@@ -24,4 +24,4 @@ Thumbs.db
 .pytest_cache/
 
 # Generated data (reproducible via scripts)
-llmmatrix-sim/data/
+data/
