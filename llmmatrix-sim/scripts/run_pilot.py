@@ -22,6 +22,19 @@ import numpy as np
 import pandas as pd
 import yaml
 
+# Load .env file if present (API keys)
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+env_path = os.path.join(project_root, ".env")
+if os.path.exists(env_path):
+    with open(env_path) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, value = line.partition("=")
+                value = value.strip()
+                if value:
+                    os.environ[key.strip()] = value
+
 # Add project root to path
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, project_root)
