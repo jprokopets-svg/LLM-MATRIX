@@ -40,54 +40,122 @@ class ForecastingQuestion:
 # ---------------------------------------------------------------------------
 
 PILOT_QUESTIONS: list[ForecastingQuestion] = [
-    # 3 monetary policy questions
+    # --- Monetary (3) — tests rates → output, inflation, FX channel ---
     ForecastingQuestion(
         id="Q01",
         shock_type="monetary",
-        # TODO: fill in shock_description, shock_magnitude, target_variables,
-        #       target_horizons, expected_direction
+        shock_description="The Central Bank of Vantria unexpectedly raises its policy rate by 100 basis points to combat persistent inflation, surprising markets that expected a hold.",
+        shock_magnitude=1.0,
+        target_variables=["y", "pi", "u"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"y_3": "down", "y_6": "down", "y_12": "neutral",
+                            "pi_3": "neutral", "pi_6": "down", "pi_12": "down",
+                            "u_3": "up", "u_6": "up", "u_12": "neutral"},
     ),
     ForecastingQuestion(
         id="Q02",
         shock_type="monetary",
+        shock_description="The Central Bank of Vantria cuts its policy rate by 50 basis points in response to softening growth indicators.",
+        shock_magnitude=-0.5,
+        target_variables=["y", "e", "u"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"y_3": "up", "y_6": "up", "y_12": "neutral",
+                            "e_3": "down", "e_6": "down", "e_12": "neutral",
+                            "u_3": "down", "u_6": "down", "u_12": "neutral"},
     ),
     ForecastingQuestion(
         id="Q03",
         shock_type="monetary",
+        shock_description="A surprise 25 basis point rate increase, smaller than the 50bp the market had priced in.",
+        shock_magnitude=0.25,
+        target_variables=["pi", "e", "r"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"pi_3": "neutral", "pi_6": "down", "pi_12": "neutral",
+                            "e_3": "up", "e_6": "neutral", "e_12": "neutral",
+                            "r_3": "up", "r_6": "up", "r_12": "neutral"},
     ),
 
-    # 3 demand questions
+    # --- Demand (3) — tests output → inflation → policy response ---
     ForecastingQuestion(
         id="Q04",
         shock_type="demand",
+        shock_description="A surge in business investment driven by improved confidence adds 1.5 percentage points to aggregate demand this quarter.",
+        shock_magnitude=1.5,
+        target_variables=["y", "pi", "r"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"y_3": "up", "y_6": "up", "y_12": "neutral",
+                            "pi_3": "neutral", "pi_6": "up", "pi_12": "up",
+                            "r_3": "up", "r_6": "up", "r_12": "up"},
     ),
     ForecastingQuestion(
         id="Q05",
         shock_type="demand",
+        shock_description="A consumer confidence collapse reduces aggregate demand by 2 percentage points.",
+        shock_magnitude=-2.0,
+        target_variables=["y", "u", "r"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"y_3": "down", "y_6": "down", "y_12": "neutral",
+                            "u_3": "up", "u_6": "up", "u_12": "neutral",
+                            "r_3": "down", "r_6": "down", "r_12": "neutral"},
     ),
     ForecastingQuestion(
         id="Q06",
         shock_type="demand",
+        shock_description="Government infrastructure spending adds a modest 0.75 percentage points to demand.",
+        shock_magnitude=0.75,
+        target_variables=["y", "pi", "u"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"y_3": "up", "y_6": "up", "y_12": "neutral",
+                            "pi_3": "neutral", "pi_6": "up", "pi_12": "neutral",
+                            "u_3": "down", "u_6": "down", "u_12": "neutral"},
     ),
 
-    # 2 cost-push questions
+    # --- Cost-push (2) — tests stagflation reasoning ---
     ForecastingQuestion(
         id="Q07",
         shock_type="cost_push",
+        shock_description="A global commodity price spike adds 1.5 percentage points to inflation this quarter, unrelated to domestic demand.",
+        shock_magnitude=1.5,
+        target_variables=["pi", "y", "r"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"pi_3": "up", "pi_6": "up", "pi_12": "neutral",
+                            "y_3": "neutral", "y_6": "down", "y_12": "down",
+                            "r_3": "up", "r_6": "up", "r_12": "up"},
     ),
     ForecastingQuestion(
         id="Q08",
         shock_type="cost_push",
+        shock_description="Easing supply chain pressures reduce inflation by 0.75 percentage points this quarter.",
+        shock_magnitude=-0.75,
+        target_variables=["pi", "r", "e"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"pi_3": "down", "pi_6": "down", "pi_12": "neutral",
+                            "r_3": "down", "r_6": "down", "r_12": "neutral",
+                            "e_3": "down", "e_6": "down", "e_12": "neutral"},
     ),
 
-    # 2 exchange rate questions
+    # --- Exchange rate (2) — tests open-economy channel ---
     ForecastingQuestion(
         id="Q09",
         shock_type="exchange_rate",
+        shock_description="A sudden 5 percent depreciation of the vantra following a global risk-off episode.",
+        shock_magnitude=-5.0,
+        target_variables=["e", "pi", "y"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"e_3": "up", "e_6": "neutral", "e_12": "neutral",
+                            "pi_3": "up", "pi_6": "up", "pi_12": "neutral",
+                            "y_3": "up", "y_6": "up", "y_12": "neutral"},
     ),
     ForecastingQuestion(
         id="Q10",
         shock_type="exchange_rate",
+        shock_description="A 3 percent appreciation of the vantra following capital inflows.",
+        shock_magnitude=3.0,
+        target_variables=["e", "pi", "u"],
+        target_horizons=[3, 6, 12],
+        expected_direction={"e_3": "down", "e_6": "neutral", "e_12": "neutral",
+                            "pi_3": "down", "pi_6": "down", "pi_12": "neutral",
+                            "u_3": "up", "u_6": "up", "u_12": "neutral"},
     ),
 ]
 
