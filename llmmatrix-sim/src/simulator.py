@@ -141,12 +141,16 @@ class Sim:
             + eps_y
         )
 
-        # Step 3: Phillips curve — Ball (1999) equation 2
-        # pi_t = persistence * pi_{t-1} + slope * y_{t-1}
-        #         - passthrough * (e_{t-1} - e_{t-2}) + eps_pi
+        # Step 3: Phillips curve — Ball (1999), deviation-from-target form
+        # With persistence < 1 (Gali 2008; Stock & Watson 1999), inflation
+        # must be formulated in deviations from pi_star to maintain steady state:
+        #   (pi_t - pi_star) = persistence * (pi_{t-1} - pi_star)
+        #                      + slope * y_{t-1}
+        #                      - passthrough * (e_{t-1} - e_{t-2}) + eps_pi
         delta_e_prev = state["e"] - state["e_prev"]
         pi_t = (
-            self.inflation_persistence * state["pi"]
+            self.pi_star
+            + self.inflation_persistence * (state["pi"] - self.pi_star)
             + self.output_slope * state["y"]
             - self.exchange_passthrough * delta_e_prev
             + eps_pi
