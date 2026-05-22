@@ -21,10 +21,12 @@ logger = logging.getLogger(__name__)
 PRICING = {
     # Anthropic
     "claude-sonnet-4-6": {"input": 3.00, "output": 15.00},
+    "claude-haiku-4-5-20251001": {"input": 0.80, "output": 4.00},
     # OpenAI
     "gpt-5-mini": {"input": 0.40, "output": 1.60},
     # DeepSeek
     "deepseek-chat": {"input": 0.27, "output": 1.10},
+    "deepseek-reasoner": {"input": 0.55, "output": 2.19},
 }
 
 # Fallback pricing for unknown models
@@ -176,7 +178,13 @@ class ModelRunner:
         )
         latency = time.time() - start
 
-        response_text = response.choices[0].message.content
+        response_text = response.choices[0].message.content or ""
+        # DeepSeek Reasoner may put output in reasoning_content with empty content
+        if not response_text and hasattr(response.choices[0].message, "reasoning_content"):
+            reasoning = response.choices[0].message.reasoning_content or ""
+            if reasoning:
+                response_text = reasoning
+                logger.info("Using reasoning_content as response (content was empty)")
         tokens_in = response.usage.prompt_tokens
         tokens_out = response.usage.completion_tokens
 
