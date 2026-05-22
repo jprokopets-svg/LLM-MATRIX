@@ -60,6 +60,10 @@ With smoothing, the output gap coefficient is raised to k = 2.0 (from Taylor's o
 - **UIP coefficient (2.0)** -- standard small open economy calibration.
 - **Okun coefficient (0.5)** -- Okun (1962); long-standing US empirical estimate.
 
+### Calibration notes
+
+This calibration satisfies four constraints: backward-looking dynamics (Carlin-Soskice 2005), open-economy UIP channel (Ball 1999), interest-rate smoothing per modern central bank practice (Dotsey & Sill 2015), and empirically-grounded Phillips persistence (Gali 2008; Stock & Watson 1999). These constraints jointly require the Taylor output coefficient k=2.0; standard k=0.5 (Taylor 1993) produces unstable systems under any empirically defensible parameter set in this model class. Calibration sensitivity analysis is available in data/validation_report.md.
+
 ## Quickstart
 
 ```bash
