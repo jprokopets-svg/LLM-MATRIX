@@ -461,7 +461,9 @@ def check_ar1_suboptimality(
     ar1_forecasts = ar1_baseline(history_df, n_forward_periods=n_forward)
 
     # Get oracle forecasts (using a demand shock as the counterfactual scenario)
-    shock_fn = lambda: demand_shock(magnitude=2.0, period=n_history)
+    # Shock targets the first forward period (n_history + 1), not n_history,
+    # because run_counterfactual starts at period=n_history and step() produces n_history+1.
+    shock_fn = lambda: demand_shock(magnitude=2.0, period=n_history + 1)
     oracle_forecasts = oracle_baseline(
         config_path=config_path,
         history_df=history_df,

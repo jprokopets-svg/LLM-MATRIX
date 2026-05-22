@@ -44,10 +44,11 @@ def main() -> None:
 
     # Define the four scenarios
     scenarios = {
-        "monetary_tightening": lambda: monetary_tightening_shock(magnitude=2.0, period=60),
-        "demand_shock": lambda: demand_shock(magnitude=2.0, period=60),
-        "cost_push_shock": lambda: cost_push_shock(magnitude=2.0, period=60),
-        "exchange_rate_shock": lambda: exchange_rate_shock(magnitude=5.0, period=60),
+        # Shock targets period 61 (first forward quarter after 60-quarter history)
+        "monetary_tightening": lambda: monetary_tightening_shock(magnitude=2.0, period=61),
+        "demand_shock": lambda: demand_shock(magnitude=2.0, period=61),
+        "cost_push_shock": lambda: cost_push_shock(magnitude=2.0, period=61),
+        "exchange_rate_shock": lambda: exchange_rate_shock(magnitude=5.0, period=61),
     }
 
     n_paths = 1000

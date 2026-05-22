@@ -141,7 +141,8 @@ def get_ground_truth(
     """
     last_period = int(history_df.iloc[-1]["period"])
     shock_fn_factory = SHOCK_FN_MAP[shock_type]
-    shock_fn = lambda: shock_fn_factory(magnitude=shock_magnitude, period=last_period)
+    # Shock targets last_period + 1 (the first forward quarter)
+    shock_fn = lambda: shock_fn_factory(magnitude=shock_magnitude, period=last_period + 1)
 
     paths = run_counterfactual(
         config_path=SIM_CONFIG_PATH,
@@ -291,10 +292,25 @@ def generate_report(
     lines.append(f"**Pilot name:** {config['pilot_name']}\n")
 
     # Run summary
-    lines.append("## Run Summary\n")
+    lines.append("## Methodology\n")
+    lines.append(
+        "This pilot evaluates LLM forecasting at the **h=1 (one-quarter-ahead) "
+        "nowcasting horizon**. This is the canonical short-horizon evaluation point "
+        "in macroeconomic forecasting (Marcellino, Stock & Watson 2006; Tashman 2000). "
+        "Single-horizon evaluation isolates the model's ability to identify "
+        "contemporaneous causal channels without confounding from multi-step "
+        "oscillatory dynamics. The ground truth is a 1000-path Monte Carlo "
+        "distribution from a validated Ball (1999) open-economy NK simulator. "
+        "Multi-horizon analysis (h=3, 6, 12) is deferred to v0.2 pending "
+        "calibration of impulse response dynamics (Jorda 2005 local projection "
+        "framework).\n"
+    )
+
+    lines.append("\n## Run Summary\n")
     model_names = [m["display_name"] for m in config["models"]]
     lines.append(f"- **Models:** {', '.join(model_names)}\n")
     lines.append(f"- **Questions:** {len(PILOT_QUESTIONS)}\n")
+    lines.append(f"- **Forecast horizon:** h=1 (one quarter ahead)\n")
     lines.append(f"- **Prompt formats:** {', '.join(config['prompt_formats'])}\n")
     lines.append(f"- **Seeds:** {config['seeds']}\n")
     lines.append(f"- **Total API calls:** {len(all_results)}\n")

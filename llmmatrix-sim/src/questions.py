@@ -41,16 +41,16 @@ class ForecastingQuestion:
 
 PILOT_QUESTIONS: list[ForecastingQuestion] = [
     # --- Monetary (3) — tests rates → output, inflation, FX channel ---
+    # At h=1: r_override hits r directly, e responds via UIP.
+    # IS curve is backward-looking so y/pi/u don't respond until h=2+.
     ForecastingQuestion(
         id="Q01",
         shock_type="monetary",
         shock_description="The Central Bank of Vantria unexpectedly raises its policy rate by 100 basis points to combat persistent inflation, surprising markets that expected a hold.",
         shock_magnitude=1.0,
         target_variables=["y", "pi", "u"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"y_3": "down", "y_6": "down", "y_12": "neutral",
-                            "pi_3": "neutral", "pi_6": "down", "pi_12": "down",
-                            "u_3": "up", "u_6": "up", "u_12": "neutral"},
+        target_horizons=[1],
+        expected_direction={"y_1": "neutral", "pi_1": "neutral", "u_1": "neutral"},
     ),
     ForecastingQuestion(
         id="Q02",
@@ -58,10 +58,8 @@ PILOT_QUESTIONS: list[ForecastingQuestion] = [
         shock_description="The Central Bank of Vantria cuts its policy rate by 50 basis points in response to softening growth indicators.",
         shock_magnitude=-0.5,
         target_variables=["y", "e", "u"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"y_3": "up", "y_6": "up", "y_12": "neutral",
-                            "e_3": "down", "e_6": "down", "e_12": "neutral",
-                            "u_3": "down", "u_6": "down", "u_12": "neutral"},
+        target_horizons=[1],
+        expected_direction={"y_1": "neutral", "e_1": "down", "u_1": "neutral"},
     ),
     ForecastingQuestion(
         id="Q03",
@@ -69,23 +67,21 @@ PILOT_QUESTIONS: list[ForecastingQuestion] = [
         shock_description="A surprise 25 basis point rate increase, smaller than the 50bp the market had priced in.",
         shock_magnitude=0.25,
         target_variables=["pi", "e", "r"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"pi_3": "neutral", "pi_6": "down", "pi_12": "neutral",
-                            "e_3": "up", "e_6": "neutral", "e_12": "neutral",
-                            "r_3": "up", "r_6": "up", "r_12": "neutral"},
+        target_horizons=[1],
+        expected_direction={"pi_1": "neutral", "e_1": "neutral", "r_1": "up"},
     ),
 
     # --- Demand (3) — tests output → inflation → policy response ---
+    # At h=1: eps_y hits y directly, r responds via Taylor, e via UIP,
+    # u via Okun. Phillips uses lagged y so pi doesn't respond yet.
     ForecastingQuestion(
         id="Q04",
         shock_type="demand",
         shock_description="A surge in business investment driven by improved confidence adds 1.5 percentage points to aggregate demand this quarter.",
         shock_magnitude=1.5,
         target_variables=["y", "pi", "r"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"y_3": "up", "y_6": "up", "y_12": "neutral",
-                            "pi_3": "neutral", "pi_6": "up", "pi_12": "up",
-                            "r_3": "up", "r_6": "up", "r_12": "up"},
+        target_horizons=[1],
+        expected_direction={"y_1": "up", "pi_1": "neutral", "r_1": "up"},
     ),
     ForecastingQuestion(
         id="Q05",
@@ -93,10 +89,8 @@ PILOT_QUESTIONS: list[ForecastingQuestion] = [
         shock_description="A consumer confidence collapse reduces aggregate demand by 2 percentage points.",
         shock_magnitude=-2.0,
         target_variables=["y", "u", "r"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"y_3": "down", "y_6": "down", "y_12": "neutral",
-                            "u_3": "up", "u_6": "up", "u_12": "neutral",
-                            "r_3": "down", "r_6": "down", "r_12": "neutral"},
+        target_horizons=[1],
+        expected_direction={"y_1": "down", "u_1": "up", "r_1": "down"},
     ),
     ForecastingQuestion(
         id="Q06",
@@ -104,23 +98,21 @@ PILOT_QUESTIONS: list[ForecastingQuestion] = [
         shock_description="Government infrastructure spending adds a modest 0.75 percentage points to demand.",
         shock_magnitude=0.75,
         target_variables=["y", "pi", "u"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"y_3": "up", "y_6": "up", "y_12": "neutral",
-                            "pi_3": "neutral", "pi_6": "up", "pi_12": "neutral",
-                            "u_3": "down", "u_6": "down", "u_12": "neutral"},
+        target_horizons=[1],
+        expected_direction={"y_1": "up", "pi_1": "neutral", "u_1": "down"},
     ),
 
     # --- Cost-push (2) — tests stagflation reasoning ---
+    # At h=1: eps_pi hits pi directly, r responds via Taylor.
+    # IS curve is backward-looking so y/u don't respond yet.
     ForecastingQuestion(
         id="Q07",
         shock_type="cost_push",
         shock_description="A global commodity price spike adds 1.5 percentage points to inflation this quarter, unrelated to domestic demand.",
         shock_magnitude=1.5,
         target_variables=["pi", "y", "r"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"pi_3": "up", "pi_6": "up", "pi_12": "neutral",
-                            "y_3": "neutral", "y_6": "down", "y_12": "down",
-                            "r_3": "up", "r_6": "up", "r_12": "up"},
+        target_horizons=[1],
+        expected_direction={"pi_1": "up", "y_1": "neutral", "r_1": "up"},
     ),
     ForecastingQuestion(
         id="Q08",
@@ -128,23 +120,21 @@ PILOT_QUESTIONS: list[ForecastingQuestion] = [
         shock_description="Easing supply chain pressures reduce inflation by 0.75 percentage points this quarter.",
         shock_magnitude=-0.75,
         target_variables=["pi", "r", "e"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"pi_3": "down", "pi_6": "down", "pi_12": "neutral",
-                            "r_3": "down", "r_6": "down", "r_12": "neutral",
-                            "e_3": "down", "e_6": "down", "e_12": "neutral"},
+        target_horizons=[1],
+        expected_direction={"pi_1": "down", "r_1": "neutral", "e_1": "neutral"},
     ),
 
     # --- Exchange rate (2) — tests open-economy channel ---
+    # At h=1: eps_e hits e directly. IS/Phillips use lagged e, so
+    # y/pi/u don't respond until h=2+.
     ForecastingQuestion(
         id="Q09",
         shock_type="exchange_rate",
         shock_description="A sudden 5 percent depreciation of the vantra following a global risk-off episode.",
         shock_magnitude=-5.0,
         target_variables=["e", "pi", "y"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"e_3": "up", "e_6": "neutral", "e_12": "neutral",
-                            "pi_3": "up", "pi_6": "up", "pi_12": "neutral",
-                            "y_3": "up", "y_6": "up", "y_12": "neutral"},
+        target_horizons=[1],
+        expected_direction={"e_1": "down", "pi_1": "neutral", "y_1": "neutral"},
     ),
     ForecastingQuestion(
         id="Q10",
@@ -152,10 +142,8 @@ PILOT_QUESTIONS: list[ForecastingQuestion] = [
         shock_description="A 3 percent appreciation of the vantra following capital inflows.",
         shock_magnitude=3.0,
         target_variables=["e", "pi", "u"],
-        target_horizons=[3, 6, 12],
-        expected_direction={"e_3": "down", "e_6": "neutral", "e_12": "neutral",
-                            "pi_3": "down", "pi_6": "down", "pi_12": "neutral",
-                            "u_3": "up", "u_6": "up", "u_12": "neutral"},
+        target_horizons=[1],
+        expected_direction={"e_1": "up", "pi_1": "neutral", "u_1": "neutral"},
     ),
 ]
 
@@ -217,7 +205,7 @@ def validate_questions(questions: list[ForecastingQuestion]) -> list[str]:
                 errors.append(f"{q.id}: invalid target variable '{v}'")
 
         # Validate target_horizons
-        valid_horizons = {3, 6, 12}
+        valid_horizons = {1, 3, 6, 12}
         for h in q.target_horizons:
             if h not in valid_horizons:
                 errors.append(f"{q.id}: invalid horizon {h}")
