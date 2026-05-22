@@ -6,3 +6,7 @@ matplotlib
 statsmodels
 pyarrow
 properscoring
+tiktoken
+httpx
+anthropic
+openai

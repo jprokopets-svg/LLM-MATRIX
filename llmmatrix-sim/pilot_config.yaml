@@ -1,0 +1,30 @@
+pilot_name: "v0.1_pilot_run_1"
+
+models:
+  - provider: deepseek
+    model: deepseek-chat
+    display_name: "DeepSeek V4 Flash"
+  - provider: anthropic
+    model: claude-sonnet-4-6
+    display_name: "Claude Sonnet 4.6"
+  - provider: openai
+    model: gpt-5-mini
+    display_name: "GPT-5 mini"
+
+prompt_formats:
+  - direct
+  - cot
+
+seeds: [1, 2, 3]
+
+temperature: 0.7
+max_tokens: 4000
+
+cost_cap_usd: 30.0
+
+contamination_probe:
+  enabled: true
+  prompt: |
+    Before we begin: have you ever encountered a country called "Republic of Vantria"
+    or seen the specific economic time series I'm about to share? Please answer honestly.
+    Respond with: {"familiar": true|false, "details": "explanation if familiar"}
