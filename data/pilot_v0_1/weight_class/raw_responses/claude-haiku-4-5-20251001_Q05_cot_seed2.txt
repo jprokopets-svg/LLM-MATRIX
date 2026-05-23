@@ -1,0 +1,96 @@
+# Macroeconomic Forecast for Vantria: Consumer Confidence Collapse Scenario
+
+## Step-by-Step Causal Analysis
+
+### 1. Direct Effects of the Shock
+
+A 2 percentage point reduction in aggregate demand directly:
+- **Reduces output**: The economy contracts relative to potential, widening the negative output gap
+- **Increases unemployment**: As firms reduce hiring and hours in response to lower demand
+- **Reduces inflationary pressure**: Lower demand weakens pricing power across the economy
+
+**Current baseline (Q60):**
+- Output gap: appears modestly positive (economy "running well above potential")
+- Unemployment: 5.6% (slightly above natural rate of 5.0%)
+- Policy rate: 1.7%
+- Inflation: 1.4% YoY (below 2% target)
+
+### 2. Second-Order Effects: Monetary Policy & Exchange Rate Dynamics
+
+**Monetary Policy Response:**
+- The shock reduces inflation below the 2% target (already at 1.4% in Q60)
+- With demand collapsing, disinflationary pressures intensify
+- The central bank would likely *ease* policy (reduce rates) to support demand and prevent deflation
+- Historical precedent: Q34-Q35 showed similar easing when inflation fell to 0.7%
+- Expected policy rate trajectory: Downward pressure, likely 0.5-1.0% range within 1-2 quarters
+
+**Exchange Rate Dynamics:**
+- Lower interest rates make VTR less attractive to international investors
+- The vantra would depreciate against trading partners
+- Currency depreciation partially offsets demand weakness through export competitiveness
+- However, this effect takes time (1-2 quarters) to fully manifest
+
+**Labor Market Dynamics:**
+- Unemployment typically rises within 1 quarter of demand shocks (Okun's law)
+- With unemployment already at 5.6% (above natural rate), the labor market has limited slack
+- Historical pattern: unemployment responds with 1-quarter lag to demand shocks
+- Expected rise: 0.4-0.7 percentage points in Q1 after shock
+
+### 3. Dynamics Over the 1-Quarter Forecast Horizon
+
+At **1 quarter ahead (Q61)**:
+
+**Output Gap:**
+- Direct demand shock: -2.0 pp
+- Starting position: modestly positive (estimate +0.5 to +1.0%)
+- Result: Output gap turns negative, approximately -1.0% to -1.5%
+- Partial offset from easing monetary policy is minimal at 1-quarter horizon
+
+**Unemployment Rate:**
+- Starting point: 5.6%
+- Okun's law coefficient: roughly 0.4-0.5 (for 1pp output gap change = 0.4-0.5pp unemployment change)
+- 2pp demand shock → ~0.8-1.0pp unemployment increase
+- Expected range: 6.3-6.5%
+- Central estimate: 6.4%
+
+**Real Interest Rate:**
+- Nominal policy rate: Expected to decline to ~1.0-1.2% (easing response)
+- Inflation expectations: Likely to fall with demand collapse, but slowly
+- Q60 inflation was 1.4%; with demand shock, expected to drift toward 0.8-1.0% over next quarter
+- Real rate = nominal rate - inflation
+- Calculation: ~1.1% - 0.9% = ~0.2% (or potentially negative if easing is aggressive)
+- However, at 1-quarter horizon, policy easing may not be fully implemented
+- Interim real rate likely 0.5-0.8%
+
+## Forecast Confidence Intervals
+
+**Uncertainty sources:**
+- Magnitude of labor market response (Okun's law parameter uncertainty)
+- Speed of monetary policy easing decision
+- Persistence of confidence shock
+- Exchange rate pass-through timing
+- Expectations formation (adaptive vs. forward-looking)
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "y_1": {
+      "point": -1.2,
+      "ci_low": -2.0,
+      "ci_high": -0.3
+    },
+    "u_1": {
+      "point": 6.4,
+      "ci_low": 6.1,
+      "ci_high": 6.8
+    },
+    "r_1": {
+      "point": 0.6,
+      "ci_low": -0.2,
+      "ci_high": 1.3
+    }
+  }
+}
+</JSON>

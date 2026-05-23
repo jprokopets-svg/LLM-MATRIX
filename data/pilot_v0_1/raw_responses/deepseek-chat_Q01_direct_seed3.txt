@@ -1,0 +1,7 @@
+{
+  "predictions": {
+    "pi_1": {"point": 1.2, "ci_low": 0.5, "ci_high": 1.9},
+    "u_1": {"point": 5.5, "ci_low": 5.0, "ci_high": 6.0},
+    "y_1": {"point": -0.5, "ci_low": -1.2, "ci_high": 0.2}
+  }
+}

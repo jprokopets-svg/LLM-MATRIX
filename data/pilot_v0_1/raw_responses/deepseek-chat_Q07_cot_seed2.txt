@@ -1,0 +1,37 @@
+Let’s go step by step.
+
+---
+
+**1. Direct effect of the shock**
+
+A global commodity price spike adds 1.5 percentage points to inflation this quarter, independent of domestic demand.  
+- Inflation will rise *this quarter* by +1.5 pp from whatever it would have been.  
+- The most recent observed inflation (Q60) was 1.4%. Adding 1.5 pp gives ~2.9% for the current quarter.  
+- The output gap is not directly affected by this supply shock in the immediate quarter—it’s a cost-push, not demand-driven.  
+- The real interest rate = policy rate – inflation. If policy doesn’t change immediately, real rate falls.
+
+**2. Second-order effects**
+
+- **Monetary policy**: The central bank targets 2% inflation. Inflation jumping to ~2.9% is above target. Historically, Vantria’s central bank reacts gradually but consistently. Given the shock is supply-driven, they may raise the policy rate to prevent second-round effects. A reasonable hike would be ~0.5–0.75 pp over the next quarter.
+- **Exchange rate**: Higher inflation and expected tightening could cause initial depreciation (if inflation erodes real returns), but higher policy rates attract capital. Historically, Vantria’s currency is volatile. Given the floating regime, a modest depreciation is likely initially, then stabilization.
+- **Output gap**: A supply shock (higher costs) reduces output temporarily. Firms pass on costs; demand falls slightly. The output gap turns more negative (or less positive). In Q60, the economy was described as “running well above potential” but with disinflationary pressures—oddly, that suggests a positive output gap. The shock will reduce it.
+
+**3. Dynamics over 1 quarter ahead**
+
+- Inflation at 1 quarter ahead: The spike is this quarter. Next quarter, the base effect from the spike fades, but pass-through to core and wage demands may keep inflation elevated. Estimate ~2.5–3.0% range, central ~2.7%.
+- Output gap: Negative effect from cost-push. Starting from slightly positive (maybe +0.5%), the shock pushes it down by ~0.3–0.5 pp. Estimate ~0.0% to +0.2%, central +0.1%.
+- Real interest rate: Policy rate likely raised to ~2.2–2.5% (from 1.7%). Inflation ~2.7%. Real rate = 2.3 – 2.7 = –0.4% approximately.
+
+---
+
+**Final predictions:**
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 2.7, "ci_low": 2.2, "ci_high": 3.2},
+    "r_1": {"point": -0.4, "ci_low": -0.9, "ci_high": 0.1},
+    "y_1": {"point": 0.1, "ci_low": -0.3, "ci_high": 0.5}
+  }
+}
+</JSON>

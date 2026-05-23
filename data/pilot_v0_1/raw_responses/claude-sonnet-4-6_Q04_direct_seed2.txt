@@ -1,0 +1,32 @@
+I'll analyze the current state of Vantria's economy and the impact of the investment shock.
+
+**Current State (Q60):**
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, suggesting negative output gap)
+- Recent trend: disinflationary pressures, labor market softening, vantra appreciated sharply
+- Period described as "economy running well above potential" but data shows slack emerging
+
+**Assessing the Output Gap at Q60:**
+Unemployment at 5.6% vs. natural rate 5.0% → ~0.6pp above NAIRU. Using Okun's coefficient (~2), this implies output gap of approximately -1.2%. The narrative contradiction ("well above potential" vs. actual data showing slack) suggests I should trust the data. Output gap at Q60: approximately -1.0% to -1.2%.
+
+**Investment Shock Analysis (+1.5pp to aggregate demand):**
+
+1. **Output Gap (1Q ahead):** Starting from ~-1.1%, a +1.5pp demand shock would push the output gap to approximately +0.3% to +0.4%. The full multiplier effect won't be immediate (partial pass-through in one quarter, maybe 70-80% of shock).
+   - Estimate: ~+0.3%
+
+2. **Inflation (1Q ahead):** Starting at 1.4%, with a positive output gap emerging and demand pressures, inflation rises modestly. One quarter is short for full pass-through. Expect ~0.2-0.3pp increase from demand pressure.
+   - Estimate: ~1.7%
+
+3. **Real Interest Rate (1Q ahead):** Policy rate at 1.7%. Central bank may nudge rates up slightly in response to demand surge, but one quarter is short for decisive action. Nominal rate ~1.8-1.9%. Real rate = nominal - inflation expectations (~2%) ≈ -0.1% to 0%.
+   - Real rate = policy rate - inflation ≈ 1.8% - 1.7% = ~0.1%
+
+```json
+{
+  "predictions": {
+    "pi_1": {"point": 1.7, "ci_low": 1.2, "ci_high": 2.2},
+    "r_1": {"point": 0.1, "ci_low": -0.4, "ci_high": 0.6},
+    "y_1": {"point": 0.3, "ci_low": -0.3, "ci_high": 0.9}
+  }
+}
+```

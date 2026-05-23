@@ -1,0 +1,74 @@
+# Step-by-Step Reasoning
+
+## 1. Direct Effects of the Shock
+
+A consumer confidence collapse reducing aggregate demand by 2 percentage points creates:
+
+**Output Gap:** The economy is currently operating above potential (Q49-Q60 narrative states "running well above potential"). A 2 percentage point demand reduction directly reduces the output gap. Given the current state appears to be roughly +1 to +1.5% above potential (inferred from labor market tightness and inflation dynamics), a 2pp shock would swing this negative, moving the output gap to approximately **-0.5 to -1.0%** at 1 quarter ahead.
+
+**Unemployment:** With unemployment at 5.6% in Q60 and the natural rate at 5.0%, the labor market is slightly loose. A demand shock reducing output will increase unemployment through the Okun's Law relationship. A 2pp output contraction typically translates to roughly 0.4-0.5pp increase in unemployment. This suggests unemployment moving to approximately **6.0-6.1%** at 1 quarter ahead.
+
+**Real Interest Rate:** The nominal policy rate in Q60 was 1.7%. Inflation in Q60 was 1.4% year-on-year. The real rate is approximately 0.3%. With demand collapsing, inflation pressures will ease, and the central bank will likely cut rates. However, the lag between the shock and policy response means the real rate may initially rise slightly (as nominal rates don't immediately fall while inflation expectations adjust downward), but this is a minor effect. More importantly, as inflation falls, the real rate will rise mechanistically unless the central bank cuts aggressively. At 1 quarter ahead, I expect modest real rate increase to **0.5-0.8%** as the central bank hasn't yet fully adjusted policy.
+
+## 2. Second-Order Effects
+
+**Monetary Policy Response:**
+- The central bank targets 2% inflation. With a demand shock reducing output gap and inflation pressure, the bank will face a trade-off.
+- However, at 1 quarter ahead, policy decisions take time. The rate in Q60 (1.7%) likely reflects some forward guidance, but a full policy response typically requires 1-2 quarters.
+- Expect the policy rate to be cut, but not immediately at full magnitude. The 1-quarter nominal rate might fall to 1.4-1.5%.
+
+**Exchange Rate:**
+- The vantra has appreciated sharply recently (Q49-Q60). A demand shock and lower expected rates will weaken the currency.
+- Currency depreciation will partially offset the demand shock through improved net exports, but this effect is modest at 1-quarter horizon.
+- This provides some support to output, but not enough to fully offset the 2pp demand shock.
+
+**Labor Market Dynamics:**
+- Firms adjust employment with a lag. At 1 quarter, the unemployment response will be partial.
+- The Okun's Law coefficient for a small open economy is typically 0.2-0.25 (1pp output gap change = 0.2-0.25pp unemployment change).
+- A 2pp demand shock reducing output gap by ~2pp suggests 0.4-0.5pp unemployment increase.
+
+**Inflation Expectations:**
+- Consumer confidence collapse signals demand weakness, reducing inflation expectations.
+- This will feed into actual inflation with a lag, but at 1 quarter, inflation remains elevated.
+- Inflation in Q60 was 1.4%, which was already declining. The demand shock accelerates disinflationary pressure, but the 1-quarter effect is modest.
+
+## 3. Dynamics Over the Forecast Horizon
+
+At 1 quarter ahead specifically:
+- Output gap swings negative but hasn't fully adjusted to the new equilibrium
+- Unemployment begins rising but hasn't fully incorporated the shock
+- Real interest rates likely tick up slightly as nominal rates lag inflation expectations downward
+- The central bank will signal future cuts but hasn't implemented them yet
+
+## Final Predictions
+
+**Output Gap at Q61 (1 quarter ahead):**
+- Current state: ~+1.0% above potential (inferred from Q60 labor market conditions)
+- Direct shock: -2.0pp
+- Partial offset from exchange rate/net exports: +0.3pp
+- Point estimate: **-0.7%**
+- 80% CI: [-1.3%, -0.1%]
+
+**Unemployment Rate at Q61 (1 quarter ahead):**
+- Current rate: 5.6%
+- Okun's Law adjustment (0.4-0.5pp per 2pp output gap change): +0.45pp
+- Point estimate: **6.05%** (rounding to 6.1%)
+- 80% CI: [5.8%, 6.4%]
+
+**Real Interest Rate at Q61 (1 quarter ahead):**
+- Current real rate: ~0.3% (1.7% nominal - 1.4% inflation)
+- Policy rate likely cuts to 1.4-1.5% (partial response)
+- Inflation expectations decline to 1.2-1.3% (from 1.4%)
+- Real rate: 1.45% - 1.25% = 0.2%, but with inflation falling faster than nominal rates, real rate rises to ~0.5%
+- Point estimate: **0.6%**
+- 80% CI: [0.2%, 1.0%]
+
+<JSON>
+{
+  "predictions": {
+    "y_1": {"point": -0.7, "ci_low": -1.3, "ci_high": -0.1},
+    "u_1": {"point": 6.1, "ci_low": 5.8, "ci_high": 6.4},
+    "r_1": {"point": 0.6, "ci_low": 0.2, "ci_high": 1.0}
+  }
+}
+</JSON>

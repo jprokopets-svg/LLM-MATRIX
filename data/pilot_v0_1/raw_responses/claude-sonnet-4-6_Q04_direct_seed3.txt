@@ -1,0 +1,53 @@
+I need to analyze Vantria's current economic state (end of Q60) and forecast the impact of a +1.5pp demand shock.
+
+## Current State Assessment (Q60)
+
+**Inflation:** 1.4% (below 2% target, trending down from 2.6% in Q59)
+**Policy rate:** 1.7%
+**Unemployment:** 5.6% (above natural rate of 5.0%, suggesting negative output gap)
+**Real interest rate:** 1.7% - 1.4% = ~0.3% (roughly neutral to mildly accommodative)
+
+**Output gap:** Unemployment at 5.6% vs natural rate 5.0% = +0.6pp above natural rate. Using Okun's Law (~2:1 ratio), output gap ≈ -1.2%. The narrative says "economy running well above potential" for Years 13-15, but Q60 data shows softening labor market and below-target inflation, suggesting the gap has turned negative by Q60. I'll estimate output gap at approximately -0.8% to -1.0% at Q60.
+
+## Shock Analysis
+
+**Demand shock:** +1.5pp to aggregate demand this quarter.
+
+**Output gap impact:**
+- Starting output gap: ~-0.9%
+- Direct demand shock adds ~1.5pp to output
+- Some leakage through imports (small open economy), maybe 0.3-0.4pp absorbed externally
+- Net domestic output gap impact: ~+1.1 to +1.2pp
+- New output gap: -0.9 + 1.1 = ~+0.2% at 1Q ahead
+- But monetary policy response is lagged, so limited offset in 1 quarter
+
+**Inflation impact:**
+- Starting inflation: 1.4%
+- Positive output gap (small) adds modest upward pressure
+- With 1Q lag, inflation response is partial: maybe +0.3-0.5pp
+- New inflation: ~1.7-1.9%
+- Point estimate: ~1.8%
+
+**Real interest rate:**
+- Central bank likely responds modestly to demand surge (policy rate may tick up slightly)
+- Policy rate: from 1.7%, perhaps moves to ~1.9-2.0% with partial response
+- Real rate = nominal rate - inflation: ~2.0% - 1.8% = ~0.2%
+- With some uncertainty, point estimate: ~0.2%
+
+## Confidence Intervals
+
+**Output gap:** Central estimate +0.2%, but uncertainty around starting gap and shock multiplier. 80% CI: [-0.4%, +0.8%]
+
+**Inflation:** Central 1.8%, uncertainty from pass-through timing. 80% CI: [1.3%, 2.3%]
+
+**Real interest rate:** Central 0.2%, uncertainty from CB reaction. 80% CI: [-0.4%, 0.8%]
+
+```json
+{
+  "predictions": {
+    "pi_1": {"point": 1.8, "ci_low": 1.3, "ci_high": 2.3},
+    "r_1": {"point": 0.2, "ci_low": -0.4, "ci_high": 0.8},
+    "y_1": {"point": 0.2, "ci_low": -0.4, "ci_high": 0.8}
+  }
+}
+```

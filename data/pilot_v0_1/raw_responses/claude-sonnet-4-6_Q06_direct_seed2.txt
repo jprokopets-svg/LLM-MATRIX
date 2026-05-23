@@ -1,0 +1,40 @@
+I need to assess the current state of Vantria's economy at Q60 and then apply the infrastructure spending shock.
+
+## Current State Assessment (Q60)
+
+**Inflation:** 1.4% YoY — below the 2% target
+**Policy rate:** 1.7% — below the estimated neutral (roughly 2%), mildly accommodative
+**Unemployment:** 5.6% — above the natural rate of 5.0%, suggesting negative output gap
+**Context:** The narrative says "economy running well above potential" but the data shows unemployment above natural rate and below-target inflation, which contradicts this. The labor market "softened" and disinflationary pressures evident. I'll trust the hard data over the narrative label.
+
+**Output gap estimate at Q60:** With unemployment at 5.6% vs. natural rate 5.0%, using an Okun's coefficient of ~2, the output gap ≈ -(5.6-5.0) × 2 = -1.2%. Call it approximately -1.0% to -1.2%.
+
+**Vantra appreciated sharply** — this is disinflationary and dampens demand further.
+
+## Shock Analysis: +0.75pp demand stimulus
+
+**Magnitude:** Modest fiscal stimulus of 0.75pp to demand.
+
+**Output gap:** Starting at roughly -1.0 to -1.2%. A 0.75pp demand boost at 1 quarter ahead would partially close the gap. Fiscal multiplier in a small open economy with floating exchange rate is typically <1 (Mundell-Fleming suggests crowding out via exchange rate). Effective impact on output gap ≈ +0.5 to +0.6pp. New output gap ≈ -1.0 + 0.55 ≈ -0.45%.
+
+**Inflation:** Starting at 1.4%. The demand boost is modest and the output gap remains slightly negative. Inflation pass-through at 1 quarter is limited. Modest upward pressure: +0.1 to +0.2pp. Forecast ≈ 1.5-1.6%. Also, the appreciated vantra continues to suppress import prices. Point estimate: ~1.6%.
+
+**Unemployment:** Starting at 5.6%. A modest demand shock with limited output gap closure. Using Okun's: if output gap moves from -1.0% to -0.45%, unemployment might fall by ~0.3pp. Forecast ≈ 5.3%.
+
+## Confidence Intervals
+
+Given uncertainty about the true output gap, multiplier effects, and exchange rate dynamics:
+
+- **y_1:** point -0.5%, CI [-1.2%, +0.2%]
+- **pi_1:** point 1.6%, CI [1.2%, 2.1%]
+- **u_1:** point 5.3%, CI [4.9%, 5.7%]
+
+```json
+{
+  "predictions": {
+    "pi_1": {"point": 1.6, "ci_low": 1.2, "ci_high": 2.1},
+    "u_1": {"point": 5.3, "ci_low": 4.9, "ci_high": 5.7},
+    "y_1": {"point": -0.5, "ci_low": -1.2, "ci_high": 0.2}
+  }
+}
+```

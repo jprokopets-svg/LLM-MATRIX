@@ -1,0 +1,62 @@
+I need to forecast inflation, real interest rate, and real exchange rate one quarter ahead, given a supply-side disinflation shock of -0.75 percentage points.
+
+## Step 1: Establish baseline from Q60
+
+- Inflation (Q60): 1.4% YoY
+- Policy rate (Q60): 1.7%
+- Unemployment (Q60): 5.6% (above natural rate of 5.0%, suggesting slack)
+- Real interest rate (Q60): 1.7% - 1.4% = 0.3%
+- Context: Economy was running above potential (per narrative), but labor market softened, vantra appreciated sharply, disinflationary pressures evident
+
+## Step 2: Assess baseline trajectory for Q61
+
+Without the shock:
+- Inflation was already trending below target (1.4% in Q60), with disinflationary pressures and VTR appreciation
+- Unemployment at 5.6% > NAIRU (5.0%), suggesting downward pressure on inflation
+- Policy rate at 1.7%, relatively low
+- Baseline inflation for Q61 might drift around 1.4-1.8% given mixed signals
+
+## Step 3: Apply the supply chain shock (-0.75 pp)
+
+**Inflation at Q61:**
+- Baseline pre-shock: ~1.6% (slight mean reversion from 1.4%, given some quarters showed 2%+)
+- Shock: -0.75 pp
+- Post-shock inflation: 1.6% - 0.75% ≈ 0.85%
+- Round to ~0.9%
+
+**Policy rate response:**
+- Central bank targets 2% inflation; with inflation dropping to ~0.9%, they may cut slightly
+- But the central bank has been slow to react in history (many "held" entries)
+- Policy rate likely stays near 1.7% or edges down slightly to ~1.5-1.6%
+- Estimate: ~1.6%
+
+**Real interest rate at Q61:**
+- Real rate = nominal rate - inflation
+- = 1.6% - 0.9% = 0.7%
+- This is a rise in real rates due to disinflation
+
+**Real exchange rate at Q61:**
+- Supply chain easing → lower domestic prices → VTR real depreciation (lower price level means real exchange rate index falls if defined as domestic/foreign price level)
+- But also: higher real rates could attract capital, appreciating VTR nominally
+- The vantra already appreciated sharply in Q49-Q60 period
+- Net effect: supply-side disinflation with modest real rate rise → mild real appreciation or depreciation depending on convention
+- Using log index convention where higher = appreciation: higher real rates suggest mild appreciation, but lower inflation suggests real depreciation
+- The dominant effect with supply shock: real exchange rate tends to depreciate slightly (lower domestic prices)
+- Baseline log index: assume normalized, with recent appreciation trend. I'll estimate a slight depreciation from the shock: ~-0.02 from wherever we are
+- Given uncertainty, I'll set point estimate at a modest level, say -0.02 relative to recent trend (slight depreciation)
+
+## Confidence Intervals (80%)
+
+**Inflation:** Point 0.9%, CI [0.3%, 1.5%]
+**Real rate:** Point 0.7%, CI [0.1%, 1.3%]
+**Real exchange rate (log index):** Point -0.02, CI [-0.08, 0.04]
+
+```json
+{
+  "predictions": {
+    "e_1": {"point": -0.02, "ci_low": -0.08, "ci_high": 0.04},
+    "pi_1": {"point": 0.9, "ci_low": 0.3, "ci_high": 1.5},
+    "r_1": {"point": 0.7, "ci_low": 0.1, "ci_high": 1.3}
+  }
+}
+```

@@ -1,0 +1,52 @@
+Let’s work through this step by step.
+
+---
+
+### Step 1 – Direct effects of a 5% nominal depreciation
+
+Vantria has a floating exchange rate. A sudden 5% nominal depreciation means the **real exchange rate** (which adjusts for price differences) will also depreciate sharply in the short run, because domestic prices and foreign prices are sticky.  
+
+- **Real exchange rate (log index):** A 5% nominal depreciation translates roughly into a 5% real depreciation initially (log change ≈ –0.05). We need a baseline level. Looking at the historical data, the real exchange rate index isn’t given directly, but we can infer it fluctuates around a normalized value. A reasonable baseline log index is 0 (i.e., index = 100 in levels). After shock: about –0.05.
+
+- **Inflation:** A depreciation raises the domestic currency price of imports. Given Vantria is a small open economy, this passes through to consumer prices quickly (within one quarter). Historical episodes show sharp depreciations (e.g., Years 4–6) were associated with *disinflationary* pressure according to the text, but that’s because they happened alongside other factors. A pure depreciation is inflationary. The pass-through is typically partial: a 5% depreciation might add 1–2 percentage points to annual CPI inflation within one quarter. Baseline inflation in the most recent quarter (Q60) was 1.4%. So inflation could rise to around 2.5–3.5%.
+
+- **Output gap:** A depreciation boosts net exports (cheaper domestic goods), so output rises above potential. The output gap becomes positive. Historically, Vantria’s output gap responds to exchange rate changes with a lag, but within one quarter some positive effect appears. Given the economy was described as “running well above potential” in Years 13–15 but recently softening (Q60 unemployment 5.6%, above natural rate 5.0%), there is some slack. A 5% depreciation could close that slack and push output slightly above potential. Estimate: output gap around +0.5% to +1.0%.
+
+---
+
+### Step 2 – Second-order effects
+
+- **Monetary policy:** The central bank targets 2% inflation. If inflation jumps above target, they will raise the policy rate. However, they meet quarterly and react with a lag. Within one quarter, the policy rate might not change yet (as seen historically, they often hold for several quarters before adjusting). So no immediate offset from monetary policy in the first quarter.
+
+- **Exchange rate dynamics:** A risk-off episode often causes further depreciation pressure, but the initial 5% is the shock. Without further news, the exchange rate may stabilize or partially reverse. For a one-quarter horizon, we assume it stays near the new level.
+
+- **Labor market:** Higher output reduces unemployment with a lag (Okun’s law). Within one quarter, unemployment might fall slightly, but the output gap effect dominates.
+
+---
+
+### Step 3 – Dynamics over one quarter
+
+At one quarter ahead:
+- Real exchange rate: still depreciated by ~5% (log –0.05) because prices haven’t adjusted much.
+- Inflation: spikes due to import pass-through, then begins to moderate as base effects kick in later. At one quarter, the annual CPI rate reflects the new price level.
+- Output gap: positive from trade boost, partially offset if import costs hurt domestic demand, but net positive.
+
+---
+
+### Final predictions
+
+- **Real exchange rate (log index):** –0.05, with uncertainty ±0.02 (confidence interval –0.07 to –0.03).
+- **Inflation (annual %):** 3.0%, with uncertainty ±1.0 percentage point (2.0% to 4.0%).
+- **Output gap (%):** +0.8%, with uncertainty ±0.6 percentage point (0.2% to 1.4%).
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": -0.05, "ci_low": -0.07, "ci_high": -0.03},
+    "pi_1": {"point": 3.0, "ci_low": 2.0, "ci_high": 4.0},
+    "y_1": {"point": 0.8, "ci_low": 0.2, "ci_high": 1.4}
+  }
+}
+</JSON>

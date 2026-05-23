@@ -1,0 +1,87 @@
+# Macroeconomic Forecasting Analysis: Republic of Vantria
+
+## Step-by-Step Reasoning
+
+### 1. Direct Effects of the Shock
+
+**Investment Surge Impact (+1.5pp to aggregate demand):**
+
+- A 1.5 percentage point boost to aggregate demand represents a significant positive shock to the economy
+- This will immediately increase the output gap (economy moves further above potential)
+- The shock occurs when the economy is already "running well above potential" (Q49-Q60 narrative) with unemployment at 5.6% in Q60, slightly above the 5.0% natural rate
+- Direct effect on inflation: demand-side pressures will push inflation upward in the near term
+- Direct effect on real interest rate: the nominal rate is fixed in the current quarter (1.7%), so the real rate moves inversely with inflation expectations
+
+### 2. Second-Order Effects
+
+**Monetary Policy Response:**
+- Current inflation in Q60 is 1.4% (below target) despite above-potential output, suggesting some disinflationary forces
+- However, the investment surge will create demand-side pressures that typically lead to inflation acceleration
+- The central bank targets 2.0% inflation and has demonstrated willingness to adjust rates (see Q37-Q48 tightening cycle)
+- At a 1-quarter horizon, the policy rate is likely held constant (1.7%), but expectations of future tightening will form
+- The mildly restrictive stance (noted in Q49-Q60) combined with above-potential growth suggests the central bank will be vigilant
+
+**Exchange Rate Dynamics:**
+- The vantra has appreciated sharply in the recent period (Q49-Q60)
+- A positive demand shock could further strengthen the currency as investment inflows increase
+- Currency appreciation would create disinflationary pressure through import prices, partially offsetting domestic demand pressures
+- However, at a 1-quarter horizon, exchange rate adjustment may be incomplete
+
+**Labor Market:**
+- Unemployment at 5.6% in Q60 is slightly elevated relative to the 5.0% natural rate
+- The investment surge will increase labor demand, tightening the labor market
+- Wage pressures will emerge, supporting inflation acceleration
+- At 1-quarter horizon, this effect is nascent but will develop
+
+### 3. Dynamics Over the Forecast Horizon
+
+**At 1 Quarter Ahead (Q61):**
+
+**Output Gap:**
+- Starting point: The economy was running "well above potential" in Q49-Q60, though the narrative becomes more ambiguous by Q60
+- The investment shock adds 1.5pp directly to aggregate demand
+- With unemployment at 5.6% (slightly above natural rate), there is modest slack that can be absorbed
+- However, the historical pattern shows that when unemployment falls below 5%, the economy operates above potential
+- Estimate: Output gap widens by approximately 1.0-1.2pp (accounting for some multiplier effects and partial absorption of slack)
+- **Point estimate: +1.5% to +2.0% output gap** (assuming it was near +0.5% to +1.0% before the shock)
+
+**Inflation Rate:**
+- Current inflation (Q60): 1.4%, below the 2.0% target
+- The demand shock will increase inflation through multiple channels:
+  - Direct demand pressure on prices
+  - Tightening labor market → wage acceleration
+  - However, currency appreciation will create offsetting disinflationary pressure
+- At 1-quarter horizon, inflation responses are typically lagged (2-4 quarters typical)
+- The investment surge creates immediate demand pressure, but price adjustment takes time
+- Inflation expectations may rise, but realized inflation will move more gradually
+- **Point estimate: 1.7% to 1.9%** (slight increase from 1.4%, reflecting some demand pass-through and expectations effects)
+
+**Real Interest Rate:**
+- Nominal policy rate at Q60: 1.7%
+- Expected inflation at 1-quarter horizon: ~1.8% (midpoint estimate)
+- Real interest rate = Nominal rate - Expected inflation
+- If nominal rate stays at 1.7% and inflation rises to ~1.8%, the real rate becomes slightly negative
+- However, the central bank may be expected to raise rates in response to demand pressures, which would partially offset this
+- **Point estimate: 0.0% to -0.1%** (real rate becomes near-zero or slightly negative as inflation rises)
+
+---
+
+## Final Predictions
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.8, "ci_low": 1.5, "ci_high": 2.2},
+    "r_1": {"point": -0.05, "ci_low": -0.4, "ci_high": 0.3},
+    "y_1": {"point": 1.7, "ci_low": 0.9, "ci_high": 2.5}
+  }
+}
+</JSON>
+
+### Interpretation of Predictions:
+
+- **Inflation (1.8%, 80% CI: 1.5-2.2%)**: The demand shock pushes inflation higher, but currency appreciation and lagged price adjustment prevent rapid acceleration. Inflation moves toward the 2.0% target but doesn't exceed it dramatically at the 1-quarter horizon.
+
+- **Real Interest Rate (-0.05%, 80% CI: -0.4 to 0.3%)**: With nominal rates held at 1.7% and inflation rising to ~1.8%, the real rate becomes slightly negative. Uncertainty reflects potential for either faster inflation pass-through or central bank rate response.
+
+- **Output Gap (1.7%, 80% CI: 0.9-2.5%)**: The 1.5pp investment shock translates to a meaningful widening of the output gap, pushing the economy further above potential. The multiplier effect and labor market tightening amplify the initial shock.

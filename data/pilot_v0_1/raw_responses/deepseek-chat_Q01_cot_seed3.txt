@@ -1,0 +1,47 @@
+Let’s reason through this step-by-step.
+
+### Step 1 – Nature of the shock
+The central bank unexpectedly raises its policy rate by **100 basis points** (1 percentage point). This is a **contractionary monetary policy shock** in an economy with a floating exchange rate and inflation targeting. Markets had expected no change, so the surprise element amplifies the impact on financial conditions and expectations.
+
+### Step 2 – Direct effects (first quarter after shock)
+
+**Output gap**:  
+- Higher policy rate → higher real interest rates → lower investment and consumption → negative output gap.  
+- The economy was already described as “running well above potential” in the most recent period (Years 13-15), but with disinflationary pressures. The hike will push output below potential.  
+- Magnitude: A 100bp surprise hike typically reduces output by about 0.3–0.5% after one quarter in a small open economy. Given the economy was above potential, the output gap will turn negative, roughly **-0.4%**.
+
+**Inflation (annual %)**:  
+- Higher rates → lower aggregate demand → lower inflation.  
+- Also, higher rates → currency appreciation (unexpected hike attracts capital inflows) → lower import prices → further disinflation.  
+- In the data, inflation was around 1.4–2.6% recently, but the economy was described as having “disinflationary pressures” despite above-potential growth, which is unusual. The shock will push inflation below target.  
+- One quarter ahead, inflation will fall sharply, likely to around **1.0%**.
+
+**Unemployment rate**:  
+- Output falls below potential → firms reduce hiring/lay off workers → unemployment rises above the natural rate (5.0%).  
+- The unemployment rate was 5.6% in Q60, already slightly above natural. With a negative output gap, it will rise further.  
+- Okun’s law (coefficient ~0.4–0.5) suggests a 0.4% output gap → unemployment rises ~0.2–0.3 pp. So unemployment ≈ **5.8–5.9%**.
+
+### Step 3 – Second-order effects
+- Exchange rate appreciation will be immediate and sharp, reinforcing disinflation.  
+- The central bank’s credibility may improve, anchoring inflation expectations lower.  
+- Labor market softening will feed back into lower wage growth, further reducing inflation in subsequent quarters.  
+- However, at the 1-quarter horizon, these are mostly still propagating.
+
+### Step 4 – Dynamics over 1 quarter
+- The peak output effect of a monetary shock is typically felt after 2–4 quarters, but a measurable effect appears within one quarter.  
+- The inflation response is faster due to exchange rate pass-through.  
+- Unemployment lags output slightly, but a rise is expected.
+
+---
+
+### Final Predictions
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.0, "ci_low": 0.4, "ci_high": 1.6},
+    "u_1": {"point": 5.9, "ci_low": 5.6, "ci_high": 6.2},
+    "y_1": {"point": -0.4, "ci_low": -0.8, "ci_high": 0.0}
+  }
+}
+</JSON>

@@ -1,0 +1,43 @@
+I'll analyze Vantria's economic history to make informed predictions about the impact of a 3% vantra appreciation.
+
+**Current State Assessment (Q60):**
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%)
+- Economy running above potential (per narrative), but labor market softening
+- Vantra already appreciated sharply in Years 13-15
+
+**Analyzing the appreciation shock:**
+
+**Real Exchange Rate:** A 3% nominal appreciation from capital inflows translates fairly directly to a real appreciation in the short run (prices are sticky). The real exchange rate index rises by approximately 3%, so log index increases by ~ln(1.03) ≈ 0.030. Starting from a baseline, the log index increases by ~0.030.
+
+**Inflation:** 
+- Currency appreciation reduces import prices, exerting downward pressure on inflation
+- Historical evidence: Q24 period showed vantra depreciation contributing to disinflation; conversely, appreciation in Q37-Q48 period coincided with low inflation readings
+- Starting from 1.4% (already below target), a 3% appreciation adds disinflationary pressure
+- Typical pass-through: ~10-15% of appreciation feeds into CPI over 1 quarter
+- Expected impact: ~-0.3 to -0.5 pp on inflation
+- Point estimate: ~1.1%
+
+**Unemployment:**
+- Appreciation reduces export competitiveness and raises import competition
+- Labor market already softening (5.6%, above NAIRU of 5.0%)
+- Capital inflows may support domestic demand somewhat, partially offsetting
+- Net effect: modest upward pressure on unemployment
+- 1-quarter horizon limits large moves
+- Point estimate: ~5.7%
+
+**Confidence Intervals:**
+- Exchange rate: relatively tight given direct mechanical relationship
+- Inflation: wider given multiple channels and current below-target starting point
+- Unemployment: moderate width given labor market dynamics
+
+```json
+{
+  "predictions": {
+    "e_1": {"point": 0.030, "ci_low": 0.020, "ci_high": 0.040},
+    "pi_1": {"point": 1.1, "ci_low": 0.6, "ci_high": 1.6},
+    "u_1": {"point": 5.7, "ci_low": 5.3, "ci_high": 6.1}
+  }
+}
+```

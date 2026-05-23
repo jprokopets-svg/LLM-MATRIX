@@ -1,0 +1,40 @@
+Let’s reason step by step.
+
+**1. Direct effects of a 3% appreciation of the vantra**
+
+- *Real exchange rate (log index)*: A nominal appreciation, if prices are sticky in the short run, translates almost one-to-one into a real appreciation. So the log real exchange rate rises by about 0.03 (3% higher, meaning domestic goods become more expensive relative to foreign).
+- *Inflation*: An appreciation lowers import prices (in domestic currency). This directly reduces consumer price inflation. The pass-through is typically partial within one quarter; for a small open economy, a reasonable short-run pass-through coefficient is around 0.2–0.3. So inflation falls by about 0.6–0.9 percentage points relative to baseline.
+- *Unemployment*: Appreciation makes exports less competitive and imports cheaper, reducing net exports and aggregate demand. Output falls below potential, so unemployment rises above the natural rate. The effect within one quarter is moderate; the Okun’s law coefficient suggests a 1% drop in output raises unemployment by about 0.4–0.5 percentage points. The demand contraction from a 3% appreciation might lower output by ~0.5–1% in one quarter, raising unemployment by about 0.2–0.5 percentage points.
+
+**2. Second-order effects via monetary policy / exchange rate / labor market**
+
+- The central bank targets 2% inflation. If inflation falls below target, the bank may cut the policy rate, which would dampen the appreciation over time but within one quarter the policy response is usually lagged.
+- The labor market softening feeds into lower wage growth, reinforcing disinflation.
+- No immediate feedback within one quarter strong enough to reverse the direct effects.
+
+**3. Dynamics over the 1-quarter horizon**
+
+- The real exchange rate stays near the new appreciated level (prices are sticky).
+- Inflation dips noticeably but does not fully adjust.
+- Unemployment ticks up as output adjusts downward.
+
+**Baseline (pre-shock) from recent data (Q60)**  
+- Inflation: 1.4%  
+- Unemployment: 5.6%  
+- Real exchange rate log index: normalize to 0 for convenience; after shock, it appreciates by ~0.03.
+
+**Quantitative estimates for 1 quarter ahead:**
+
+- **Real exchange rate (log)**: point = 0.03, CI ±0.01 (some uncertainty in pass-through and price stickiness).
+- **Inflation**: baseline ~1.4%, minus ~0.7 pp pass-through → 0.7%. CI ±0.4 pp.
+- **Unemployment**: baseline 5.6% + ~0.3 pp → 5.9%. CI ±0.3 pp.
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": 0.03, "ci_low": 0.02, "ci_high": 0.04},
+    "pi_1": {"point": 0.7, "ci_low": 0.3, "ci_high": 1.1},
+    "u_1": {"point": 5.9, "ci_low": 5.6, "ci_high": 6.2}
+  }
+}
+</JSON>

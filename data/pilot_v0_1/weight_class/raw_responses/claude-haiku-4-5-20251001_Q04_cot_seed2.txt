@@ -1,0 +1,63 @@
+# Macroeconomic Forecast for the Republic of Vantria
+
+## Step-by-Step Causal Analysis
+
+### 1. Direct Effects of the Shock
+
+**Positive demand shock (+1.5pp to aggregate demand):**
+- The surge in business investment directly increases aggregate demand, shifting the IS curve outward
+- At Q60 baseline: unemployment is 5.6% (0.6pp above natural rate of 5.0%), indicating modest economic slack
+- Inflation is 1.4% year-on-year (below the 2.0% target)
+- The policy rate stands at 1.7%
+
+The demand shock will:
+- **Increase the output gap**: With slack in the economy, the +1.5pp demand boost will translate into increased output and reduced unemployment
+- **Increase inflation pressure**: Higher demand will put upward pressure on prices, though the magnitude depends on the degree of slack and inflation expectations
+
+### 2. Second-Order Effects
+
+**Monetary Policy Response:**
+- Current inflation (1.4%) is below target; the central bank has room to accommodate
+- The policy rate (1.7%) is below the neutral real rate implied by the inflation target and recent growth dynamics
+- The central bank is likely to hold steady initially, given below-target inflation despite above-potential growth (a contradiction in the narrative suggesting measurement challenges or temporary factors)
+- However, if the demand shock persists and inflation begins rising, the central bank may gradually tighten
+
+**Exchange Rate Channel:**
+- The vantra has appreciated sharply in recent quarters (Q49-Q60 period)
+- A demand shock raising output growth could strengthen the currency further through improved growth expectations
+- Currency appreciation would dampen net exports and inflation (import price relief), partially offsetting the demand shock
+
+**Labor Market Dynamics:**
+- Unemployment is currently 5.6%, above the natural rate
+- The demand shock will tighten labor markets, reducing unemployment and raising wage pressures
+- This creates upward pressure on inflation with a lag (1-2 quarters)
+
+### 3. Dynamics Over the Forecast Horizon (1 Quarter Ahead)
+
+**At 1 quarter ahead (Q61):**
+
+- **Output gap**: The +1.5pp demand shock hits an economy with 0.6pp slack. The shock will be partially absorbed by higher output and partially by tighter labor markets. With floating exchange rates and currency appreciation likely, net exports may partially offset the demand boost. I estimate the output gap moves from approximately -0.6% to approximately +0.5% to +0.8%.
+
+- **Inflation**: At 1 quarter ahead, inflation responds slowly to demand pressures. The 1.4% baseline inflation reflects recent disinflationary trends. The demand shock will add pressure, but with lags in wage and price-setting, the immediate impact is modest. I estimate inflation rises to approximately 1.7-1.9%, reflecting some pass-through of demand pressures plus base effects.
+
+- **Real interest rate**: The nominal policy rate is 1.7%. With inflation rising from 1.4% to ~1.8%, the real rate would be approximately -0.1% to 0.0%. However, the central bank may hold rates steady initially given below-target inflation, so the real rate could actually decline slightly as inflation expectations adjust upward.
+
+## Final Predictions
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.8, "ci_low": 1.5, "ci_high": 2.1},
+    "r_1": {"point": -0.05, "ci_low": -0.4, "ci_high": 0.3},
+    "y_1": {"point": 0.6, "ci_low": 0.2, "ci_high": 1.0}
+  }
+}
+</JSON>
+
+### Reasoning for Point Estimates:
+
+**Inflation (1.8%)**: Starting from 1.4% with a +1.5pp demand shock, the immediate pass-through at 1-quarter horizon is partial. With some slack remaining and currency appreciation providing disinflationary pressure, inflation rises but doesn't reach the full demand impact. The 80% CI reflects uncertainty about exchange rate pass-through and wage dynamics.
+
+**Real Interest Rate (-0.05%)**: With the nominal policy rate at 1.7% and inflation rising to 1.8%, the real rate turns slightly negative. The CB may hold rates steady initially, so the real rate compression comes from inflation expectations rising. The wide CI reflects uncertainty about whether the CB will preemptively tighten.
+
+**Output Gap (0.6%)**: The economy starts with modest slack (-0.6%). A +1.5pp demand shock is partially offset by currency appreciation and some crowding out, but still moves the output gap positive. The estimate reflects that the shock is meaningful but not fully realized within one quarter due to lags.

@@ -1,0 +1,62 @@
+Let’s reason through this step-by-step.
+
+---
+
+### 1. Direct effect of the shock
+
+A **consumer confidence collapse** reduces aggregate demand (C + possibly I) by **2 percentage points** relative to potential.  
+- This directly creates a **negative output gap** of about –2% initially (before any feedback).  
+- Lower output → firms reduce hiring / lay off workers → **unemployment rises** above the natural rate (5.0%).  
+- Lower demand → **disinflationary pressure** (inflation falls below target).  
+
+---
+
+### 2. Second-order effects over 1 quarter
+
+**Monetary policy:**  
+- The central bank targets 2% inflation. With inflation falling (likely below target), the central bank will **cut its policy rate** to stimulate demand.  
+- A cut in the nominal policy rate, combined with falling inflation expectations, lowers the **real interest rate** (real rate = nominal rate – expected inflation).  
+- Lower real rates stimulate investment and consumption, partially offsetting the initial demand shortfall.
+
+**Exchange rate:**  
+- A lower policy rate (and weaker economic outlook) typically causes the currency to **depreciate**.  
+- Depreciation makes exports cheaper and imports more expensive → boosts net exports (partial offset to demand fall) and raises import prices (upward pressure on inflation).  
+- Over just 1 quarter, the exchange rate pass-through to prices is partial but non-negligible.
+
+**Labor market:**  
+- The initial rise in unemployment feeds back through lower wage growth, further reducing disposable income and demand (multiplier effect).  
+- However, because this is only a 1-quarter horizon, these feedbacks are still unfolding.
+
+---
+
+### 3. Net effect at 1 quarter ahead
+
+- The initial –2% demand shock is partially offset by:
+  - Monetary easing (real rate falls)
+  - Net export boost from depreciation
+- Typical short-run fiscal/monetary multipliers suggest an offset of about 0.4–0.6 percentage points.  
+  → **Output gap** ≈ –1.5% (point estimate).  
+- **Unemployment** rises above the natural rate (5.0%). Okun’s law (coefficient ~0.5) implies a 1.5% output gap → unemployment ≈ 5.0 + 0.75 = **5.75%**.  
+- **Real interest rate**: Starting nominal rate was around 1.7% (Q60). The central bank likely cuts by ~0.5 pp in response to the demand fall and below-target inflation. Expected inflation falls from ~1.4% to maybe 1.0%.  
+  Real rate ≈ (1.7 – 0.5) – 1.0 = **0.2%**.
+
+---
+
+### 4. Confidence intervals
+
+Given model uncertainty, multiplier uncertainty, and policy reaction uncertainty:
+- Output gap: ±0.5 pp → CI: –2.0% to –1.0%  
+- Unemployment: ±0.4 pp → CI: 5.35% to 6.15%  
+- Real interest rate: ±0.4 pp → CI: –0.2% to 0.6%
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "y_1": {"point": -1.5, "ci_low": -2.0, "ci_high": -1.0},
+    "u_1": {"point": 5.75, "ci_low": 5.35, "ci_high": 6.15},
+    "r_1": {"point": 0.2, "ci_low": -0.2, "ci_high": 0.6}
+  }
+}
+</JSON>

@@ -1,0 +1,47 @@
+Let’s reason through this step-by-step.
+
+---
+
+**1. Direct effects of a 5% nominal depreciation**
+
+- **Real exchange rate (log index):** A 5% nominal depreciation directly lowers the real exchange rate (log index) by about 0.05, assuming domestic prices are sticky in the short run. If the pre-shock real exchange rate index is 100 (log = 4.605), it falls to log ≈ 4.555. I’ll treat the index as normalized such that log = 0 at some baseline; here a 5% drop means point estimate ≈ -0.05.
+
+- **Inflation:** Import prices rise immediately, pushing up consumer prices. The pass-through in a small open economy is typically around 0.2–0.3 in the first quarter. So a 5% depreciation adds roughly 1.0–1.5 percentage points to inflation. The pre-shock inflation (Q60) was 1.4%, so point estimate ≈ 2.6% (annualized).
+
+- **Output gap:** Depreciation boosts net exports (competitiveness effect) and raises demand. However, the shock is from a risk-off episode, which may also compress domestic demand. On net, the output gap likely rises modestly, say +0.3% to +0.5% above potential. Pre-shock output gap (Q60) was negative (unemployment 5.6% vs natural 5.0%, so gap ≈ -1.2%). After shock, gap narrows to about -0.8%.
+
+---
+
+**2. Second-order effects (monetary policy / labor market)**
+
+- The central bank targets 2% inflation. A spike to ~2.6% is above target but not dramatically so. Given the history of cautious rate moves, they might raise rates by 25–50 bp over the next quarter. This would partially offset the demand boost.
+- Labor market: With output gap still negative but improving, unemployment edges down slightly, reinforcing the narrowing gap.
+- Exchange rate: The initial 5% depreciation might be partially reversed if the central bank tightens, but risk-off typically keeps pressure on. Net, assume the real exchange rate stays near the lower level for one quarter.
+
+---
+
+**3. Dynamics over 1-quarter horizon**
+
+- Real exchange rate: Stays low (log ~ -0.05) because price adjustment is slow.
+- Inflation: Peaks in the quarter of the shock, then begins to fade as base effects and policy response kick in. At 1 quarter ahead, still elevated.
+- Output gap: Improves due to trade channel, partially offset by tighter policy and risk-off sentiment.
+
+---
+
+**Final predictions:**
+
+- **Real exchange rate (log index):** Point = -0.05, with uncertainty from possible partial reversal (±0.02) → CI: -0.07 to -0.03.
+- **Inflation (annual %):** Point = 2.6%, with pass-through uncertainty (±0.5 pp) → CI: 2.1% to 3.1%.
+- **Output gap (%):** Point = -0.8%, with demand uncertainty (±0.4 pp) → CI: -1.2% to -0.4%.
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": -0.05, "ci_low": -0.07, "ci_high": -0.03},
+    "pi_1": {"point": 2.6, "ci_low": 2.1, "ci_high": 3.1},
+    "y_1": {"point": -0.8, "ci_low": -1.2, "ci_high": -0.4}
+  }
+}
+</JSON>

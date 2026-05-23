@@ -1,0 +1,76 @@
+# Macroeconomic Forecast: Vantria — Global Commodity Price Spike
+
+## Step-by-Step Causal Reasoning
+
+### Baseline Conditions (End of Q60)
+
+Before applying the shock, I need to establish the baseline:
+- **Inflation**: 1.4% (below target), trending mildly upward in recent quarters
+- **Policy rate**: 1.7% (nominal)
+- **Unemployment**: 5.6% (above the 5.0% natural rate → negative output gap)
+- **Output gap**: Negative. With unemployment at 5.6% vs. NAIRU of 5.0%, applying an approximate Okun's coefficient of ~2, the output gap is roughly **−1.2%**
+- **Real interest rate**: Nominal rate 1.7% minus inflation 1.4% = **+0.3%** (mildly positive, mildly restrictive)
+- **External**: Vantra recently appreciated sharply, which is disinflationary and adds to negative output gap
+- **Narrative**: Economy running with slack, disinflationary pressures, policy mildly restrictive but rate already low
+
+---
+
+### 1. Direct Effects of the Shock
+
+A **+1.5 pp supply-side inflation shock** (global commodity prices):
+- **Inflation** jumps mechanically from ~1.4% to approximately **1.4% + 1.5% = 2.9%** year-on-year at the 1-quarter horizon
+- This is a **cost-push / supply shock**, not demand-driven
+- **Output gap**: Supply shocks of this type tend to be **stagflationary** — they raise prices while simultaneously compressing real incomes and squeezing margins, which is mildly contractionary for demand. However, at 1 quarter, the direct demand effect is modest. The output gap likely widens slightly (more negative), perhaps by **−0.2 to −0.3 pp**, moving from ~−1.2% to ~**−1.4%**
+- **Real interest rate**: If the nominal rate stays fixed in the near term and inflation rises, the real rate falls. At 1 quarter, real rate ≈ 1.7% − 2.9% ≈ **−1.2%** (but this depends on central bank response)
+
+---
+
+### 2. Second-Order Effects
+
+**Monetary Policy Response:**
+- Vantria's central bank targets 2% inflation. The shock pushes inflation to ~2.9%, well above target.
+- However, the central bank has historically shown **measured, gradual responses** — it did not overreact to transient supply shocks in the historical record. During Q40–Q42, when inflation rose to 2.7–3.2%, the bank raised rates by ~100 bps over several quarters.
+- Critically, this shock is **explicitly unrelated to domestic demand**. The economy already has slack (negative output gap, unemployment above NAIRU). A hawkish response to a pure supply shock would deepen the output gap further.
+- Vantria's central bank appears to have some degree of **flexible average inflation targeting** behavior — it tolerated below-target inflation for extended periods (Q13–Q36 range). It is unlikely to aggressively hike in response to a supply shock when there is already slack.
+- At **1 quarter ahead**, the policy rate may rise modestly — perhaps 20–30 bps — or remain unchanged as the bank assesses the shock's persistence. I'll assume a small hike to ~**1.9–2.0%** nominal.
+
+**Exchange Rate Channel:**
+- If the central bank tightens even modestly, and if the commodity shock raises Vantria's import costs, the vantra's response is ambiguous. The recent sharp appreciation already weighs on exports. A mild rate hike could support the vantra further, adding disinflationary pressure that partially offsets the commodity shock over time. At 1 quarter, this effect is limited.
+
+**Labor Market:**
+- With unemployment already at 5.6% (above NAIRU), wage pressures are subdued. The commodity shock is unlikely to trigger significant second-round wage effects at this horizon. This limits the persistence of inflationary pressure.
+
+**Real Income Effect:**
+- Higher commodity prices compress real household incomes, mildly dampening consumption demand. This reinforces the slightly more negative output gap.
+
+---
+
+### 3. Dynamic Evolution at 1-Quarter Horizon
+
+At **1 quarter ahead**:
+- The commodity price spike feeds directly into the CPI basket. Assuming commodity prices remain elevated for at least one quarter, inflation registers ~**2.8–3.0%** annualized.
+- The output gap moves slightly more negative (−1.3% to −1.5%) due to real income compression and any mild monetary tightening.
+- The central bank likely raises the policy rate by ~20–30 bps (consistent with its historical pattern of measured adjustments), bringing nominal rate to ~**1.9–2.0%**.
+- Real interest rate = nominal rate − inflation ≈ 1.9% − 2.9% ≈ **−1.0%** (real easing despite nominal tightening, because the inflation shock dominates).
+
+---
+
+## Summary of Point Estimates
+
+| Variable | Baseline (Q60) | Shock Effect | Q1 Forecast |
+|---|---|---|---|
+| Inflation (%) | 1.4% | +1.5 pp direct | ~2.9% |
+| Output Gap (%) | ~−1.2% | −0.2 pp | ~−1.4% |
+| Real Rate (%) | +0.3% | Nominal ↑ slightly, inflation ↑ more | ~−1.0% |
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 2.9, "ci_low": 2.2, "ci_high": 3.6},
+    "r_1": {"point": -1.0, "ci_low": -1.8, "ci_high": -0.3},
+    "y_1": {"point": -1.4, "ci_low": -2.1, "ci_high": -0.7}
+  }
+}
+</JSON>

@@ -1,0 +1,47 @@
+I need to analyze Vantria's current economic state and predict the impact of a commodity price spike.
+
+## Current State Assessment (Q60)
+
+**Recent conditions:**
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0% → negative output gap)
+- Period description: "economy running well above potential" (contradicts data) but "disinflationary pressures evident," "labor market softened"
+- Vantra appreciated sharply → disinflationary import price channel
+- The data shows below-target inflation and above-natural unemployment, suggesting a slightly negative output gap despite the narrative
+
+**Real interest rate at Q60:** 1.7% - 1.4% = 0.3% (roughly neutral to mildly accommodative in real terms)
+
+## Shock Analysis
+
+A **supply-side commodity price spike** adding 1.5pp to inflation:
+- This is a cost-push shock, not demand-driven
+- It temporarily raises headline inflation but doesn't improve the output gap — if anything, it may slightly reduce real incomes and dampen demand
+
+**Inflation at Q1 ahead:**
+- Baseline inflation trend: ~1.4-1.6% (below target, disinflationary)
+- Add 1.5pp commodity shock: ~2.9-3.1%
+- Point estimate: ~3.0%
+
+**Output gap at Q1 ahead:**
+- Currently slightly negative (unemployment 5.6% vs 5.0% NAIRU)
+- Okun's law: ~0.5% gap per 1pp unemployment excess → gap ≈ -0.6%
+- Cost-push shock slightly worsens real purchasing power, marginal negative demand effect
+- Point estimate: ~-0.7%
+
+**Real interest rate at Q1 ahead:**
+- Central bank faces stagflationary shock (supply-side): Vantria's CB has been relatively cautious
+- CB likely holds or raises modestly; given below-target underlying inflation and negative output gap, likely limited response
+- Policy rate: modest increase to ~2.0-2.2% (signaling concern about inflation)
+- Real rate = nominal rate - realized inflation ≈ 2.0% - 3.0% = -1.0%
+- This represents an easing of real financial conditions due to supply shock
+
+```json
+{
+  "predictions": {
+    "pi_1": {"point": 3.0, "ci_low": 2.2, "ci_high": 3.8},
+    "r_1": {"point": -1.0, "ci_low": -1.8, "ci_high": -0.2},
+    "y_1": {"point": -0.7, "ci_low": -1.4, "ci_high": 0.1}
+  }
+}
+```

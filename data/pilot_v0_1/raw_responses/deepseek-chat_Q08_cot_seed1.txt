@@ -1,0 +1,58 @@
+Let’s walk through the causal channels step-by-step.
+
+---
+
+### 1. Direct effect of the shock
+
+The shock is a **supply-side improvement**: easing supply chain pressures reduce inflation by **0.75 percentage points** this quarter.
+
+- **Inflation (π)**: Directly falls by ~0.75 pp relative to the previous quarter’s trajectory.
+- **Real interest rate (r)**: Since the nominal policy rate is not immediately changed (central bank reacts with a lag), a fall in inflation *raises* the real rate:  
+  \( r = i - \pi^e \). If inflation falls 0.75 pp and nominal rate is unchanged, real rate rises by ~0.75 pp.
+- **Real exchange rate (e)**: Lower inflation improves competitiveness if nominal exchange rate doesn’t adjust instantly. However, with a floating rate, lower inflation may lead to *nominal* depreciation if the central bank is expected to cut rates later. On net, the real exchange rate likely *depreciates* slightly as the disinflation is seen as temporary and monetary easing is anticipated.
+
+---
+
+### 2. Second-order effects (monetary policy / exchange rate / labor market)
+
+- **Monetary policy**: The central bank targets 2% inflation. With inflation now well below target (likely around 1–1.5% in the shock quarter), they will cut the policy rate in response, probably within 1–2 quarters. This lowers the real rate after the initial jump.
+- **Exchange rate**: Expected rate cuts lead to nominal depreciation, reinforcing the real depreciation. Over 1 quarter, the real exchange rate falls (depreciates).
+- **Labor market**: Lower inflation may temporarily raise real wages, possibly softening labor demand slightly, but the effect is small over one quarter.
+
+---
+
+### 3. Dynamics over the forecast horizon (1 quarter ahead)
+
+At 1 quarter ahead:
+- **Inflation**: The 0.75 pp shock is still partly in effect, but base effects and some pass-through from depreciation will partially offset. Net: inflation ~0.3–0.5 pp below the previous quarter’s pre-shock level.
+- **Real interest rate**: Nominal rate may have been cut slightly by then, but inflation is lower too. Real rate likely remains elevated relative to pre-shock, but less than the immediate jump.
+- **Real exchange rate**: Depreciated relative to pre-shock due to expected easing and lower inflation.
+
+---
+
+### Calibration from recent data (Q60)
+
+At Q60:
+- Inflation = 1.4%
+- Policy rate = 1.7%
+- Real rate ≈ 1.7 – 1.4 = 0.3%
+- Real exchange rate index (log) – not given numerically, but we can set a baseline of 0.0 for convenience (relative index).
+
+After shock:
+- Inflation in Q60 would have been 1.4% – 0.75% = 0.65% if shock hit immediately. But the shock is *this quarter*, so 1Q ahead (Q61) inflation recovers slightly due to depreciation pass-through and base effects → ~1.0%.
+- Real rate: If policy rate stays at 1.7% (or cut to ~1.5%), and inflation ~1.0%, real rate ≈ 0.5–0.7%.
+- Real exchange rate: Depreciates by ~2–3% in log terms relative to Q60.
+
+---
+
+### Final predictions
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.0, "ci_low": 0.4, "ci_high": 1.6},
+    "r_1": {"point": 0.6, "ci_low": 0.0, "ci_high": 1.2},
+    "e_1": {"point": -0.03, "ci_low": -0.08, "ci_high": 0.02}
+  }
+}
+</JSON>

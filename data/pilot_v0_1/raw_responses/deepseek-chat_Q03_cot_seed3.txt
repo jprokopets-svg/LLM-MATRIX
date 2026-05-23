@@ -1,0 +1,77 @@
+Let’s reason through this step-by-step.
+
+---
+
+### 1. Direct effects of the shock
+
+The shock is a **25 bp rate increase**, but the market had priced in **50 bp**.  
+This means the actual tightening is **less than expected**.  
+Relative to expectations, this is effectively a **dovish surprise**.
+
+- **Real interest rate (r):**  
+  The nominal policy rate rises by 25 bp, but inflation expectations likely adjust little in the very short run (since the hike is smaller than expected, people may expect future inflation to be slightly higher).  
+  The *ex post* real rate rises by roughly 25 bp minus any change in expected inflation. Initially, the real rate increases, but by less than if the full 50 bp had been delivered.
+
+- **Nominal exchange rate:**  
+  A smaller-than-expected hike leads to a **depreciation** of the vantra relative to the counterfactual of a 50 bp hike.  
+  This depreciation raises import prices, feeding into **higher inflation** in the short run.
+
+- **Inflation (π):**  
+  Directly: the depreciation pushes up import prices → higher CPI.  
+  Indirectly: the real rate is still higher than before the shock (just less high than expected), so some demand dampening occurs, but the net short-run effect is upward pressure on inflation.
+
+---
+
+### 2. Second-order effects
+
+- **Monetary policy channel:**  
+  The smaller hike means less restraint on aggregate demand than markets expected. Output remains slightly higher, which adds to inflationary pressure.
+
+- **Exchange rate channel:**  
+  The depreciation is a one-off price level shock that boosts inflation for a few quarters as it passes through to consumer prices.  
+  Over 1 quarter, the pass-through is partial but significant.
+
+- **Labor market:**  
+  Unemployment is currently around 5.6% (Q60), above the natural rate of 5.0%.  
+  The smaller hike means less cooling, so unemployment falls more slowly or even stays elevated for a bit.  
+  However, over a 1-quarter horizon, labor market effects are minimal.
+
+---
+
+### 3. Dynamics over 1 quarter
+
+- **Inflation (π₁):**  
+  Prior quarter inflation was 1.4%. The depreciation adds ~0.3–0.5 percentage points to inflation via import prices.  
+  Demand effects are negligible in one quarter.  
+  Likely inflation rises to around **1.8–2.0%**.
+
+- **Real exchange rate (log index):**  
+  The nominal depreciation lowers the real exchange rate (makes domestic goods cheaper abroad).  
+  Starting from a normalized log index of 0, a sharp depreciation might lower it by ~2–4%.  
+  Given the surprise is 25 bp less tightening than expected, a reasonable move is about **-0.03 to -0.05** in logs.
+
+- **Real interest rate (r₁):**  
+  Policy rate goes from 1.7% to 1.95% (25 bp hike).  
+  Expected inflation over the next year might rise slightly (maybe to ~1.8% from 1.4%).  
+  So real rate ≈ 1.95% – 1.8% = **0.15%** (i.e., 0.15 annual %).  
+  But with uncertainty, it could be slightly negative or slightly positive.
+
+---
+
+### Final Predictions
+
+- **π₁:** 1.9% (80% CI: 1.5%–2.3%)
+- **e₁ (log real exchange rate):** –0.04 (80% CI: –0.07 to –0.01)
+- **r₁:** 0.2% (80% CI: –0.2% to 0.6%)
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": -0.04, "ci_low": -0.07, "ci_high": -0.01},
+    "pi_1": {"point": 1.9, "ci_low": 1.5, "ci_high": 2.3},
+    "r_1": {"point": 0.2, "ci_low": -0.2, "ci_high": 0.6}
+  }
+}
+</JSON>

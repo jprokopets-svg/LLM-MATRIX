@@ -1,0 +1,61 @@
+I'll work through this systematically, establishing baseline conditions before analyzing the shock.
+
+## Step 1: Establish Baseline (End of Q60)
+
+**Current conditions (Q60):**
+- Inflation: 1.4% YoY (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0% → negative output gap)
+- Narrative: Economy running "well above potential" (contradicted by softening labor market and below-target inflation — I'll trust the data over the narrative label)
+- VTR appreciated sharply → disinflationary pressure via import prices
+- Labor market softening
+
+**Baseline output gap estimate:** With unemployment at 5.6% vs. natural rate 5.0%, using an Okun's coefficient of ~2, the output gap is approximately -1.2%. The economy appears to be operating *below* potential despite the narrative description.
+
+**Baseline real interest rate:** Policy rate 1.7% minus inflation 1.4% ≈ 0.3% real rate. This is slightly accommodative given neutral real rate is approximately 0%.
+
+## Step 2: Analyze the Shock
+
+**Shock:** +1.5 pp to aggregate demand from business investment surge.
+
+### Direct Effects (1 quarter ahead):
+
+**Output gap:** Starting from roughly -1.2%, a +1.5 pp demand shock would push the output gap toward approximately +0.3%. Investment shocks typically have a multiplier slightly above 1 in the short run, but with a floating exchange rate (some leakage), effective impact is closer to 1.0–1.2×. The output gap likely moves to approximately +0.2% to +0.5%.
+
+**Inflation:** Inflation responds to the output gap with a lag. At 1 quarter ahead, the demand shock is just landing. With the output gap moving from negative to roughly zero/slightly positive, and starting from 1.4% inflation, the direct pass-through in 1 quarter is modest — perhaps +0.2 to +0.4 pp. Inflation likely rises to ~1.6–1.8%.
+
+**Exchange rate second-order:** The investment surge may attract capital inflows, appreciating the VTR slightly, which is mildly disinflationary — partially offsetting the demand-side inflation pressure.
+
+### Second-Order Effects:
+
+**Monetary policy:** The central bank targets 2% inflation. With inflation still below target (~1.6–1.8%) and output gap just turning positive, the central bank may modestly tighten (raise policy rate by 0–25 bps). The policy rate was 1.7%; it might move to ~1.8–2.0%.
+
+**Real interest rate:** Nominal rate rises slightly, but inflation also rises slightly. Real rate = ~1.9% - 1.7% ≈ 0.2–0.3%. Roughly unchanged or marginally higher.
+
+**Labor market:** Unemployment at 5.6% won't respond meaningfully in 1 quarter.
+
+### Dynamics at 1 Quarter Horizon:
+
+The 1-quarter horizon is short enough that:
+- Demand shock fully registers in output
+- Inflation response is partial (sticky prices)
+- Monetary policy response is modest (central bank observes but acts cautiously given below-target inflation)
+- Real rate changes minimally
+
+## Final Estimates
+
+**Output gap at Q+1:** ~+0.3% (baseline -1.2% + ~1.5 pp shock, with some leakage via exchange rate appreciation and import substitution)
+
+**Inflation at Q+1:** ~1.8% (baseline 1.4% + ~0.4 pp from demand pressure, partially offset by VTR appreciation)
+
+**Real interest rate at Q+1:** ~0.3% (nominal ~2.0%, inflation ~1.8%; central bank nudges rate up modestly in response to improved outlook)
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.8, "ci_low": 1.3, "ci_high": 2.3},
+    "r_1": {"point": 0.3, "ci_low": -0.2, "ci_high": 0.8},
+    "y_1": {"point": 0.3, "ci_low": -0.3, "ci_high": 0.9}
+  }
+}
+</JSON>

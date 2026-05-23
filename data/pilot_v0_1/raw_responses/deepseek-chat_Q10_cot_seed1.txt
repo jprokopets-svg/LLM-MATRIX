@@ -1,0 +1,70 @@
+Let’s reason step-by-step.
+
+---
+
+### Step 1: Direct effect of a 3% nominal appreciation
+
+A 3% nominal appreciation of the vantra (VTR) means the domestic currency strengthens against trading partners.  
+Under a floating exchange rate, if prices are sticky in the short run, the nominal appreciation passes through almost fully to the **real exchange rate**, which also appreciates by about 3% (log index rises).  
+Thus, at 1 quarter ahead:  
+- **Real exchange rate (log index)**: rises by ~0.03 relative to its pre-shock level.  
+  From the history, the real exchange rate is not explicitly given in levels, but the shock is a 3% shift. If we index the pre-shock level as 0 in logs, the point estimate is **0.03**.
+
+---
+
+### Step 2: Direct effect on inflation
+
+An appreciation lowers import prices (in domestic currency), reducing consumer price inflation directly.  
+Pass-through to CPI is partial within one quarter. Typical estimates for small open economies: 10–20% of an exchange rate change passes through to CPI within one quarter.  
+- 3% appreciation → direct disinflationary effect of about –0.3% to –0.6% (annualized).  
+- The pre-shock inflation rate (Q60) was 1.4% year-on-year.  
+- With the shock, inflation at 1 quarter ahead would fall to roughly **0.8%–1.1%**.
+
+---
+
+### Step 3: Direct effect on unemployment
+
+Appreciation reduces net exports → lower aggregate demand → output falls below potential → unemployment rises above the natural rate (5.0%).  
+The magnitude depends on the openness of the economy. For a small open economy, an appreciation of 3% might reduce GDP by ~0.3–0.6% in the short run.  
+Using Okun’s law (coefficient ~0.4 to 0.5), a 0.5% output gap increase raises unemployment by ~0.2–0.25 percentage points.  
+Pre-shock unemployment (Q60) = 5.6%.  
+So unemployment at 1 quarter ahead: roughly **5.8%–5.9%**.
+
+---
+
+### Step 4: Second-order effects
+
+Monetary policy: The central bank targets 2% inflation. With inflation falling below target, the central bank may cut the policy rate. However, within one quarter, policy decisions lag; we assume no immediate change (policy held constant in the short horizon).  
+Labor market softening reinforces the disinflation via lower wage pressure.  
+Exchange rate may overshoot initially but within one quarter remains close to the shock level.
+
+---
+
+### Step 5: Dynamics over 1 quarter
+
+- Real exchange rate: stays near +0.03 log points.  
+- Inflation: falls by ~0.4 percentage points from 1.4% → **1.0%**.  
+- Unemployment: rises by ~0.25 percentage points from 5.6% → **5.85%**.
+
+---
+
+### Confidence intervals (80%)
+
+Given historical volatility in Vantria’s data:
+- Real exchange rate: ±0.01 (narrow, since shock is directly observed)  
+- Inflation: ±0.4 pp (uncertainty in pass-through)  
+- Unemployment: ±0.3 pp (uncertainty in output response)
+
+---
+
+### Final predictions
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": 0.03, "ci_low": 0.02, "ci_high": 0.04},
+    "pi_1": {"point": 1.0, "ci_low": 0.6, "ci_high": 1.4},
+    "u_1": {"point": 5.85, "ci_low": 5.55, "ci_high": 6.15}
+  }
+}
+</JSON>

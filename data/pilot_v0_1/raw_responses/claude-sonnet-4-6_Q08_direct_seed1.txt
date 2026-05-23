@@ -1,0 +1,43 @@
+I'll analyze Vantria's economic conditions and forecast the impact of the supply chain easing shock.
+
+**Current baseline (Q60):**
+- Inflation: 1.4% YoY
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, suggesting slack)
+- Real rate: 1.7% - 1.4% = 0.3%
+- Recent trend: vantra appreciated sharply, disinflationary pressures, economy described as "well above potential" but labor market softening
+
+**Shock analysis: -0.75pp supply-side disinflation**
+
+**Inflation (π₁):**
+- Baseline Q60: 1.4%
+- Supply chain easing reduces inflation by 0.75pp
+- Starting from already below-target inflation (1.4%), this pushes further below target
+- Some mean reversion tendency, but supply shock is immediate
+- Estimated: 1.4% - 0.75% ≈ 0.65%, with some partial offset from demand/inertia
+- Point estimate: ~0.7%
+
+**Real interest rate (r₁):**
+- Nominal policy rate at Q60: 1.7%
+- With inflation falling to ~0.7%, the central bank may cut rates slightly (consistent with historical behavior when inflation fell below target - e.g., Q23-Q24 cuts)
+- However, central bank reaction is lagged; policy rate may stay near 1.7% or edge down slightly (~1.5-1.6%)
+- Real rate = nominal rate - inflation ≈ 1.6% - 0.7% ≈ 0.9%
+- Point estimate: ~0.9%
+
+**Real exchange rate (e₁):**
+- Vantra recently appreciated sharply (disinflationary via import prices)
+- Lower domestic inflation relative to trading partners → real depreciation pressure (lower domestic prices = higher real purchasing power of VTR, but in log index terms, lower domestic inflation relative to foreign = real appreciation)
+- With domestic inflation falling further below trading partner inflation, real exchange rate appreciates modestly
+- But currency has already appreciated sharply; some mean reversion likely
+- Net: modest real appreciation from inflation differential
+- Using log index baseline ~0, point estimate: slight appreciation ~+0.01 to +0.02
+
+```json
+{
+  "predictions": {
+    "e_1": {"point": 0.02, "ci_low": -0.03, "ci_high": 0.07},
+    "pi_1": {"point": 0.70, "ci_low": 0.10, "ci_high": 1.30},
+    "r_1": {"point": 0.90, "ci_low": 0.30, "ci_high": 1.50}
+  }
+}
+```

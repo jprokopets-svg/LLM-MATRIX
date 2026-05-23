@@ -24,4 +24,9 @@ Thumbs.db
 .pytest_cache/
 
 # Generated data (reproducible via scripts)
-data/
+data/*
+# But track published artifacts
+!data/simulator/
+!data/simulator/**
+!data/pilot_v0_1/
+!data/pilot_v0_1/**

@@ -1,0 +1,9 @@
+```json
+{
+  "predictions": {
+    "y_1": {"point": 1.0, "ci_low": 0.3, "ci_high": 1.7},
+    "pi_1": {"point": 2.2, "ci_low": 1.5, "ci_high": 2.9},
+    "u_1": {"point": 4.9, "ci_low": 4.4, "ci_high": 5.4}
+  }
+}
+```

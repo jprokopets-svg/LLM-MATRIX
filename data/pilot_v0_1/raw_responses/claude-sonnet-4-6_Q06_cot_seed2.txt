@@ -1,0 +1,55 @@
+I'll work through this systematically, analyzing Vantria's economic state and the shock's effects.
+
+## Step 1: Establishing the Baseline (End of Q60)
+
+**Current conditions:**
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7% (near neutral, slightly below the ~2% neutral rate)
+- Unemployment: 5.6% (above natural rate of 5.0%, so labor market slack)
+- The narrative says "economy running well above potential" but the data tells a different story — unemployment above NAIRU, inflation below target, policy rate declining. The narrative labels appear inconsistent with the data; I'll trust the data.
+- Output gap: likely **mildly negative** given unemployment at 5.6% vs. 5.0% NAIRU (Okun's law: ~0.5 × (5.6-5.0) = ~-0.3% output gap, perhaps -0.3% to -0.5%)
+- The vantra recently appreciated sharply, creating disinflationary pressure
+- Trend: inflation softening (2.6% → 1.4%), unemployment rising (5.4% → 5.6%)
+
+## Step 2: Shock Analysis — 0.75pp Demand Boost from Infrastructure Spending
+
+**Direct effects (1 quarter horizon):**
+- Fiscal stimulus adds 0.75pp to aggregate demand
+- With a fiscal multiplier likely between 0.8–1.2 for a small open economy (leakage through imports), the output gap impact is roughly +0.5 to +0.9pp
+- Starting from ~-0.4% output gap, the shock moves the gap toward slightly positive territory (~+0.1% to +0.4%)
+
+**Labor market (1 quarter):**
+- Output gap improvement → unemployment falls modestly
+- Okun's coefficient ~0.5, with a 1-quarter lag and partial pass-through
+- Unemployment improvement: ~0.2-0.3pp → from 5.6% to roughly 5.3-5.4%
+- Infrastructure spending also directly creates jobs, reinforcing this
+
+**Inflation (1 quarter):**
+- Demand-pull pressure is modest at 1 quarter — Phillips curve lags mean limited immediate pass-through
+- Starting inflation at 1.4%, with modest demand stimulus and existing slack, inflation edges up slightly
+- Estimate: +0.1 to +0.2pp → ~1.5-1.6%
+
+**Second-order effects:**
+- Monetary policy: Central bank is already below target on inflation with a slightly accommodative rate (1.7%). The stimulus is modest, so no immediate policy rate hike expected within 1 quarter
+- Exchange rate: Slightly positive demand shock could marginally strengthen VTR, creating minor offsetting disinflationary pressure, but effect is small at 1Q
+- The recent VTR appreciation already weighing on inflation; infrastructure spending partially offsets slack
+
+## Step 3: Confidence Assessment
+
+The economy is in a mild downturn with slack. A 0.75pp demand boost is moderate — not transformative at 1 quarter. Uncertainty is meaningful given narrative inconsistencies and exchange rate volatility.
+
+**Output gap:** Starting ~-0.4%, shock adds ~+0.5-0.6pp (accounting for import leakage in open economy), landing near +0.1 to +0.2%
+
+**Unemployment:** From 5.6%, modest improvement to ~5.3-5.4%
+
+**Inflation:** From 1.4%, slight uptick to ~1.5-1.6%
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.6, "ci_low": 1.2, "ci_high": 2.1},
+    "u_1": {"point": 5.3, "ci_low": 4.9, "ci_high": 5.7},
+    "y_1": {"point": 0.2, "ci_low": -0.3, "ci_high": 0.7}
+  }
+}
+</JSON>

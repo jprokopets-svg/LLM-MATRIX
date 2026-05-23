@@ -1,0 +1,55 @@
+I need to analyze Vantria's current economic state (end of Q60) and forecast the impact of a 0.75pp demand shock from infrastructure spending.
+
+## Current State Assessment (Q60)
+
+**Inflation:** 1.4% (below 2% target)
+**Unemployment:** 5.6% (above natural rate of 5.0%, suggesting slack)
+**Policy rate:** 1.7% (mildly accommodative/neutral)
+**Output gap:** Negative — unemployment at 5.6% vs natural rate 5.0% implies roughly -0.6pp gap (using Okun's coefficient ~2, gap ≈ -(5.6-5.0)*2 ≈ -1.2%). The narrative says "economy running well above potential" for Years 13-15 but by Q60 the labor market has softened and inflation is subdued at 1.4%, suggesting the output gap has turned negative or near zero by Q60.
+
+**Reconciling the narrative:** The period description says "well above potential" but Q60 data shows unemployment 5.6% (above NAIRU), inflation 1.4% (below target), vantra appreciated (disinflationary). The labor market "softened." By Q60, the output gap appears modestly negative, around -0.5% to -1.0%.
+
+I'll estimate the pre-shock output gap at approximately -0.8%.
+
+## Shock Analysis: +0.75pp demand shock
+
+**Output gap impact (1Q ahead):**
+- Starting gap: ~-0.8%
+- Demand shock adds ~0.75pp to output gap (with some multiplier, but at 1Q horizon, close to 0.75pp direct effect)
+- New output gap: -0.8% + 0.75% ≈ -0.05% (roughly closed, near zero)
+- Point estimate: ~0.0%
+
+**Inflation impact (1Q ahead):**
+- Starting inflation: 1.4%
+- Output gap moves from negative to near-zero → modest upward pressure
+- At 1Q horizon, inflation response is lagged; small pass-through
+- Phillips curve effect: ~0.1-0.2pp from gap closure
+- Inflation: ~1.5-1.6%
+- Point estimate: ~1.6%
+
+**Unemployment impact (1Q ahead):**
+- Starting unemployment: 5.6%
+- Output gap improvement of ~0.75pp → via Okun's law (coefficient ~2), unemployment falls ~0.35-0.4pp
+- New unemployment: 5.6% - 0.35% ≈ 5.25%
+- Point estimate: ~5.2%
+
+## Confidence Intervals (80%)
+
+**Output gap:** Uncertainty around multiplier timing, starting gap estimate
+- CI: [-0.5%, +0.5%]
+
+**Inflation:** Uncertainty around pass-through speed
+- CI: [1.3%, 2.0%]
+
+**Unemployment:** Uncertainty around Okun relationship
+- CI: [4.9%, 5.5%]
+
+```json
+{
+  "predictions": {
+    "pi_1": {"point": 1.6, "ci_low": 1.3, "ci_high": 2.0},
+    "u_1": {"point": 5.2, "ci_low": 4.9, "ci_high": 5.5},
+    "y_1": {"point": 0.0, "ci_low": -0.5, "ci_high": 0.5}
+  }
+}
+```

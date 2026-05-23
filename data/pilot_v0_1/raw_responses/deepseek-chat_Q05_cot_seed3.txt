@@ -1,0 +1,44 @@
+Let’s reason step-by-step.
+
+---
+
+### Step 1 – Direct effect of the shock
+
+A consumer confidence collapse reducing aggregate demand by 2 percentage points will:
+
+- **Output gap**: Directly lower output below potential. If the economy was near potential (unemployment around 5.0%, inflation near target), a 2% demand shortfall produces a negative output gap of about –2% initially.
+- **Unemployment**: Okun’s law (typical coefficient ~0.5) suggests a 2% output gap raises unemployment by ~1 percentage point above the natural rate. Natural rate = 5.0%, so unemployment rises toward ~6.0%.
+- **Real interest rate**: The nominal policy rate is initially around 1.7–2.0% (from Q60). Inflation is ~1.4% (Q60). Real rate ≈ 1.7 – 1.4 = 0.3% initially. After the shock, inflation will fall further (disinflation), and the central bank will likely cut the policy rate. The real rate could become slightly negative.
+
+---
+
+### Step 2 – Second-order effects
+
+**Monetary policy**: The central bank targets 2% inflation. With demand weak and inflation falling below target, it will cut the policy rate. Given the lag, within 1 quarter the cut may be modest (e.g., 25–50 bp).  
+
+**Exchange rate**: Lower interest rates and weaker demand tend to depreciate the currency. A depreciation adds some inflationary pressure via imports, partially offsetting the disinflation. But this takes more than 1 quarter to feed through significantly.  
+
+**Labor market**: Firms respond to lower demand by reducing hiring or laying off workers. The unemployment rise is front-loaded.
+
+---
+
+### Step 3 – Dynamics over 1 quarter
+
+At 1 quarter ahead:
+- Output gap: Still near –2%, maybe slightly less if automatic stabilizers and initial policy response soften it. Estimate: –1.8%.
+- Unemployment: Rises quickly to around 6.0% (natural 5.0% + 1.0% from Okun).
+- Real interest rate: Nominal rate cut to ~1.5%, inflation falls to ~1.0% → real rate ≈ 0.5%. But given uncertainty, central around 0.3–0.8%.
+
+---
+
+### Final predictions
+
+<JSON>
+{
+  "predictions": {
+    "r_1": {"point": 0.5, "ci_low": -0.2, "ci_high": 1.2},
+    "u_1": {"point": 6.0, "ci_low": 5.5, "ci_high": 6.5},
+    "y_1": {"point": -1.8, "ci_low": -2.5, "ci_high": -1.1}
+  }
+}
+</JSON>

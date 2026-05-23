@@ -1,0 +1,55 @@
+I need to analyze Vantria's current economic state and predict the effects of a +1.5pp demand shock.
+
+## Current State Assessment (Q60)
+
+**Starting conditions:**
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, so negative output gap)
+- Real interest rate: 1.7% - 1.4% = 0.3%
+- The economy is described as "running well above potential" (contradicts unemployment data somewhat, but the narrative says disinflationary pressures and the labor market softened)
+- Vantra appreciated sharply (disinflationary via import prices)
+
+**Output gap estimate at Q60:**
+Unemployment is 5.6% vs natural rate 5.0% → gap of +0.6pp above natural rate. Using Okun's coefficient ~2, this implies output gap of approximately -1.2%. The description says "running well above potential" but inflation is low (1.4%) and unemployment is above natural rate — I'll trust the data over the narrative description, suggesting a slightly negative or near-zero output gap. I'll estimate output gap at approximately -0.5% to -1.0%.
+
+## Shock Analysis: +1.5pp to Aggregate Demand
+
+**1-quarter-ahead output gap:**
+- Starting output gap: ~-0.8% (averaging the unemployment signal)
+- Demand shock adds 1.5pp to output
+- Not all demand translates to output gap immediately; some leakage, but in 1 quarter, most of the demand boost feeds through
+- Output gap impact: -0.8% + ~1.2% (partial pass-through of 1.5pp) ≈ +0.4%
+- Point estimate: ~0.5%
+
+**1-quarter-ahead inflation:**
+- Starting inflation: 1.4%
+- With output gap moving positive (~+0.5%), Phillips curve pressure is modest
+- Demand-pull inflation: roughly 0.2-0.3pp additional over one quarter (annualized effect from output gap)
+- But one quarter is short — inflation responds with a lag
+- Inflation: 1.4% + ~0.3% ≈ 1.7%
+- Point estimate: ~1.7%
+
+**1-quarter-ahead real interest rate:**
+- Central bank in Vantria has been reactive but gradual
+- Current policy rate: 1.7%, current real rate: ~0.3%
+- With demand shock and slight inflation pickup, CB may nudge rate up slightly
+- Policy rate might move to ~1.9% (modest tightening signal)
+- Real rate = nominal rate - inflation ≈ 1.9% - 1.7% = 0.2%
+- Point estimate: ~0.2%
+
+## Confidence Intervals
+
+**Output gap (y_1):** Point 0.5%, CI: [-0.3%, 1.3%] — uncertainty about starting gap and multiplier
+**Inflation (pi_1):** Point 1.7%, CI: [1.3%, 2.2%] — short-run inflation is sticky
+**Real rate (r_1):** Point 0.2%, CI: [-0.3%, 0.8%] — CB response uncertain
+
+```json
+{
+  "predictions": {
+    "pi_1": {"point": 1.7, "ci_low": 1.3, "ci_high": 2.2},
+    "r_1": {"point": 0.2, "ci_low": -0.3, "ci_high": 0.8},
+    "y_1": {"point": 0.5, "ci_low": -0.3, "ci_high": 1.3}
+  }
+}
+```

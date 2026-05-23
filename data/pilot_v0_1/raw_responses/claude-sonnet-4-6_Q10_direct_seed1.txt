@@ -1,0 +1,45 @@
+I need to forecast the real exchange rate, inflation, and unemployment 1 quarter after a 3% vantra appreciation shock.
+
+**Starting conditions (Q60):**
+- Inflation: 1.4% YoY
+- Policy rate: 1.7%
+- Unemployment: 5.6%
+- Context: Economy above potential, disinflationary pressures, labor market softening, vantra just appreciated sharply
+
+**Analyzing the shock: 3% vantra appreciation via capital inflows**
+
+**Real Exchange Rate (e_1):**
+A 3% nominal appreciation, combined with the existing sharp appreciation trend in Q49-Q60, means the real exchange rate index rises by approximately 3% (log change ≈ 0.030). Starting from a baseline log index (normalized), the appreciation adds ~0.030 log points. Given the economy already has an appreciated currency, I'll treat the current log index as a baseline and add the shock. Point estimate: +0.030 log units above current level. I'll represent this as the change/level increment of ~0.030.
+
+**Inflation (pi_1):**
+- Current inflation: 1.4%, already below target
+- A 3% appreciation reduces import prices, creating further disinflationary pressure
+- Pass-through in a small open economy: typically 10-30% of exchange rate change feeds into CPI over 1-4 quarters; at 1 quarter, partial pass-through ~15% → -0.45pp effect
+- Starting at 1.4%, this pushes toward ~0.9-1.0%
+- The economy is already experiencing disinflationary pressures per the narrative
+- Point estimate: ~1.0%
+
+**Unemployment (u_1):**
+- Current: 5.6%, already above natural rate (5.0%), labor market softening
+- Appreciation reduces export competitiveness and net exports, adding slack
+- But 1 quarter is short; labor market adjusts slowly
+- Modest additional softening: +0.1 to +0.2pp
+- Point estimate: ~5.7%
+
+**Confidence intervals:**
+
+For real exchange rate: The 3% appreciation is the shock itself; uncertainty around real rate reflects price level adjustment uncertainty. CI: [0.020, 0.040]
+
+For inflation: Uncertainty in pass-through timing and magnitude. CI: [0.5, 1.5]
+
+For unemployment: Labor market slow to adjust, but direction is upward. CI: [5.4, 6.0]
+
+```json
+{
+  "predictions": {
+    "e_1": {"point": 0.030, "ci_low": 0.020, "ci_high": 0.040},
+    "pi_1": {"point": 1.0, "ci_low": 0.5, "ci_high": 1.5},
+    "u_1": {"point": 5.7, "ci_low": 5.4, "ci_high": 6.0}
+  }
+}
+```

@@ -1,0 +1,50 @@
+Let’s reason step-by-step.
+
+---
+
+### 1. Direct effect of the shock
+The government increases infrastructure spending, adding **+0.75 percentage points to aggregate demand**. This directly raises output above potential → **positive output gap** in the short run.  
+Higher demand puts upward pressure on prices → **inflation rises**.  
+Stronger output reduces unemployment → **unemployment falls** (via Okun’s law).
+
+### 2. Second-order effects
+- **Monetary policy**: The central bank targets 2% inflation. With inflation rising above target, the central bank will raise the policy rate. This dampens some of the demand boost, but the full effect of rate hikes takes several quarters, so within 1 quarter the tightening is minimal.
+- **Exchange rate**: Higher policy rates attract capital inflows → **vantra appreciates**. This reduces import prices, partially offsetting inflationary pressure.
+- **Labor market**: With output above potential, labor demand increases → unemployment falls below the natural rate (5.0%).
+
+### 3. Dynamics over 1 quarter
+At only 1 quarter ahead:
+- The direct demand effect dominates.
+- Monetary policy hasn’t had time to fully react and feed through.
+- Exchange rate appreciation may start but only partially offsets inflation.
+- Output gap becomes positive (roughly +0.6% to +0.8% above potential).
+- Inflation rises by about 0.3–0.5 pp above recent trend (trend ~1.8–2.0%) → around 2.3–2.5%.
+- Unemployment falls by about 0.3–0.4 pp below natural rate → around 4.6–4.7%.
+
+---
+
+### Final Predictions
+
+**Output gap (y_1)**: The economy was near potential in Q60 (unemployment 5.6% suggests slightly below potential), but the shock pushes it above.  
+Point: +0.6%  
+80% CI: [0.3, 0.9]
+
+**Inflation (pi_1)**: Recent inflation was 1.4% in Q60, but with demand boost and some pass-through, it rises.  
+Point: 2.4%  
+80% CI: [1.8, 3.0]
+
+**Unemployment (u_1)**: Falls from 5.6% toward natural rate and below.  
+Point: 4.7%  
+80% CI: [4.3, 5.1]
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 2.4, "ci_low": 1.8, "ci_high": 3.0},
+    "u_1": {"point": 4.7, "ci_low": 4.3, "ci_high": 5.1},
+    "y_1": {"point": 0.6, "ci_low": 0.3, "ci_high": 0.9}
+  }
+}
+</JSON>

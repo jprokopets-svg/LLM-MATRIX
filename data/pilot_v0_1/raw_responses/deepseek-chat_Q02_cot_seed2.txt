@@ -1,0 +1,56 @@
+Let’s reason through this step-by-step.
+
+---
+
+### 1. Direct effect of a 50 bp policy rate cut
+
+A rate cut lowers the cost of borrowing, stimulating domestic demand. This directly:
+- **Narrows the output gap** (moves it upward, i.e., less negative / more positive)
+- **Puts downward pressure on unemployment** (as firms hire more to meet demand)
+- **Depreciates the real exchange rate** (lower interest rates make VTR less attractive to foreign investors, so the currency weakens)
+
+In the short run (1 quarter ahead), these direct effects are partial — monetary policy operates with lags — but financial markets adjust quickly, so the exchange rate moves almost immediately.
+
+---
+
+### 2. Second-order effects
+
+- **Exchange rate depreciation** → higher import prices → upward pressure on inflation. However, over just 1 quarter, this pass-through is incomplete.
+- **If the economy was near potential or slightly below**, the stimulus may push output closer to or slightly above potential, reducing slack.
+- **Labor market** responds with a lag; unemployment typically falls modestly within one quarter after a cut if the economy is not in a deep recession.
+
+---
+
+### 3. Dynamics over the forecast horizon (1 quarter ahead)
+
+The most recent data (Q60) shows:
+- Inflation: 1.4% (below 2% target)
+- Unemployment: 5.6% (above natural rate of 5.0%)
+- Policy rate was 1.7% → cut to 1.2%
+
+The economy appears to have some slack (unemployment above natural rate, inflation below target). A 50 bp cut is stimulative.
+
+- **Output gap**: Currently likely negative (since unemployment > NAIRU). The cut will push it up by maybe 0.2–0.4 pp in one quarter. Estimate: from roughly –0.5% to –0.2%.
+- **Real exchange rate**: Depreciates by about 1–2% in log terms in response to a 50 bp cut in a small open economy. Given recent history of sharp movements, a log index change of –0.015 is plausible.
+- **Unemployment**: Declines by roughly 0.1–0.2 pp in one quarter. From 5.6% → ~5.4%.
+
+---
+
+### 4. Confidence intervals
+
+Given the volatility in Vantria’s data, 80% CIs are:
+- Output gap: ±0.4 pp
+- Real exchange rate: ±0.03 log points
+- Unemployment: ±0.3 pp
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "y_1": {"point": -0.2, "ci_low": -0.6, "ci_high": 0.2},
+    "e_1": {"point": -0.015, "ci_low": -0.045, "ci_high": 0.015},
+    "u_1": {"point": 5.4, "ci_low": 5.1, "ci_high": 5.7}
+  }
+}
+</JSON>

@@ -1,0 +1,97 @@
+# Macroeconomic Forecasting Analysis: Vantria Commodity Price Shock
+
+## Step-by-Step Causal Analysis
+
+### 1. Direct Effects of the Commodity Price Shock
+
+**Inflation Impact:**
+- The global commodity price spike adds +1.5 percentage points to inflation directly through import price channels
+- Q60 baseline inflation: 1.4% year-on-year
+- Direct shock effect: 1.4% + 1.5% = 2.9% at Q61
+- This is a supply shock, not demand-driven, so it doesn't directly reflect economic slack
+
+**Output Gap Impact:**
+- In the short run (1 quarter ahead), the commodity shock has minimal direct effect on real output
+- The shock primarily affects the price level, not the quantity of goods produced
+- Output gap at Q60: The narrative states "economy running well above potential" but unemployment is 5.6% (above natural rate of 5.0%), suggesting modest positive output gap of approximately +0.5% to +1.0%
+
+**Real Interest Rate Impact:**
+- Nominal policy rate at Q60: 1.7%
+- With inflation rising to ~2.9%, the real interest rate (nominal rate minus expected inflation) would decline
+- Real rate = 1.7% - 2.9% = -1.2% (if inflation expectations adjust fully)
+- However, if inflation expectations remain anchored, real rates decline less dramatically
+
+### 2. Second-Order Effects
+
+**Monetary Policy Response:**
+- The central bank targets 2.0% inflation
+- With inflation jumping to 2.9%, the central bank faces a policy dilemma: this is a supply shock, not a demand shock
+- Historical pattern (Q37-Q48): The CB tightened when inflation rose above target, but this was demand-driven
+- For a supply shock, optimal policy typically involves some tolerance for temporary inflation overshoot to avoid unnecessary output contraction
+- However, given the CB's demonstrated hawkishness (tightening in Q39-Q40 when inflation rose), expect modest tightening bias
+- **Expected policy response at Q61:** Likely to hold steady or raise slightly (0.1-0.2pp increase) rather than aggressive tightening
+- **Assumption:** Policy rate remains at 1.7% to 1.9% at Q61
+
+**Exchange Rate Channel:**
+- Commodity price spike typically weakens the currency of commodity-importing economies
+- Vantria appears to be a commodity importer (history shows vantra depreciated during disinflationary periods)
+- Expected: VTR depreciates 2-3% in response
+- Depreciation → further import price pressures → reinforces inflation shock
+- This creates a feedback loop that could push inflation slightly higher than the direct 1.5pp effect alone
+
+**Labor Market Dynamics:**
+- Q60 unemployment: 5.6% (above natural rate)
+- Labor market has softened recently
+- Supply shock doesn't immediately tighten labor market
+- Unemployment likely remains elevated or rises modestly as real income effects dampen demand
+- Expected unemployment at Q61: 5.6% to 5.8%
+
+**Demand Effects:**
+- Real income shock from higher commodity prices reduces household purchasing power
+- This dampens aggregate demand slightly
+- Output gap likely contracts by 0.2-0.3 percentage points
+
+### 3. Dynamics Over the Forecast Horizon (1 Quarter Ahead)
+
+**Inflation Trajectory:**
+- Q61 inflation = baseline 1.4% + commodity shock 1.5% = 2.9%
+- Base effects will start to fade in subsequent quarters, but Q61 captures the full shock
+- No major second-round effects expected within 1 quarter
+
+**Output Gap Evolution:**
+- The negative demand effect from reduced real incomes partially offsets the neutral direct effect
+- Q60 output gap estimated at +0.5% to +1.0% (above potential given "well above potential" narrative)
+- Q61 output gap contracts to approximately +0.2% to +0.5%
+
+**Real Interest Rate:**
+- Nominal rate: 1.7% to 1.9%
+- Expected inflation: 2.9%
+- Real rate: 1.7% - 2.9% = -1.2% to 1.9% - 2.9% = -1.0%
+- This represents a significant real tightening relative to the neutral rate
+
+## Final Predictions for Q61 (1 Quarter Ahead)
+
+**Inflation Rate (Annual %):**
+- Point estimate: 2.9%
+- Reasoning: 1.4% baseline + 1.5% commodity shock, with minor additional currency depreciation effects
+- 80% CI: [2.7%, 3.1%] (accounts for uncertainty in pass-through rates and exchange rate effects)
+
+**Output Gap (%):**
+- Point estimate: +0.3%
+- Reasoning: Starting position ~+0.7%, reduced by ~0.4pp from negative demand effects of real income shock
+- 80% CI: [-0.2%, +0.8%] (wide range reflects uncertainty about demand elasticity to commodity prices)
+
+**Real Interest Rate (Annual %):**
+- Point estimate: -1.1%
+- Reasoning: 1.7% nominal rate minus 2.9% expected inflation
+- 80% CI: [-1.5%, -0.7%] (depends on how quickly inflation expectations adjust and CB response)
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 2.9, "ci_low": 2.7, "ci_high": 3.1},
+    "y_1": {"point": 0.3, "ci_low": -0.2, "ci_high": 0.8},
+    "r_1": {"point": -1.1, "ci_low": -1.5, "ci_high": -0.7}
+  }
+}
+</JSON>

@@ -1,0 +1,35 @@
+I'll analyze Vantria's economic history to make informed predictions about the impact of a global commodity price spike.
+
+**Current State Assessment (Q60):**
+- Inflation: 1.4% YoY
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0% → negative output gap)
+- Recent trend: Inflation below target, labor market softening, vantra appreciated sharply
+
+**Output Gap Estimate at Q60:**
+Unemployment at 5.6% vs. natural rate 5.0% = +0.6pp above natural → using Okun's law (~2:1), output gap ≈ -1.2%. The economy is running below potential despite the narrative saying "well above potential" (which appears inconsistent with the data; I'll trust the data).
+
+**Shock Analysis:**
+- Supply-side shock: +1.5pp to inflation, unrelated to domestic demand
+- This is a pure cost-push/supply shock
+
+**1-Quarter Ahead Forecasts:**
+
+**Inflation (π₁):**
+Base inflation trend: ~1.4% with slight upward momentum. Adding 1.5pp commodity shock → ~2.9%. The central bank is unlikely to fully offset in one quarter. Point estimate: ~2.9%
+
+**Output Gap (y₁):**
+Supply shock doesn't directly boost demand. With negative output gap already (~-1.2%), the commodity shock may slightly compress real incomes and dampen demand marginally. Output gap: ~-1.3% to -1.4%
+
+**Real Interest Rate (r₁):**
+Current nominal rate: 1.7%. With inflation jumping to ~2.9%, real rate = 1.7% - 2.9% = -1.2%. The central bank may nudge rates up slightly in response (historically they've been measured), perhaps to ~1.9-2.0%, but probably not dramatically given the supply-side nature and existing slack. Nominal rate ~1.9%, real rate ≈ 1.9% - 2.9% = -1.0%
+
+```json
+{
+  "predictions": {
+    "pi_1": {"point": 2.9, "ci_low": 2.1, "ci_high": 3.7},
+    "r_1": {"point": -1.0, "ci_low": -1.8, "ci_high": -0.2},
+    "y_1": {"point": -1.4, "ci_low": -2.2, "ci_high": -0.6}
+  }
+}
+```

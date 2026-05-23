@@ -1,0 +1,70 @@
+I'll work through this systematically, analyzing Vantria's economic backdrop and the shock's transmission channels.
+
+## Step 1: Establishing the Baseline (Q60)
+
+At Q60:
+- Inflation: 1.4% YoY
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, so slack exists)
+- Real interest rate (ex-post): 1.7% - 1.4% = 0.3%
+- Context: Economy described as "running well above potential" (contradicted by unemployment above NAIRU), disinflationary pressures, vantra appreciated sharply, labor market softening
+
+The narrative says "above potential" but unemployment at 5.6% > 5.0% NAIRU suggests slack. Inflation at 1.4% is below target. The vantra appreciated (disinflationary via import prices). Policy rate at 1.7% is near neutral (~2%).
+
+## Step 2: Direct Effect of the Shock
+
+Easing supply chain pressures reduce inflation by **0.75 percentage points** this quarter.
+
+Starting from 1.4% baseline inflation:
+- **Direct impact on inflation**: 1.4% - 0.75% = **~0.65%**
+
+This is a supply-side (cost-push reversal) shock — it's disinflationary without necessarily affecting real activity directly.
+
+## Step 3: Second-Order Effects
+
+**Monetary Policy Channel:**
+- Inflation drops to ~0.65%, well below the 2% target
+- Historical pattern in Vantria shows the central bank responds to below-target inflation by cutting rates (see Q23-Q24, Q34-Q35 episodes)
+- However, the central bank tends to move gradually. From 1.7%, a modest cut of ~0.2-0.3pp seems likely within one quarter
+- Expected policy rate: ~1.4-1.5%
+
+**Real Interest Rate:**
+- Nominal rate falls to ~1.4-1.5%
+- Inflation at ~0.65%
+- Real rate = ~1.4% - 0.65% = **~0.75-0.85%**
+- This is modestly higher in real terms than baseline (0.3%), as inflation falls faster than the nominal rate adjusts
+
+**Exchange Rate Channel:**
+- Lower inflation and potential rate cuts reduce the interest differential
+- The vantra had already appreciated sharply in Q49-Q60
+- Rate cuts would put modest downward pressure on VTR
+- But supply chain easing is a global phenomenon — effect may be muted
+- Real exchange rate: slight depreciation from the appreciated level, but limited in one quarter
+- Using a log index framework: if we normalize Q60 = 0, a modest depreciation of ~0.02-0.03 log points seems reasonable
+
+**Labor Market:**
+- Unemployment already at 5.6%, above NAIRU
+- Supply-side shock doesn't directly worsen employment
+- No significant additional labor market deterioration in 1 quarter
+
+## Step 4: Forecast Horizon Dynamics (1 Quarter)
+
+At 1 quarter ahead:
+- **Inflation**: Base 1.4% minus 0.75pp shock = 0.65%, with some partial pass-through uncertainty → ~0.6-0.7%
+- **Real interest rate**: Nominal ~1.45%, inflation ~0.65% → real rate ~0.8%
+- **Real exchange rate**: Modest depreciation from appreciated level; log index ~-0.02 to -0.03 (relative to Q60 baseline of ~0)
+
+The confidence intervals reflect:
+- Uncertainty about pass-through speed (supply chain relief may be partial)
+- Central bank reaction timing uncertainty
+- Exchange rate volatility given floating regime
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 0.65, "ci_low": 0.2, "ci_high": 1.1},
+    "r_1": {"point": 0.8, "ci_low": 0.3, "ci_high": 1.3},
+    "e_1": {"point": -0.03, "ci_low": -0.08, "ci_high": 0.02}
+  }
+}
+</JSON>

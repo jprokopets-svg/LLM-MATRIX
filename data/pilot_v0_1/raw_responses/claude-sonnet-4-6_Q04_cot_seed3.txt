@@ -1,0 +1,63 @@
+I'll work through this systematically, first establishing baseline conditions, then analyzing the shock's propagation.
+
+## Step 1: Establishing Baseline Conditions at Q60
+
+**Current state (Q60):**
+- Inflation: 1.4% YoY (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0% → negative output gap)
+- Recent trend: inflation has been drifting below target, labor market softening
+- The economy in Years 13-15 was described as "running well above potential" but with "disinflationary pressures" — a contradiction that suggests the narrative labels may not perfectly match the data. The actual data shows unemployment at 5.6% (above NAIRU) and inflation at 1.4% (below target), consistent with a small negative output gap.
+
+**Baseline output gap estimate:**
+With unemployment at 5.6% vs. NAIRU of 5.0%, Okun's Law (coefficient ~2) suggests output gap ≈ -1.2%. The vantra recently appreciated sharply (disinflationary, dampening demand). I'll estimate the baseline output gap at approximately **-1.0%**.
+
+**Baseline real interest rate:**
+Policy rate 1.7% minus inflation 1.4% = **0.3% real rate**. Neutral real rate is approximately 0% (given the history of policy rates clustering around 2% with ~2% inflation). So monetary policy is very mildly restrictive.
+
+## Step 2: Analyzing the Shock
+
+**The shock:** +1.5pp to aggregate demand from business investment surge.
+
+**Direct effects on output gap (1Q ahead):**
+- A 1.5pp demand boost hits the output gap directly. From baseline of -1.0%, this pushes the output gap to approximately **+0.5%**.
+- Business investment is a real demand component — the multiplier within one quarter is less than 1 (partial pass-through due to leakages in an open economy with floating exchange rate). In a small open economy, import leakage and exchange rate appreciation dampen the multiplier. Effective impact on output gap: perhaps 0.8–1.0× the shock → output gap moves to roughly **+0.2% to +0.5%**.
+
+**Direct effects on inflation (1Q ahead):**
+- Inflation responds with a lag. One quarter is short — demand-pull inflation pass-through is limited.
+- Starting from 1.4% baseline, with a modest positive output gap, inflation might tick up by 0.1–0.3pp via demand pressure and expectations.
+- The recent sharp VTR appreciation is already exerting disinflationary pressure through import prices.
+- Net inflation at 1Q: approximately **1.6–1.8%**.
+
+## Step 3: Second-Order Effects
+
+**Monetary policy response:**
+- The central bank targets 2% inflation. With inflation still below target (1.4–1.7%) and the output gap turning modestly positive, the CB may begin signaling tightening but is unlikely to move aggressively within one quarter.
+- Historical pattern shows the CB moved gradually (e.g., Q37–Q40 cycle). Policy rate likely stays near 1.7–2.0%.
+
+**Exchange rate channel:**
+- Improved investment confidence → capital inflows → VTR appreciation pressure.
+- VTR already appreciated sharply in Q49-Q60 period, adding disinflationary headwinds.
+- Further appreciation would dampen net exports, partially offsetting the investment boost.
+- This reduces the effective output gap impact and keeps inflation subdued.
+
+**Labor market:**
+- One quarter is too short for significant labor market adjustment. Unemployment likely stays near 5.5–5.6%.
+
+## Step 4: Synthesizing Estimates
+
+**Output gap at Q+1:** Baseline ~-1.0%, shock adds ~+1.0pp (accounting for open-economy multiplier ~0.65 on 1.5pp shock = ~+1.0pp net). Output gap ≈ **+0.0% to +0.3%**, point estimate **+0.2%**.
+
+**Inflation at Q+1:** Starting 1.4%, demand-pull adds ~0.2pp, but exchange rate appreciation offsets some. Point estimate: **1.6%**.
+
+**Real interest rate at Q+1:** Policy rate likely unchanged at ~1.7–1.8% (modest tightening signal). Real rate = nominal rate - inflation ≈ 1.75% - 1.6% = **0.15%**. Given open economy appreciation dynamics, real rate may tick slightly higher. Point estimate: **0.2%**.
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.6, "ci_low": 1.2, "ci_high": 2.1},
+    "r_1": {"point": 0.2, "ci_low": -0.2, "ci_high": 0.7},
+    "y_1": {"point": 0.2, "ci_low": -0.4, "ci_high": 0.9}
+  }
+}
+</JSON>

@@ -1,0 +1,68 @@
+# Reasoning Through the Shock Channels
+
+## 1. Direct Effects of Consumer Confidence Collapse
+
+A 2 percentage point reduction in aggregate demand directly:
+- **Reduces output gap**: Current output is described as "running well above potential" (Years 13-15 section). A 2pp AD shock would shift the output gap downward by approximately 2 percentage points.
+- **Increases unemployment**: Lower output demand reduces labor demand. With the natural rate at 5.0% and current unemployment at 5.6% (Q60), the shock will push unemployment higher.
+- **Reduces inflation pressure**: Lower aggregate demand reduces pricing power. At Q60, inflation stands at 1.4%, already below the 2.0% target.
+- **Real interest rate**: Nominal rates remain relatively sticky in the short term (policy lags), so lower inflation mechanically increases the real rate in the near term.
+
+## 2. Second-Order Effects
+
+**Monetary Policy Response:**
+- The central bank targets 2.0% inflation and has been maintaining rates around 1.7% (Q60). With demand collapsing and inflation already at 1.4%, deflationary pressures will mount.
+- The central bank will likely cut rates within 1-2 quarters, but at the 1-quarter horizon, policy is unlikely to have shifted yet (policy lags are typically 1-2 quarters).
+- At Q60, the policy rate is 1.7% and inflation is 1.4%, implying a real rate of ~0.3%. With demand shock and falling inflation expectations, the real rate will rise in the short term before policy accommodation.
+
+**Exchange Rate Channel:**
+- A demand collapse typically weakens the currency (capital outflows, lower returns). Historical pattern shows vantra depreciation during disinflationary episodes (Years 4-6, Years 7-9).
+- Currency depreciation would eventually provide some offset to AD weakness through net exports, but this effect is lagged.
+
+**Labor Market Dynamics:**
+- Current unemployment is 5.6%, above the natural rate of 5.0%, indicating some slack already exists.
+- The 2pp AD shock will translate into unemployment increases via Okun's law. Empirically, a 1pp output gap change corresponds to roughly 0.5pp unemployment change.
+- A 2pp negative output shock should increase unemployment by approximately 1.0-1.2 percentage points.
+
+## 3. Dynamics at 1-Quarter Horizon
+
+At the 1-quarter horizon:
+- **Output gap**: Current state shows above-potential output, but the narrative suggests this is already moderating. The 2pp AD shock directly reduces output gap by 2pp. Starting from approximately +1% to +2% (above potential), the shock brings it to approximately -1% to 0%.
+- **Unemployment**: Lags in labor market adjustment mean the full unemployment impact takes time, but initial response should be visible. Expect unemployment to rise by 0.7-1.0pp from 5.6%.
+- **Real interest rate**: Nominal rates sticky, inflation falls, real rate rises initially. Nominal rate likely still 1.7%, but inflation expectations decline sharply (from 1.4% toward 1.0% or below). Real rate rises from ~0.3% to ~0.7-1.0%.
+
+## Point Estimates and Confidence Intervals
+
+**Output Gap at Q61:**
+- Current state: economy above potential, but demand shock of 2pp is substantial
+- Direct effect: -2pp shift
+- Baseline assumption: output gap was +0.5% to +1.5% before shock
+- Post-shock: -0.5% to -1.5%
+- Point estimate: **-1.0%**
+- 80% CI: **-2.0% to 0.0%** (accounting for uncertainty in baseline gap and shock transmission)
+
+**Unemployment Rate at Q61:**
+- Current: 5.6%
+- Okun's law: ~0.5 coefficient on output gap changes
+- 2pp output gap shock → ~1.0pp unemployment increase
+- But labor market lags mean only partial adjustment in 1 quarter
+- Point estimate: 5.6% + 0.7pp = **6.3%**
+- 80% CI: **5.9% to 6.7%** (accounting for variation in Okun coefficient and lag structure)
+
+**Real Interest Rate at Q61:**
+- Nominal rate at Q60: 1.7% (unlikely to change within 1 quarter given policy lags)
+- Inflation at Q60: 1.4%
+- Current real rate: ~0.3%
+- Demand collapse reduces inflation expectations; inflation likely falls to 0.8-1.0% by Q61
+- Real rate: 1.7% - 0.9% = **0.8%**
+- 80% CI: **0.3% to 1.3%** (accounting for uncertainty in inflation pass-through and nominal rate stickiness)
+
+<JSON>
+{
+  "predictions": {
+    "y_1": {"point": -1.0, "ci_low": -2.0, "ci_high": 0.0},
+    "u_1": {"point": 6.3, "ci_low": 5.9, "ci_high": 6.7},
+    "r_1": {"point": 0.8, "ci_low": 0.3, "ci_high": 1.3}
+  }
+}
+</JSON>

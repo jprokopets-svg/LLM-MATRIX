@@ -1,0 +1,45 @@
+Let’s reason this through step-by-step.
+
+### Step 1 – Direct effect of the shock
+A surge in business investment adds **+1.5 percentage points** to aggregate demand. This directly raises output above potential, so the **output gap becomes more positive** (or less negative). In the most recent quarter (Q60), the economy was described as “running well above potential” — but in Q60 itself, unemployment was 5.6%, above the natural rate of 5.0%, suggesting output was slightly below potential at that exact quarter. The shock pushes output above potential.
+
+### Step 2 – Second-order effects
+
+**Inflation:**
+- Higher aggregate demand puts upward pressure on prices.
+- With the economy moving to a positive output gap, inflation will rise above its recent level (~1.4% in Q60).
+- The central bank targets 2% inflation and will likely raise the policy rate in response.
+
+**Monetary policy:**
+- The central bank will raise its policy rate to cool demand.
+- Higher nominal rates, combined with rising inflation, affect the real interest rate.
+- The exchange rate (vantra) may appreciate if the central bank raises rates relative to foreign rates, but the description notes a floating regime — appreciation dampens inflation via import prices, partially offsetting demand-push inflation.
+
+**Labor market:**
+- Stronger demand reduces unemployment below the natural rate, tightening the labor market and adding wage pressures over time.
+
+### Step 3 – Dynamics over 1 quarter
+
+At only **1 quarter ahead**, the full feedback from monetary policy may not yet be fully felt (policy changes take 2–4 quarters to peak effect). So:
+
+- **Output gap:** Starting near zero or slightly negative in Q60 (unemployment 5.6% vs 5.0% natural → negative gap ~ -0.6%). The +1.5% demand shock raises output gap to approximately **+0.9%**.
+- **Inflation:** From 1.4% in Q60, with positive output gap and some pass-through from demand, inflation rises to around **2.2–2.5%**.
+- **Real interest rate:** Policy rate in Q60 was 1.7%. If the central bank anticipates inflation, it may raise by ~0.25–0.5% quickly. Real rate = nominal rate – expected inflation. With inflation rising, real rate could be around **-0.3% to 0.1%**.
+
+### Step 4 – Point estimates and confidence intervals
+
+Given the uncertainty in magnitude of central bank response and exchange rate effects:
+
+- **Output gap (y_1):** Point +0.9%, CI [0.3%, 1.5%]
+- **Inflation (pi_1):** Point 2.3%, CI [1.8%, 2.8%]
+- **Real interest rate (r_1):** Point -0.1%, CI [-0.6%, 0.4%]
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 2.3, "ci_low": 1.8, "ci_high": 2.8},
+    "r_1": {"point": -0.1, "ci_low": -0.6, "ci_high": 0.4},
+    "y_1": {"point": 0.9, "ci_low": 0.3, "ci_high": 1.5}
+  }
+}
+</JSON>

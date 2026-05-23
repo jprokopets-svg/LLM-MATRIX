@@ -1,0 +1,67 @@
+I'll work through this systematically, analyzing Vantria's economic history and then applying the supply chain shock.
+
+## Step 1: Establish Baseline Conditions (End of Q60)
+
+**Recent data (Q57-Q60):**
+- Inflation: 2.3%, 2.3%, 2.6%, 1.4% → trending around 2.0-2.3%, with Q60 dipping to 1.4%
+- Policy rate: 2.2%, 2.3%, 2.2%, 1.7% → central bank already easing slightly
+- Unemployment: 5.1%, 4.9%, 5.4%, 5.6% → softening labor market, above natural rate of 5.0%
+
+**Baseline inflation heading into Q61:** ~1.8-2.0% (Q60's 1.4% likely partially reflects vantra appreciation; underlying trend around 2%)
+
+**Baseline policy rate:** 1.7% (Q60), with easing bias given softening labor market
+
+**Context:** Economy was "running well above potential" per narrative, but labor market softening and vantra appreciated sharply — disinflationary pressures already present.
+
+## Step 2: Direct Effect of Supply Chain Shock
+
+The shock reduces inflation by **0.75 percentage points** this quarter.
+
+Starting from a baseline of ~1.8% (already suppressed by VTR appreciation), the direct effect brings inflation to approximately:
+- **1.8% - 0.75% = ~1.05%** → round to ~1.1%
+
+This is a supply-side (positive supply shock), which lowers prices without reducing output directly.
+
+## Step 3: Second-Order Effects
+
+**Monetary Policy Response:**
+- Inflation already at/below target (1.4% in Q60), now dropping further to ~1.1%
+- Central bank has been cutting (2.3% → 1.7% over recent quarters)
+- With inflation well below 2% target and unemployment above natural rate (5.6%), the central bank has strong motivation to cut further
+- However, central bank typically moves with a lag; at 1-quarter horizon, they may cut modestly
+- Expected policy rate at Q61: ~1.4-1.5% (cut of ~25bp from 1.7%)
+
+**Real Interest Rate:**
+- Nominal rate: ~1.5%
+- Inflation: ~1.1%
+- Real rate = 1.5% - 1.1% ≈ **0.4%**
+- This is relatively accommodative in real terms, consistent with below-target inflation
+
+**Exchange Rate:**
+- Lower inflation → lower interest rates → reduced carry attractiveness → VTR depreciates slightly
+- But supply chain easing is global; if trading partners also see lower inflation, differential may be small
+- VTR already appreciated sharply in Years 13-15; some mean reversion possible
+- Net effect: modest VTR depreciation at 1-quarter horizon
+- Log index: if Q60 baseline is set at ~0 (recent appreciation means it's elevated), expect slight depreciation → small negative move, perhaps -0.5% to -1% in log terms
+- Point estimate: **-0.01** (slight depreciation from elevated level)
+
+## Step 4: Confidence Intervals
+
+**Inflation (pi_1):** Central estimate 1.1%, but uncertainty around baseline and shock persistence
+- 80% CI: [0.5%, 1.7%]
+
+**Real interest rate (r_1):** Central estimate ~0.4%
+- 80% CI: [-0.2%, 1.0%]
+
+**Real exchange rate (e_1):** Slight depreciation from elevated levels
+- 80% CI: [-0.03, 0.01]
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": -0.01, "ci_low": -0.03, "ci_high": 0.01},
+    "pi_1": {"point": 1.1, "ci_low": 0.5, "ci_high": 1.7},
+    "r_1": {"point": 0.4, "ci_low": -0.2, "ci_high": 1.0}
+  }
+}
+</JSON>

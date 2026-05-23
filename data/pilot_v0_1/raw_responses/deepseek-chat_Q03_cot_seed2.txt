@@ -1,0 +1,68 @@
+Let’s reason through this step-by-step.
+
+---
+
+### 1. Direct effects of the shock
+
+The shock is a **surprise 25bp rate increase**, which is **smaller than the 50bp the market had priced in**.  
+
+- **Real interest rate (r):** The nominal policy rate goes up by 25bp, but because the market had expected 50bp, the *surprise* is actually a **relative easing** compared to expectations.  
+  - However, the actual level of the rate is higher than before.  
+  - Short-run real rate = nominal rate minus expected inflation. If inflation expectations are sticky, the real rate rises by roughly the surprise component relative to the previous level, but *less* than 25bp because the market had already priced in some tightening.  
+  - Given the surprise is only 25bp (not 50bp), the real rate ends up **lower than what was fully priced in** but higher than before the announcement.  
+  - For a 1-quarter horizon, the real rate will rise by about 10–15bp relative to the pre-shock level, because some of the 25bp was already discounted.
+
+- **Exchange rate (real, log index):** A surprise rate hike typically appreciates the currency (higher return on domestic assets). But because the hike was *smaller than expected*, the currency may **depreciate** relative to the prior market expectation.  
+  - On net, the real exchange rate could weaken slightly (log index falls) or stay roughly flat, depending on how much the surprise deviates from the expected path.  
+  - Given the market had priced in 50bp, a 25bp hike is a *dovish surprise*, so the currency likely depreciates.
+
+- **Inflation (π, annual %):**  
+  - A higher policy rate dampens demand, which reduces inflation.  
+  - A weaker currency (from the dovish surprise) pushes *up* import prices, raising inflation.  
+  - These two effects work in opposite directions. Over 1 quarter, the demand channel is slower to operate, while the exchange rate pass-through is quicker.  
+  - The net effect is likely a **small increase** in inflation over 1 quarter, because the depreciation effect dominates at short horizons.
+
+---
+
+### 2. Second-order effects (1 quarter ahead)
+
+- **Monetary policy:** The central bank will observe the inflation and output response. If inflation rises slightly, they may hold or hike further, but that’s beyond the 1-quarter horizon.
+- **Labor market:** Higher rates slow hiring, but with a lag. At 1 quarter, unemployment might rise slightly, but not enough to significantly affect inflation yet.
+- **Exchange rate:** The initial depreciation may partially reverse if markets adjust expectations of future policy, but 1 quarter is short for full reversal.
+
+---
+
+### 3. Dynamics over the forecast horizon (1 quarter)
+
+At **1 quarter ahead**:
+- **Inflation:** Up slightly (0.1–0.3 pp) due to import price pass-through.
+- **Real exchange rate:** Down slightly (depreciation of 0.5–1.5% in log terms).
+- **Real interest rate:** Up modestly (10–15bp above pre-shock level), because nominal rate is higher but inflation expectations haven’t moved much.
+
+---
+
+### 4. Numerical estimates based on the data
+
+From the history:
+- Inflation in recent quarters (Q57–Q60) averaged ~2.2%, then fell to 1.4% in Q60.  
+  Pre-shock inflation: ~1.4% (Q60).  
+  After shock: likely ~1.6–1.8% due to depreciation pass-through.
+
+- Real interest rate: Pre-shock nominal rate = 1.7% (Q60). Inflation = 1.4% → real rate ≈ 0.3%.  
+  After 25bp hike: nominal ≈ 1.95%, inflation ≈ 1.7% → real rate ≈ 0.25% (actually slightly lower if inflation rises more). But given the surprise was smaller than expected, the real rate may end up ~0.4–0.5%.
+
+- Real exchange rate (log index): Let’s set pre-shock index at 0.0 for convenience. A dovish surprise of 25bp relative to 50bp expectation might cause ~1% depreciation → log index ≈ -0.01.
+
+---
+
+### Final predictions
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.7, "ci_low": 1.2, "ci_high": 2.2},
+    "e_1": {"point": -0.01, "ci_low": -0.03, "ci_high": 0.01},
+    "r_1": {"point": 0.45, "ci_low": 0.1, "ci_high": 0.8}
+  }
+}
+</JSON>

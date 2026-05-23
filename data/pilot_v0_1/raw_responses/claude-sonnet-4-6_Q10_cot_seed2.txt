@@ -1,0 +1,37 @@
+I'll analyze this step-by-step, drawing on Vantria's economic history and standard open-economy macroeconomic channels.
+
+## Step 1: Direct Effects of 3% VTR Appreciation
+
+**Real Exchange Rate:** A 3% nominal appreciation directly translates to a real appreciation of similar magnitude in the short run (prices are sticky). The log index of the real exchange rate rises by approximately 0.03 (in log terms). Starting from the current period (Q60), where the vantra had already appreciated sharply, this adds further real appreciation pressure.
+
+**Inflation:** Currency appreciation reduces import prices, creating disinflationary pressure. For a small open economy like Vantria:
+- Import price channel: A 3% appreciation typically reduces import prices by ~3%, which feeds into CPI with a weight depending on import share. For a small open economy, import pass-through to CPI might be 0.3–0.5 of the exchange rate move, so roughly 0.9–1.5 pp disinflationary impulse over several quarters.
+- At 1 quarter ahead, the pass-through is partial — perhaps 20–30% of the full effect materializes immediately, so ~0.3–0.45 pp downward pressure on inflation.
+
+**Unemployment:** Appreciation makes exports less competitive and imports cheaper, compressing domestic tradables production. This reduces aggregate demand and output, pushing unemployment up. However, at 1 quarter, labor market responses are sluggish. The effect is modest — perhaps +0.1 to +0.2 pp.
+
+## Step 2: Second-Order Effects
+
+**Monetary Policy Channel:** Current Q60 inflation is 1.4% (below target), policy rate is 1.7%, unemployment is 5.6% (above natural rate of 5.0%). The central bank is already in a mild easing posture. An appreciation shock adds further disinflationary pressure, which would likely prompt the central bank to hold or cut rates. Lower rates could partially offset the contractionary demand effect, but with a lag beyond 1 quarter.
+
+**Exchange Rate Dynamics:** Capital inflows sustain appreciation pressure in the near term. The vantra had already appreciated sharply in Years 13–15. Further appreciation compounds the disinflationary and demand-compressing effects.
+
+**Labor Market:** Unemployment at 5.6% is already above the natural rate. The appreciation adds modest further slack. At 1 quarter, the labor market response is limited.
+
+## Step 3: Dynamics at 1-Quarter Horizon
+
+- **Real Exchange Rate (log index):** The shock is a 3% nominal appreciation → log change ≈ ln(1.03) ≈ 0.0296. With sticky prices, real appreciation is nearly 1:1 at 1 quarter. Setting a baseline log index of 0 (normalized), the 1-quarter value is approximately +0.030.
+
+- **Inflation:** Q60 inflation is 1.4%. The appreciation adds ~0.3–0.4 pp disinflationary impulse at 1 quarter (partial pass-through). Underlying trend in Years 13–15 shows inflation averaging ~1.9% but recently softening. I estimate ~1.1% at 1 quarter ahead.
+
+- **Unemployment:** Q60 unemployment is 5.6%, already above natural rate. Appreciation adds modest demand drag. I estimate ~5.7% at 1 quarter ahead, with limited movement given labor market stickiness.
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": 0.030, "ci_low": 0.020, "ci_high": 0.040},
+    "pi_1": {"point": 1.1, "ci_low": 0.6, "ci_high": 1.6},
+    "u_1": {"point": 5.7, "ci_low": 5.4, "ci_high": 6.0}
+  }
+}
+</JSON>

@@ -1,0 +1,38 @@
+Let’s reason through this step by step.
+
+### Step 1 – Understanding the shock
+The central bank cuts its policy rate by 50 basis points (0.5 percentage points) in response to softening growth. This is an expansionary monetary policy shock.
+
+### Step 2 – Direct effects on variables at 1 quarter ahead
+
+**Output gap (y_1):**  
+A rate cut lowers the cost of borrowing, encourages investment and consumption, and should boost aggregate demand. Since the economy in recent history (Q49–Q60) was described as “running well above potential” but with softening labor markets and below-target inflation, the cut is meant to counteract a downturn. At 1 quarter ahead, the output gap will rise (become less negative or more positive). Given the recent data, output gap was slightly positive but declining. A 50bp cut will likely push it up by around 0.3–0.5 percentage points from its recent value. The recent output gap was around +0.5%? Actually, “well above potential” suggests maybe +1% to +1.5%, but softening. Let’s estimate the output gap at around +0.3% before the shock, then after cut it moves to about +0.6%.
+
+**Real exchange rate (e_1, log index):**  
+A rate cut lowers domestic interest rates relative to abroad, making VTR less attractive to hold. This causes nominal depreciation. With sticky prices, real exchange rate also depreciates. The log index is arbitrary; we need a level. From history, the VTR appreciated sharply in Q49–Q60 period. A cut reverses that somewhat. If the log index was around, say, 4.60 (just a guess based on typical scaling), a 50bp cut might depreciate it by about 2–3% in real terms over one quarter, so log index falls by ~0.02 to 0.03. Let’s set baseline at 4.60, so new value ~4.58.
+
+**Unemployment rate (u_1):**  
+Lower interest rates stimulate demand → firms hire more → unemployment falls. The natural rate is 5.0%. Recent unemployment was 5.6% in Q60 (above natural). The cut should reduce it. A typical rule of thumb: a 1% increase in output gap reduces unemployment by about 0.4% (Okun’s law). If output gap rises by ~0.3%, unemployment falls by ~0.12 percentage points. From 5.6% to about 5.48%. But since the effect is only 1 quarter ahead, the full pass-through isn’t complete, so maybe a bit less: 5.5%.
+
+### Step 3 – Second-order effects
+- Depreciation boosts net exports → further supports output gap.
+- Lower unemployment may eventually feed into wages and inflation, but at 1 quarter ahead, that’s minimal.
+- No immediate feedback to central bank within the quarter (they just cut).
+
+### Step 4 – Confidence intervals
+Given historical volatility:
+- Output gap: ±0.5% (80% CI)
+- Real exchange rate: ±0.03 log points
+- Unemployment: ±0.3 pp
+
+### Final predictions
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": 4.58, "ci_low": 4.55, "ci_high": 4.61},
+    "u_1": {"point": 5.5, "ci_low": 5.2, "ci_high": 5.8},
+    "y_1": {"point": 0.6, "ci_low": 0.1, "ci_high": 1.1}
+  }
+}
+</JSON>

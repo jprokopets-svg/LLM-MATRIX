@@ -1,0 +1,70 @@
+Let’s walk through the logic step by step.
+
+---
+
+### 1. Direct effect of the shock
+
+- A global commodity price spike adds **+1.5 percentage points** to inflation this quarter, purely from supply side (cost-push), not from domestic demand overheating.
+- This means the observed inflation rate this quarter (Q61) would jump temporarily above what domestic conditions would imply.
+- The output gap is **not directly affected** by this shock—it’s a supply-side price shock, not a demand shock. However, second-order effects will matter.
+
+---
+
+### 2. Second-order effects over the next quarter (Q62)
+
+**Monetary policy reaction:**
+- The central bank targets 2% inflation. A 1.5 pp spike pushes inflation above target.
+- The central bank will raise the policy rate to counteract inflationary pressure, even though the spike is temporary. This raises the *real interest rate* (nominal rate minus expected inflation).
+- Because the shock is supply-driven, raising rates will dampen demand, widening the output gap (making it more negative or less positive).
+
+**Exchange rate:**
+- Higher domestic interest rates attract capital inflows → the vantra appreciates.
+- Appreciation reduces import prices, partially offsetting the commodity price spike over time, but with a lag.
+
+**Labor market:**
+- Tighter monetary policy slows economic activity → unemployment rises → output gap becomes more negative.
+
+**Inflation dynamics:**
+- The direct +1.5 pp effect fades after one quarter (since it’s a one-time level shift in prices, not sustained).
+- However, second-round effects (wage-price spiral, expectations) could keep inflation slightly elevated. Given the central bank’s credibility and the floating exchange rate, the pass-through is limited.
+- By one quarter ahead (Q62), inflation should be lower than the spike quarter but still somewhat above target because of inertia and the lagged effects of depreciation reversal.
+
+---
+
+### 3. Numerical reasoning for Q62 (1 quarter ahead)
+
+**Inflation (π_1):**
+- Base inflation before shock was around 1.4–2.0% (recent quarters show ~1.4% in Q60).
+- The spike adds 1.5 pp in Q61, but by Q62 that direct effect is gone.
+- However, the exchange rate appreciation and demand weakening from tighter policy push inflation down. Expect inflation to fall back toward 1.5–2.0%, but slightly below the pre-shock trend because of the tightening.
+- **Point estimate:** 1.6%  
+- **80% CI:** 1.2% to 2.0%
+
+**Output gap (y_1):**
+- Pre-shock output gap was near zero or slightly positive (unemployment around 5.6%, natural rate 5.0%, so slightly negative output gap).
+- The policy tightening reduces demand. A typical rule-of-thumb: a 1 pp increase in real rate reduces output gap by ~0.5 pp after one quarter.
+- The real rate rise will be moderate (maybe 0.5–1.0 pp increase). So output gap falls by ~0.3–0.5 pp.
+- **Point estimate:** -0.4%  
+- **80% CI:** -0.8% to 0.0%
+
+**Real interest rate (r_1):**
+- Real rate = nominal policy rate – expected inflation.
+- Nominal rate likely raised by ~0.5–1.0 pp in response to the spike.
+- Expected inflation for Q62 is lower than the spike (around 1.6%).
+- Pre-shock nominal rate was 1.7% in Q60. If raised to ~2.3%, and expected inflation ~1.6%, real rate ≈ 0.7%.
+- **Point estimate:** 0.7%  
+- **80% CI:** 0.3% to 1.1%
+
+---
+
+### Final predictions
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.6, "ci_low": 1.2, "ci_high": 2.0},
+    "r_1": {"point": 0.7, "ci_low": 0.3, "ci_high": 1.1},
+    "y_1": {"point": -0.4, "ci_low": -0.8, "ci_high": 0.0}
+  }
+}
+</JSON>

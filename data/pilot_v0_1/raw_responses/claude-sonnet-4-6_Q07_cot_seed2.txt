@@ -1,0 +1,79 @@
+## Step-by-Step Reasoning
+
+### Establishing the Baseline (Q60)
+
+From the most recent data:
+- **Inflation**: 1.4% (below the 2% target)
+- **Policy rate**: 1.7%
+- **Unemployment**: 5.6% (above the 5.0% natural rate → negative output gap)
+- **Context**: Economy described as "running well above potential" (contradicted somewhat by the data showing above-natural unemployment), disinflationary pressures, vantra appreciated sharply, labor market softening.
+
+The narrative says "above potential" but the unemployment at 5.6% > 5.0% NAIRU suggests slack. I'll weight the hard data: the output gap appears **mildly negative** (roughly -0.5% to -1.0%) given unemployment ~0.6pp above natural rate (Okun's law ~2:1 ratio → ~-1.2% output gap, but I'll be conservative at ~-0.7%).
+
+**Real interest rate baseline**: Policy rate 1.7% − inflation 1.4% = **0.3% real rate**
+
+### Step 1: Direct Effects of the Commodity Price Shock
+
+- A **+1.5pp supply-side inflation shock** pushes headline inflation from ~1.4% to approximately **2.9%** in the near term.
+- This is a **cost-push shock**, not demand-driven, so it does **not** directly improve the output gap — if anything, it reduces real purchasing power and could slightly worsen it.
+- The output gap remains negative or worsens marginally due to the real income squeeze from higher commodity prices.
+
+### Step 2: Second-Order Effects
+
+**Monetary Policy Response:**
+- Vantria's central bank targets 2% inflation. With inflation jumping to ~2.9%, there will be pressure to tighten. However, the central bank's historical behavior shows it has been relatively measured — policy rates have rarely moved more than 0.3-0.5pp in a single quarter.
+- Given the shock is supply-side (not demand), a hawkish response risks deepening the output gap. The central bank may partially accommodate, raising rates modestly (perhaps +0.2 to +0.3pp).
+- New policy rate estimate: ~1.9–2.0%
+
+**Exchange Rate Channel:**
+- A rate hike (or expectation thereof) could appreciate the vantra, which would partially offset imported commodity inflation — a natural stabilizer for a small open economy with a floating exchange rate.
+- The vantra already appreciated sharply in Years 13-15, which was partly disinflationary. Further appreciation would dampen the pass-through of commodity prices.
+
+**Labor Market:**
+- Labor market is softening (unemployment 5.6%, above NAIRU). Wage pressures are limited.
+- Second-round effects (wage-price spiral) are unlikely to be significant given slack.
+- The output gap may worsen slightly due to real income squeeze from higher commodity prices reducing consumption.
+
+**Real Interest Rate:**
+- If the central bank raises nominal rates to ~1.9-2.0% and inflation is ~2.9%:
+- Real rate = 1.95% − 2.9% ≈ **-0.95%** → accommodative in real terms despite nominal tightening
+- This is a key dynamic: the supply shock causes the real rate to fall even if the central bank tightens nominally.
+
+### Step 3: Dynamic Evolution at 1-Quarter Horizon
+
+**Inflation (1Q ahead):**
+- Baseline: ~1.4%
+- Commodity shock adds: +1.5pp
+- Partial offset from vantra appreciation: ~-0.2pp
+- Estimated: **~2.7%**
+- The shock is immediate but some dampening occurs via exchange rate.
+
+**Output Gap (1Q ahead):**
+- Baseline: ~-0.7%
+- Real income squeeze from commodity prices: ~-0.2pp additional drag
+- Estimated: **~-0.9%**
+- Slack persists; no demand stimulus here.
+
+**Real Interest Rate (1Q ahead):**
+- Nominal policy rate: ~1.9% (modest hike)
+- Inflation: ~2.7%
+- Real rate: 1.9% − 2.7% = **~-0.8%**
+- The real rate turns meaningfully negative despite nominal tightening, as the inflation spike outpaces the policy response.
+
+### Confidence Intervals
+
+**Inflation**: High uncertainty around pass-through speed and exchange rate offset. 80% CI: [2.0%, 3.5%]
+
+**Real rate**: Depends on central bank response and actual inflation realization. 80% CI: [-1.5%, 0.2%]
+
+**Output gap**: Relatively stable near-term; limited variance. 80% CI: [-1.5%, -0.2%]
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 2.7, "ci_low": 2.0, "ci_high": 3.5},
+    "r_1": {"point": -0.8, "ci_low": -1.5, "ci_high": 0.2},
+    "y_1": {"point": -0.9, "ci_low": -1.5, "ci_high": -0.2}
+  }
+}
+</JSON>

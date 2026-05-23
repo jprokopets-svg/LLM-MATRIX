@@ -1,0 +1,38 @@
+I'll analyze this step-by-step, drawing on Vantria's economic history and standard open-economy macroeconomic channels.
+
+## Step 1: Direct Effects of a 3% VTR Appreciation
+
+**Real Exchange Rate:** A 3% nominal appreciation directly translates to a real exchange rate appreciation of roughly the same magnitude at the 1-quarter horizon (prices are sticky in the short run). The log index rises by approximately 0.03 (or ~3 log points).
+
+**Inflation:** Currency appreciation reduces import prices, exerting downward pressure on CPI. For a small open economy like Vantria, the pass-through from exchange rate to inflation is meaningful. Historical evidence from Q13-Q24 shows the vantra's depreciation contributed to disinflationary pressure "through import price channels," confirming this channel works in both directions. A 3% appreciation might reduce inflation by roughly 0.3–0.6 percentage points at a 1-quarter horizon (partial pass-through, typically 10–20% in the first quarter for small open economies).
+
+**Unemployment:** Appreciation makes exports less competitive and imports cheaper, reducing net exports and aggregate demand. This creates mild upward pressure on unemployment. However, at 1 quarter, the labor market response is lagged and modest.
+
+## Step 2: Second-Order Effects
+
+**Monetary Policy:** Looking at Vantria's history, the central bank has generally been reactive. If appreciation suppresses inflation below target, the central bank might ease (lower policy rate), which would partially offset the appreciation over time. At Q60, the policy rate is 1.7% with inflation at 1.4% — already below target. A further disinflationary shock might prompt a rate cut, but this effect is more relevant at 2+ quarters.
+
+**Labor Market:** The demand compression from appreciation (weaker exports, import substitution) would gradually feed into unemployment. At 1 quarter, the effect is small — perhaps +0.1 to +0.2 percentage points. Starting unemployment at Q60 is 5.6%, already slightly above the 5.0% natural rate.
+
+**Exchange Rate Dynamics:** Capital inflows sustaining the appreciation could persist beyond the initial shock, but at 1 quarter we primarily capture the immediate effect.
+
+## Step 3: Dynamics at 1-Quarter Horizon
+
+- **Real exchange rate:** Appreciates ~3% (log ≈ +0.03 from baseline). Using a log index baseline around 0 (normalized), the level would be approximately +0.030.
+- **Inflation:** Starting at 1.4% in Q60, with disinflationary pressure from appreciation (~0.3–0.4 pp reduction), inflation likely falls to around 1.0–1.1%.
+- **Unemployment:** Starting at 5.6%, mild additional demand weakness pushes it slightly higher, perhaps 5.7–5.8%.
+
+**Calibration checks from history:**
+- During the Y4-6 sharp depreciation period, inflation moved notably through import channels, confirming sensitivity.
+- The economy in Y13-15 shows above-potential output with soft labor market — current conditions suggest limited buffer against demand shocks.
+- The central bank has historically been slow to respond (policy rate changes are small and gradual), so monetary offset at 1 quarter is minimal.
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": 0.030, "ci_low": 0.020, "ci_high": 0.040},
+    "pi_1": {"point": 1.05, "ci_low": 0.70, "ci_high": 1.45},
+    "u_1": {"point": 5.7, "ci_low": 5.4, "ci_high": 6.1}
+  }
+}
+</JSON>

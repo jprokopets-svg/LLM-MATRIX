@@ -1,0 +1,58 @@
+Let’s reason through this step-by-step.
+
+---
+
+### 1. Direct effect of the shock
+
+A global commodity price spike adds **+1.5 percentage points** to inflation this quarter, independent of domestic demand.  
+- Inflation in Q60 was 1.4%.  
+- With the shock, this quarter’s inflation would be approximately **1.4 + 1.5 = 2.9%** (annualized year-on-year).  
+- This is a one-time cost-push shock; it does not directly change output or the real interest rate, but it changes inflation expectations and policy responses.
+
+---
+
+### 2. Second-order effects
+
+#### Monetary policy
+The central bank targets 2% inflation. Inflation jumping to ~2.9% is above target.  
+- The central bank will likely raise the policy rate to counteract inflation.  
+- In Q60, the policy rate was 1.7%. A typical response to a 0.9% overshoot might be a 0.25–0.50 percentage point hike.  
+- Assume the policy rate rises to about **2.0–2.2%** by next quarter.
+
+#### Real interest rate
+Real interest rate = policy rate – expected inflation.  
+- Expected inflation for next quarter will incorporate the shock.  
+- If inflation next quarter remains elevated (say ~2.5–3.0% year-on-year), the real rate may actually fall or stay low initially, because nominal rates rise slowly.
+
+#### Exchange rate
+Vantria has a floating exchange rate.  
+- Higher domestic inflation and a rate hike could attract capital inflows, appreciating the vantra.  
+- An appreciation dampens imported inflation slightly, but the commodity shock is global and large.
+
+#### Output gap
+- The shock is supply-side (cost-push). It reduces real incomes and may dampen demand slightly.  
+- However, the economy in Q60 had unemployment at 5.6% (above natural rate of 5.0%), meaning output was *below* potential already.  
+- A rate hike in response to inflation will further cool demand, widening the negative output gap.
+
+---
+
+### 3. Dynamics over the 1-quarter horizon
+
+At **1 quarter ahead** (Q61):
+- **Inflation**: The shock adds 1.5 pp this quarter, but pass-through may persist. Assume inflation ~2.8% (slightly decayed from 2.9%).
+- **Output gap**: Negative and widening. From Q60, unemployment was 5.6% (output gap ≈ -1.2% using Okun’s law with coefficient 2). Add tightening → output gap ≈ -1.5%.
+- **Real interest rate**: Policy rate ~2.1%, inflation ~2.8% → real rate ≈ -0.7%. But if expected inflation is ~2.5%, real rate ≈ -0.4%.
+
+---
+
+### Final predictions
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 2.8, "ci_low": 2.2, "ci_high": 3.4},
+    "r_1": {"point": -0.4, "ci_low": -1.0, "ci_high": 0.2},
+    "y_1": {"point": -1.5, "ci_low": -2.5, "ci_high": -0.5}
+  }
+}
+</JSON>

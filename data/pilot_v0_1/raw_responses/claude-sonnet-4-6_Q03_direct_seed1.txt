@@ -1,0 +1,61 @@
+I need to analyze Vantria's economic history and forecast the impact of a surprise 25bp rate hike (vs. 50bp expected) at 1 quarter ahead.
+
+**Current State (Q60):**
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, suggesting slack)
+- Economy described as "running well above potential" (contradicted by labor slack)
+- Vantra appreciated sharply
+- Disinflationary pressures evident
+
+**The Shock Analysis:**
+A 25bp hike when 50bp was priced in is effectively a **dovish surprise** (easing relative to expectations). Markets expected tighter policy; getting less tightening means:
+- Relative monetary easing signal → currency depreciation (or less appreciation)
+- Real exchange rate: should weaken/depreciate relative to what was priced
+- Interest rate: rises by 25bp to ~1.95%
+- Inflation: slight upward pressure from dovish surprise, but 1-quarter lag is short
+
+**Forecasting each variable:**
+
+**Policy rate after shock:** 1.7% + 0.25% = 1.95%
+
+**Inflation (π at Q+1):**
+- Currently 1.4%, below target
+- Disinflationary pressures, slack in labor market (5.6% unemployment > 5% NAIRU)
+- Dovish surprise provides slight upward nudge to inflation expectations
+- But monetary transmission is slow; 1 quarter is very short
+- Slight upward drift from dovish surprise, but underlying disinflation continues
+- Point estimate: ~1.5%
+
+**Real Exchange Rate (log index, Q+1):**
+- Vantra had been appreciating sharply
+- Dovish surprise (less tightening than expected) → currency depreciation relative to expectations
+- The "surprise" component means markets reprice → VTR weakens
+- Real exchange rate depreciates (lower log index value)
+- Starting from an appreciated position, dovish surprise causes depreciation
+- Using a normalized log index around recent levels, say 0 as baseline at Q60
+- Dovish surprise → depreciation of maybe 0.5-1.5% in real terms over 1 quarter
+- Point estimate: -0.8 (depreciation from baseline)
+
+**Real Interest Rate (r at Q+1):**
+- Nominal rate: ~1.95%
+- Inflation: ~1.5%
+- Real rate: 1.95% - 1.5% = ~0.45%
+- Historical real rates have been near 0-1% range
+- Point estimate: ~0.45%
+
+**Confidence Intervals (80%):**
+
+- Inflation: [1.1%, 2.0%] — uncertainty around disinflation path
+- Real exchange rate: [-1.5%, -0.2%] — depreciation likely but magnitude uncertain
+- Real interest rate: [0.0%, 0.9%]
+
+```json
+{
+  "predictions": {
+    "e_1": {"point": -0.8, "ci_low": -1.5, "ci_high": -0.2},
+    "pi_1": {"point": 1.5, "ci_low": 1.1, "ci_high": 2.0},
+    "r_1": {"point": 0.45, "ci_low": 0.0, "ci_high": 0.9}
+  }
+}
+```

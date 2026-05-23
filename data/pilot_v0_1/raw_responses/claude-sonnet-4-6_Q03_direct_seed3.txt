@@ -1,0 +1,34 @@
+I need to analyze Vantria's economic context and forecast the impact of a surprise 25bp rate hike (vs. 50bp expected).
+
+## Current State (Q60)
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, slack in labor market)
+- Context: Economy described as "running well above potential" but disinflationary pressures evident, vantra appreciated sharply, labor market softening
+
+## Shock Analysis: 25bp hike vs. 50bp expected
+This is a **dovish surprise** — the central bank delivered less tightening than markets priced in. This means:
+
+1. **Exchange rate**: Markets expected more tightening → more capital inflows. Getting less tightening than expected means the vantra should **depreciate** relative to market expectations (real exchange rate falls). The prior appreciation trend may partially reverse.
+
+2. **Inflation**: The dovish surprise (less tightening) is mildly **inflationary** relative to expectations. However, inflation is already below target at 1.4%, slack exists (unemployment 5.6% > 5.0% NAIRU), and the vantra had been appreciating (disinflationary). At 1-quarter horizon, the direct effect is modest. Inflation likely stays near 1.4-1.8%.
+
+3. **Real interest rate**: Nominal rate increases by 25bp (to ~1.95%). With inflation around 1.5-1.7%, the real rate = nominal - inflation ≈ 1.95% - 1.6% ≈ 0.35%. Currently real rate ≈ 1.7% - 1.4% = 0.3%.
+
+## Quantitative Estimates
+
+**Inflation (π_1)**: Currently 1.4%. Dovish surprise slightly supports inflation, but slack and appreciation headwinds persist. At 1Q horizon, minimal pass-through. Estimate ~1.5%, range [1.1%, 2.0%].
+
+**Real Exchange Rate (e_1)**: Dovish surprise relative to 50bp expectation causes depreciation. The vantra had appreciated sharply — this partially reverses. Log index drops modestly. Using baseline ~0, the shock causes a small negative move. Estimate: -0.015 (slight depreciation from recent peak), range [-0.04, 0.01].
+
+**Real Interest Rate (r_1)**: Nominal rate ~1.95%, inflation ~1.5%. Real rate ≈ 0.45%. Range [0.1%, 0.8%].
+
+```json
+{
+  "predictions": {
+    "e_1": {"point": -0.015, "ci_low": -0.04, "ci_high": 0.01},
+    "pi_1": {"point": 1.5, "ci_low": 1.1, "ci_high": 2.0},
+    "r_1": {"point": 0.45, "ci_low": 0.1, "ci_high": 0.8}
+  }
+}
+```

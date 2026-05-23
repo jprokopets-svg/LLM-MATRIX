@@ -1,0 +1,1202 @@
+[
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q01",
+    "seed": 1,
+    "tokens": 961,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q01",
+    "seed": 2,
+    "tokens": 1020,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q01",
+    "seed": 3,
+    "tokens": 942,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q01",
+    "seed": 1,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q01",
+    "seed": 2,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q01",
+    "seed": 3,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q02",
+    "seed": 1,
+    "tokens": 999,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q02",
+    "seed": 2,
+    "tokens": 881,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q02",
+    "seed": 3,
+    "tokens": 1061,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q02",
+    "seed": 1,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q02",
+    "seed": 2,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q02",
+    "seed": 3,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q03",
+    "seed": 1,
+    "tokens": 1042,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q03",
+    "seed": 2,
+    "tokens": 916,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q03",
+    "seed": 3,
+    "tokens": 943,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q03",
+    "seed": 1,
+    "tokens": 757,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q03",
+    "seed": 2,
+    "tokens": 746,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q03",
+    "seed": 3,
+    "tokens": 682,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q04",
+    "seed": 1,
+    "tokens": 936,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q04",
+    "seed": 2,
+    "tokens": 944,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q04",
+    "seed": 3,
+    "tokens": 1129,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q04",
+    "seed": 1,
+    "tokens": 832,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q04",
+    "seed": 2,
+    "tokens": 588,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q04",
+    "seed": 3,
+    "tokens": 755,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q05",
+    "seed": 1,
+    "tokens": 965,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q05",
+    "seed": 2,
+    "tokens": 1054,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q05",
+    "seed": 3,
+    "tokens": 1009,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q05",
+    "seed": 1,
+    "tokens": 590,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q05",
+    "seed": 2,
+    "tokens": 845,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q05",
+    "seed": 3,
+    "tokens": 956,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q06",
+    "seed": 1,
+    "tokens": 843,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q06",
+    "seed": 2,
+    "tokens": 889,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q06",
+    "seed": 3,
+    "tokens": 864,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q06",
+    "seed": 1,
+    "tokens": 779,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q06",
+    "seed": 2,
+    "tokens": 725,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q06",
+    "seed": 3,
+    "tokens": 497,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q07",
+    "seed": 1,
+    "tokens": 1579,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q07",
+    "seed": 2,
+    "tokens": 1164,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q07",
+    "seed": 3,
+    "tokens": 1314,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q07",
+    "seed": 1,
+    "tokens": 563,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q07",
+    "seed": 2,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q07",
+    "seed": 3,
+    "tokens": 623,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q08",
+    "seed": 1,
+    "tokens": 920,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q08",
+    "seed": 2,
+    "tokens": 1031,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q08",
+    "seed": 3,
+    "tokens": 930,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q08",
+    "seed": 1,
+    "tokens": 608,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q08",
+    "seed": 2,
+    "tokens": 869,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q08",
+    "seed": 3,
+    "tokens": 558,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q09",
+    "seed": 1,
+    "tokens": 1493,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q09",
+    "seed": 2,
+    "tokens": 1227,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q09",
+    "seed": 3,
+    "tokens": 1082,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q09",
+    "seed": 1,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q09",
+    "seed": 2,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q09",
+    "seed": 3,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q10",
+    "seed": 1,
+    "tokens": 885,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q10",
+    "seed": 2,
+    "tokens": 836,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "cot",
+    "qid": "Q10",
+    "seed": 3,
+    "tokens": 801,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q10",
+    "seed": 1,
+    "tokens": 644,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q10",
+    "seed": 2,
+    "tokens": 663,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "format": "direct",
+    "qid": "Q10",
+    "seed": 3,
+    "tokens": 547,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q01",
+    "seed": 1,
+    "tokens": 623,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q01",
+    "seed": 2,
+    "tokens": 599,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q01",
+    "seed": 3,
+    "tokens": 716,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q01",
+    "seed": 1,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q01",
+    "seed": 2,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q01",
+    "seed": 3,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q02",
+    "seed": 1,
+    "tokens": 793,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q02",
+    "seed": 2,
+    "tokens": 657,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q02",
+    "seed": 3,
+    "tokens": 603,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q02",
+    "seed": 1,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q02",
+    "seed": 2,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q02",
+    "seed": 3,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q03",
+    "seed": 1,
+    "tokens": 759,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q03",
+    "seed": 2,
+    "tokens": 1057,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q03",
+    "seed": 3,
+    "tokens": 918,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q03",
+    "seed": 1,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q03",
+    "seed": 2,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q03",
+    "seed": 3,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q04",
+    "seed": 1,
+    "tokens": 735,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q04",
+    "seed": 2,
+    "tokens": 744,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q04",
+    "seed": 3,
+    "tokens": 686,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q04",
+    "seed": 1,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q04",
+    "seed": 2,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q04",
+    "seed": 3,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q05",
+    "seed": 1,
+    "tokens": 765,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q05",
+    "seed": 2,
+    "tokens": 788,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q05",
+    "seed": 3,
+    "tokens": 610,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q05",
+    "seed": 1,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q05",
+    "seed": 2,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q05",
+    "seed": 3,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q06",
+    "seed": 1,
+    "tokens": 635,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q06",
+    "seed": 2,
+    "tokens": 708,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q06",
+    "seed": 3,
+    "tokens": 667,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q06",
+    "seed": 1,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q06",
+    "seed": 2,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q06",
+    "seed": 3,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q07",
+    "seed": 1,
+    "tokens": 936,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q07",
+    "seed": 2,
+    "tokens": 657,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q07",
+    "seed": 3,
+    "tokens": 723,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q07",
+    "seed": 1,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q07",
+    "seed": 2,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q07",
+    "seed": 3,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q08",
+    "seed": 1,
+    "tokens": 841,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q08",
+    "seed": 2,
+    "tokens": 1016,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q08",
+    "seed": 3,
+    "tokens": 666,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q08",
+    "seed": 1,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q08",
+    "seed": 2,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q08",
+    "seed": 3,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q09",
+    "seed": 1,
+    "tokens": 940,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q09",
+    "seed": 2,
+    "tokens": 800,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q09",
+    "seed": 3,
+    "tokens": 821,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q09",
+    "seed": 1,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q09",
+    "seed": 2,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q09",
+    "seed": 3,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q10",
+    "seed": 1,
+    "tokens": 835,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q10",
+    "seed": 2,
+    "tokens": 740,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "cot",
+    "qid": "Q10",
+    "seed": 3,
+    "tokens": 686,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q10",
+    "seed": 1,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q10",
+    "seed": 2,
+    "tokens": 105,
+    "strict_compliance": true,
+    "parser_rescued": false,
+    "has_markdown_wrap": false
+  },
+  {
+    "model": "DeepSeek V4 Flash",
+    "format": "direct",
+    "qid": "Q10",
+    "seed": 3,
+    "tokens": 109,
+    "strict_compliance": false,
+    "parser_rescued": true,
+    "has_markdown_wrap": true
+  }
+]

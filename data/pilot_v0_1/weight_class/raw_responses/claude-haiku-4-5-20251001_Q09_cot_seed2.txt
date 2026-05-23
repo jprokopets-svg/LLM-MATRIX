@@ -1,0 +1,87 @@
+# Step-by-Step Causal Analysis
+
+## 1. Direct Effects of the 5% Vantra Depreciation
+
+**Real Exchange Rate:**
+- A 5% nominal depreciation of the vantra directly lowers the real exchange rate (log index) by approximately 5 percentage points in the immediate quarter
+- With sticky prices in the short run, nominal depreciation largely translates to real depreciation initially
+- Expected real exchange rate change: **-5.0% (approximately)**
+
+**Inflation Rate:**
+- Depreciation increases import prices directly, feeding through to consumer price inflation via the import price channel
+- Historical precedent: In Q13-Q24, vantra depreciation contributed to disinflationary pressure through import channels, but that was a gradual depreciation
+- A sudden 5% shock is more abrupt. Import-weighted goods inflation should rise in Q1
+- Pass-through is typically partial and lagged; expect ~40-60% pass-through to CPI within one quarter
+- Estimated direct import price contribution: 0.5-0.8 percentage points to annual inflation
+- Current baseline (Q60): 1.4% inflation. With shock: **1.9-2.2% range**
+
+**Output Gap:**
+- Direct positive effect: Depreciation improves competitiveness, boosting net exports
+- Q60 context: Economy running above potential with unemployment at 5.6% (slightly above NAIRU of 5.0%), suggesting modest positive output gap
+- Depreciation stimulates export demand and substitutes for imports, expanding aggregate demand
+- Expected output gap widening: **+0.3 to +0.7 percentage points**
+
+## 2. Second-Order Effects
+
+**Monetary Policy Response:**
+- Central bank targets 2.0% inflation; Q60 shows 1.4% inflation with policy rate at 1.7%
+- The depreciation-driven inflation pickup to ~2.0-2.2% would likely keep policy on hold initially
+- However, if inflation expectations become unanchored, the CB may need to tighten
+- Most likely: **policy rate held steady at 1.7-1.8% in Q1**, monitoring inflation trajectory
+- This accommodative stance reinforces the expansionary effect of depreciation
+
+**Exchange Rate Dynamics:**
+- The initial 5% depreciation may trigger some stabilizing forces:
+  - Higher inflation expectations could attract foreign capital (carry trade reversal)
+  - Improved current account from export boost may support currency over time
+  - But global risk-off environment persists, limiting appreciation
+- Expected real exchange rate at Q1: **-4.5% to -5.0%** (partial stabilization)
+
+**Labor Market:**
+- Improved competitiveness boosts employment demand
+- Q60 shows labor market softening (unemployment 5.6%), so there's slack to absorb
+- Export-oriented sectors expand, pulling unemployment down slightly
+- No immediate wage pressure expected given the slack
+
+## 3. Dynamics Over the Forecast Horizon (1 Quarter)
+
+**Quarter 1 Outcomes:**
+
+- **Real Exchange Rate**: The depreciation is largely realized in Q1, with only modest stabilization from carry flows. The vantra remains weak as global risk-off persists.
+  - Point estimate: **-4.8%**
+  - Range: -5.2% to -4.4%
+
+- **Inflation Rate**: Import pass-through begins to materialize, but is not yet complete. Depreciation-driven goods inflation rises, but services inflation remains sticky. Annual inflation reflects the lagged nature of import price transmission.
+  - Q60 baseline: 1.4%
+  - Depreciation-driven addition: +0.6 to +0.8 percentage points
+  - Point estimate: **2.1%**
+  - Range: 1.9% to 2.4%
+
+- **Output Gap**: Depreciation boost to net exports is immediate, but full demand multiplier takes time. However, business confidence effects and forward-looking consumption may amplify the shock. Given the economy was already above potential (Q60), the gap widens.
+  - Estimated shock contribution: +0.4 to +0.6 percentage points
+  - Point estimate: **+0.5%** (assuming small positive gap in Q60 of ~0.2-0.3%)
+  - Range: 0.2% to 0.8%
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {
+      "point": -4.8,
+      "ci_low": -5.2,
+      "ci_high": -4.4
+    },
+    "pi_1": {
+      "point": 2.1,
+      "ci_low": 1.9,
+      "ci_high": 2.4
+    },
+    "y_1": {
+      "point": 0.5,
+      "ci_low": 0.2,
+      "ci_high": 0.8
+    }
+  }
+}
+</JSON>

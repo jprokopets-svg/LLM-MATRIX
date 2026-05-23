@@ -1,0 +1,33 @@
+I'll analyze Vantria's economic history to establish baseline conditions, then apply the demand shock.
+
+**Baseline Assessment (end of Q60):**
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, suggesting slight slack)
+- The economy described as "running well above potential" but labor market softening and disinflationary pressures — this is somewhat contradictory, suggesting the above-potential growth may be moderating
+- Vantra appreciated sharply (disinflationary via import prices)
+- Policy stance: mildly restrictive
+
+**Estimating baseline output gap:** Despite the narrative saying "well above potential," the data shows unemployment at 5.6% (above NAIRU of 5.0%), inflation at 1.4% (below target), and disinflationary pressures. The output gap appears to be near zero or slightly negative at Q60. I'll estimate the output gap at approximately -0.3% as baseline.
+
+**Shock Analysis: 2pp demand reduction**
+- A 2pp reduction in aggregate demand is a significant negative shock
+- At 1 quarter ahead, automatic stabilizers and policy lags mean limited monetary policy offset
+- Output gap impact: Starting from ~-0.3%, a 2pp demand shock would push output gap to approximately -2.0% to -2.3%
+- Unemployment: Using Okun's coefficient (~0.4-0.5 for small open economy), a ~2pp output gap change → unemployment rises ~0.8-1.0pp from 5.6% → ~6.4-6.6%
+- Real interest rate: Policy rate at 1.7%, inflation at 1.4% → real rate ~0.3% baseline. With demand collapse, central bank may begin cutting but with 1-quarter lag, limited response. Real rate may edge slightly lower as inflation expectations fall faster than nominal rate adjusts → approximately 0.1-0.3%
+
+**Point estimates:**
+- Output gap (y_1): -2.2%
+- Unemployment (u_1): 6.4%
+- Real interest rate (r_1): 0.2%
+
+```json
+{
+  "predictions": {
+    "r_1": {"point": 0.2, "ci_low": -0.4, "ci_high": 0.8},
+    "u_1": {"point": 6.4, "ci_low": 5.9, "ci_high": 6.9},
+    "y_1": {"point": -2.2, "ci_low": -3.1, "ci_high": -1.3}
+  }
+}
+```

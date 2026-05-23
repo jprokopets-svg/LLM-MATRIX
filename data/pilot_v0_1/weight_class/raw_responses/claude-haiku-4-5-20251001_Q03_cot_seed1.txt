@@ -1,0 +1,97 @@
+# Macroeconomic Analysis: Vantria Rate Shock
+
+## Step-by-Step Reasoning
+
+### 1. Direct Effects of the 25bp Rate Increase (vs. 25bp surprise ease)
+
+**Current Context (Q60):**
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%)
+- Real interest rate: ~0.3% (nominal 1.7% - inflation 1.4%)
+- Exchange rate: appreciating trend
+
+**The Shock:**
+The market priced in a 50bp increase, but the central bank delivered only 25bp. This is a **25bp negative surprise** (easier than expected), not a tightening shock. The central bank is signaling:
+- Concern about below-target inflation (1.4% in Q60)
+- Labor market softening (unemployment 5.6%)
+- Economic slack despite "above-potential" narrative
+
+**Direct impacts:**
+- **Real interest rate**: Falls from ~0.3% to approximately 0.0-0.1% (nominal 1.95% if we assume the 25bp hike, minus expected inflation)
+- **Exchange rate**: The negative surprise (easier than expected) should cause **depreciation** as the interest rate differential with trading partners narrows
+- **Inflation**: No direct immediate impact, but the surprise ease signals future accommodation
+
+### 2. Second-Order Effects
+
+**Exchange Rate Channel (Primary):**
+- Historical pattern: Vantria exhibits significant exchange rate volatility (sharp appreciation in Years 1, 10-12, 13-15; sharp depreciation in Years 4-6, 7-9)
+- A 25bp surprise ease reduces the attractiveness of VTR assets relative to foreign alternatives
+- Expected **real depreciation of 1-2%** in the near term
+- This depreciation should support inflation through import price channels (as observed in Q18-Q24)
+
+**Monetary Policy Expectations Channel:**
+- Market had priced 50bp; only 25bp delivered = dovish surprise
+- This signals the central bank is concerned about growth/inflation trade-off
+- Forward guidance likely to emphasize "data-dependent" approach
+- Expectations of future rate cuts may increase slightly
+
+**Demand/Labor Market Channel:**
+- Current unemployment is 5.6% (above natural rate), indicating slack
+- Lower real rates support demand and employment
+- With inflation below target, this accommodation is warranted
+- Lag effects: employment impacts typically emerge over 2-3 quarters
+
+**Inflation Dynamics:**
+- Q60 inflation at 1.4% is 60bp below target
+- The depreciation channel should add ~0.1-0.2% to inflation over next 2-3 quarters
+- Labor market slack limits wage pressures in near term
+- Inflation likely to move toward 1.6-1.8% range by Q61
+
+### 3. Dynamics Over the 1-Quarter Forecast Horizon
+
+**At Q61 (1 quarter ahead):**
+
+**Inflation (π₁):**
+- Base effect: 1.4% (Q60 carries forward with 1-quarter lag)
+- Depreciation effect: +0.05-0.15% (partial pass-through in first quarter)
+- Demand effect: minimal at 1-quarter horizon
+- **Expected range: 1.5-1.7%**, point estimate: **1.6%**
+
+**Real Exchange Rate (e₁):**
+- The 25bp surprise ease causes immediate depreciation
+- Historical volatility suggests 1-2% moves are plausible
+- No offsetting appreciation pressure (growth narrative weakening)
+- Real depreciation of **-1.2% to -1.8%** from current level
+- **Point estimate: -1.5%** (log index change)
+
+**Real Interest Rate (r₁):**
+- Nominal rate rises to ~1.95% (1.7% + 0.25bp hike)
+- Expected inflation rises to ~1.6%
+- Real rate = 1.95% - 1.6% = **0.35%**
+- Confidence interval accounts for uncertainty in inflation pass-through
+- **Range: 0.15% to 0.50%**, point estimate: **0.35%**
+
+## Final Predictions
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {
+      "point": 1.6,
+      "ci_low": 1.4,
+      "ci_high": 1.8
+    },
+    "e_1": {
+      "point": -1.5,
+      "ci_low": -2.1,
+      "ci_high": -0.9
+    },
+    "r_1": {
+      "point": 0.35,
+      "ci_low": 0.15,
+      "ci_high": 0.55
+    }
+  }
+}
+</JSON>

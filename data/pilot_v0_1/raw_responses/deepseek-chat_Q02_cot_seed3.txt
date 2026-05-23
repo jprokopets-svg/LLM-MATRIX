@@ -1,0 +1,29 @@
+Let’s work through the causal channels step-by-step.
+
+### Step 1 – Direct effect of the 50bp rate cut  
+A 50bp cut is a significant easing move. It lowers the real interest rate, which stimulates domestic demand (consumption and investment). This directly increases output and reduces the output gap (makes it more positive or less negative). It also weakens the currency (depreciates the real exchange rate) via interest rate parity, as lower rates reduce foreign capital inflows.
+
+### Step 2 – Second-order effects  
+- **Output gap → labor market:** Higher output reduces unemployment below the natural rate (5.0%) in the short run, via Okun’s law.  
+- **Exchange rate → inflation:** Depreciation raises import prices, pushing up CPI. However, in the very short run (1 quarter), pass-through is partial.  
+- **Monetary policy feedback:** The central bank is cutting because of softening growth, so the initial output gap may be slightly negative or near zero. The cut pushes it toward positive territory.
+
+### Step 3 – Dynamics over 1 quarter  
+At 1 quarter ahead, the full demand effect of the rate cut has not yet peaked, but financial conditions adjust quickly. The exchange rate depreciates immediately. The output gap moves up by roughly 0.3–0.5 percentage points from its pre-shock level. Unemployment falls by about 0.2–0.3 points. The real exchange rate (log index) depreciates by around 1–2%.
+
+Looking at recent history (Q49–Q60), the economy was near or slightly above potential, with unemployment around 5.0–5.6% and output gap likely small. The cut pushes output gap slightly positive (say +0.3%), unemployment down toward 4.8%, and the real exchange rate lower.
+
+### Final predictions  
+- **Output gap (y_1):** +0.3% (80% CI: –0.1 to +0.7)  
+- **Real exchange rate (e_1):** log index ~4.60 (depreciation from ~4.65 baseline; 80% CI: 4.55 to 4.65)  
+- **Unemployment (u_1):** 4.8% (80% CI: 4.5 to 5.1)
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": 4.60, "ci_low": 4.55, "ci_high": 4.65},
+    "u_1": {"point": 4.8, "ci_low": 4.5, "ci_high": 5.1},
+    "y_1": {"point": 0.3, "ci_low": -0.1, "ci_high": 0.7}
+  }
+}
+</JSON>

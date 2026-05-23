@@ -1,0 +1,101 @@
+# Step-by-Step Causal Analysis
+
+## 1. Direct Effects of the 3% Vantra Appreciation Shock
+
+**Real Exchange Rate:**
+- A 3% appreciation of the nominal vantra directly translates to a 3% appreciation of the real exchange rate (in log terms, approximately +0.03 or +3.0 log points)
+- This is the mechanical, immediate impact on the real exchange rate index
+
+**Inflation:**
+- Currency appreciation reduces import prices in domestic currency terms
+- This creates disinflationary pressure through the import price channel (pass-through to CPI)
+- Historical precedent: Q24 (vantra depreciation → disinflationary pressure), Q34-Q35 (vantra depreciation → low inflation)
+- Expected first-quarter effect: modest downward pressure on inflation, though with lags in full pass-through
+
+**Unemployment:**
+- Direct labor market effect is minimal in Q1
+- However, appreciation makes exports less competitive, potentially dampening demand
+- This would increase unemployment pressure, but with typical labor market lags of 1-2 quarters
+
+## 2. Second-Order Effects
+
+**Monetary Policy Response:**
+- Current inflation (Q60) is 1.4%, below the 2.0% target
+- The economy is running above potential (per narrative) with softening labor market
+- Appreciation-induced disinflationary pressure will further move inflation away from target
+- The central bank is unlikely to tighten; more likely to maintain or ease policy
+- Policy rate was 1.7% in Q60; expect it to remain accommodative or potentially ease slightly
+
+**Exchange Rate Dynamics:**
+- The 3% appreciation is the shock; subsequent dynamics depend on whether this is temporary or persistent
+- If capital inflows persist, the appreciation could stick
+- If it's a temporary shock, mean reversion would occur, but we forecast Q1 ahead (one quarter), so the appreciation largely persists
+
+**Labor Market Propagation:**
+- Appreciation → reduced export competitiveness → lower aggregate demand
+- This would eventually increase unemployment, but with standard lags (2-3 quarters typical)
+- At Q1 horizon, unemployment may still be relatively stable or only beginning to respond
+
+## 3. Dynamics Over the Forecast Horizon (Q1 Ahead)
+
+At a 1-quarter horizon:
+- **Real exchange rate:** The appreciation is already realized; minimal additional movement expected
+- **Inflation:** Import price pass-through begins but is incomplete in Q1; modest disinflation materializes
+- **Unemployment:** Labor market lags mean minimal immediate response; may edge up slightly as demand weakens, but not dramatic
+
+## Historical Calibration
+
+Looking at prior episodes:
+- **Q24 (vantra depreciation):** Inflation fell to 0.9%, unemployment stable at 5.1%
+- **Q34-Q35 (vantra depreciation):** Inflation bottomed at 0.7%, unemployment rose slightly to 5.3-5.4%
+- **Q55-Q60 (vantra appreciation):** Inflation remained sticky at 1.4-2.6% range despite appreciation; unemployment softened to 5.6%
+
+The recent Q55-Q60 episode is most relevant: despite appreciation, inflation didn't collapse immediately, and unemployment took time to respond.
+
+---
+
+# Final Predictions
+
+## Real Exchange Rate at Q1 Ahead
+The shock is a 3% appreciation. At a 1-quarter horizon, the appreciation is mechanically realized with minimal mean reversion expected in the near term (capital inflows persist).
+
+**Point estimate:** +3.0 (log index appreciation)
+**Confidence interval (80%):** [2.7, 3.3]
+
+---
+
+## Inflation Rate at Q1 Ahead
+Base case (Q60): 1.4% inflation, well below the 2.0% target.
+
+The 3% appreciation creates disinflationary pressure through import prices. However:
+- Pass-through is gradual; full effect takes 2-3 quarters
+- Current inflation is already soft; further decline expected but not dramatic
+- Historical episodes suggest 0.3-0.6 percentage point disinflation in first quarter following appreciation
+- Monetary policy remains accommodative, not offsetting the disinflationary shock
+
+**Point estimate:** 1.0% (decline of ~0.4 percentage points from Q60)
+**Confidence interval (80%):** [0.6, 1.4]
+
+---
+
+## Unemployment Rate at Q1 Ahead
+Base case (Q60): 5.6% unemployment, above the 5.0% natural rate.
+
+The appreciation reduces export competitiveness, weakening demand. However:
+- Labor market lags are typically 2-3 quarters
+- At Q1 horizon, the unemployment response is muted
+- The labor market has already been softening (Q59-Q60 narrative)
+- Modest additional increase expected, but not sharp
+
+**Point estimate:** 5.7% (slight increase of 0.1 percentage points)
+**Confidence interval (80%):** [5.4, 6.0]
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": 3.0, "ci_low": 2.7, "ci_high": 3.3},
+    "pi_1": {"point": 1.0, "ci_low": 0.6, "ci_high": 1.4},
+    "u_1": {"point": 5.7, "ci_low": 5.4, "ci_high": 6.0}
+  }
+}
+</JSON>

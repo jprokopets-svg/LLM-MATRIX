@@ -1,0 +1,31 @@
+I'll analyze the current state of Vantria's economy and the impact of the infrastructure spending shock.
+
+**Current conditions (Q60):**
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, suggesting negative output gap)
+- Context: Economy described as "running well above potential" (contradicted by softening labor market and below-target inflation), disinflationary pressures, vantra appreciated sharply
+
+**Assessment of starting conditions:**
+- Unemployment at 5.6% vs. natural rate 5.0% → output gap is negative (roughly -0.6% to -1.0%)
+- Inflation at 1.4%, below target → consistent with slack
+- Policy rate at 1.7%, slightly below neutral (~2%)
+- Vantra appreciation → disinflationary, dampens demand
+
+**Shock analysis: +0.75pp demand boost from infrastructure spending**
+
+Using Okun's law (roughly 2:1 ratio), a ~0.75pp demand boost would reduce unemployment by ~0.3-0.4pp over one quarter (with lags, partial effect at 1Q).
+
+- Output gap: Starting around -0.8%, the 0.75pp demand boost partially transmits in Q1 → output gap moves toward roughly -0.2% to 0%
+- Unemployment: From 5.6%, modest reduction of ~0.2-0.3pp → ~5.3-5.4%
+- Inflation: Starting at 1.4%, the demand boost adds modest upward pressure, but currency appreciation and existing slack limit the pass-through. Expect ~1.5-1.7% at 1Q horizon
+
+```json
+{
+  "predictions": {
+    "pi_1": {"point": 1.6, "ci_low": 1.1, "ci_high": 2.1},
+    "u_1": {"point": 5.3, "ci_low": 4.9, "ci_high": 5.7},
+    "y_1": {"point": -0.2, "ci_low": -0.8, "ci_high": 0.4}
+  }
+}
+```

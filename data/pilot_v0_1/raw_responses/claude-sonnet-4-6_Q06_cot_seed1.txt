@@ -1,0 +1,47 @@
+I'll analyze Vantria's economic context and the infrastructure spending shock systematically.
+
+## Step 1: Establishing the Baseline (Q60 conditions)
+
+From Q60:
+- Inflation: 1.4% (below the 2% target)
+- Policy rate: 1.7% (slightly below neutral ~2%)
+- Unemployment: 5.6% (above natural rate of 5.0%, suggesting slack)
+- The economy in Years 13-15 was described as "running well above potential" but with "disinflationary pressures" and a "softening labor market" — this is somewhat contradictory narrative framing, but the data shows unemployment rising to 5.6% and inflation falling to 1.4%, suggesting the economy has actually moved into modest negative output gap territory by Q60.
+
+**Baseline output gap estimate:** With unemployment at 5.6% vs. natural rate 5.0%, using Okun's coefficient (~2), the output gap is approximately -1.2%. The economy has slack.
+
+## Step 2: Direct Effects of the Shock
+
+A **0.75 pp demand boost** from infrastructure spending:
+- This is a modest fiscal stimulus. In a small open economy with a floating exchange rate, the fiscal multiplier is typically below 1 (Mundell-Fleming: fiscal expansion crowds out net exports via exchange rate appreciation).
+- Effective multiplier likely ~0.5–0.8 for a small open economy.
+- Direct output gap impact at 1Q: roughly +0.4 to +0.6 pp improvement in output gap.
+
+## Step 3: Second-Order Effects
+
+**Monetary policy:** The central bank targets 2% inflation. With inflation at 1.4% (below target) and slack in the economy, the central bank has room to accommodate. Policy rate is already at 1.7%, slightly below neutral. The CB is unlikely to tighten aggressively in response to a modest 0.75pp demand shock, especially with below-target inflation.
+
+**Exchange rate:** A modest fiscal expansion might cause slight VTR appreciation (higher demand, marginally higher rates expected), which would dampen import prices slightly — mild disinflationary offset. But effect is small at 1Q horizon.
+
+**Labor market:** With unemployment at 5.6% (above NAIRU of 5.0%), the demand boost will absorb some slack. At 1Q, the labor market response is lagged. Unemployment might tick down modestly by ~0.1–0.2 pp.
+
+**Inflation:** Starting from 1.4%, a modest demand boost with existing slack means limited inflationary pressure at 1Q. Inflation might nudge up slightly toward 1.5–1.7%, but the slack and appreciation effects keep it contained.
+
+## Step 4: Horizon Dynamics (1 Quarter)
+
+At just 1 quarter ahead:
+- **Output gap:** Moves from ~-1.2% toward ~-0.6% to -0.7% (improvement of ~0.5pp)
+- **Inflation:** Modest uptick from 1.4% to ~1.5–1.6% (demand slightly firmer, but slack remains)
+- **Unemployment:** Slight decline from 5.6% to ~5.4–5.5% (labor market responds with a short lag)
+
+The confidence intervals are wide given uncertainty about multiplier size, exchange rate response, and baseline output gap estimation.
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.6, "ci_low": 1.2, "ci_high": 2.0},
+    "u_1": {"point": 5.4, "ci_low": 5.1, "ci_high": 5.7},
+    "y_1": {"point": -0.7, "ci_low": -1.3, "ci_high": -0.1}
+  }
+}
+</JSON>

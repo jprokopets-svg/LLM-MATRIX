@@ -1,0 +1,40 @@
+I'll analyze Vantria's economic conditions at Q60 and apply the supply chain shock.
+
+**Current conditions (Q60):**
+- Inflation: 1.4% YoY
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, suggesting slack)
+- Context: Economy running above potential (per narrative), but disinflationary pressures, vantra appreciated sharply, labor market softened
+
+**Baseline inflation assessment:**
+- Q60 inflation is 1.4%, already below target
+- Recent trend: Q57-Q59 averaged ~2.4%, then dropped to 1.4% in Q60
+- Vantra appreciation is adding disinflationary pressure through import channels
+- Labor market slack (unemployment 5.6% vs 5.0% natural rate)
+
+**Applying the -0.75pp supply chain shock:**
+- Baseline next quarter inflation: ~1.4% (already showing disinflationary momentum, appreciation effects continuing)
+- With -0.75pp shock: approximately 1.4% - 0.75% ≈ 0.65%
+- Rounding to reasonable precision: ~0.7%
+
+**Real interest rate:**
+- Nominal policy rate: likely held near 1.7% (central bank may not react immediately, or may cut slightly given low inflation)
+- With inflation dropping to ~0.7%, real rate = 1.7% - 0.7% ≈ 1.0%
+- Given the bank's history of measured responses and current below-target inflation, policy rate might edge down slightly to ~1.5-1.6%
+- Real rate estimate: ~1.6% - 0.7% ≈ 0.9%
+
+**Real exchange rate:**
+- Vantra has been appreciating sharply (nominal)
+- Lower domestic inflation relative to trading partners → real exchange rate appreciation continues but partially offset
+- Log index: continuing appreciation trend, modest additional real appreciation from lower inflation differential
+- Assigning a log index value relative to recent trend; appreciating environment suggests slight positive movement
+
+```json
+{
+  "predictions": {
+    "e_1": {"point": 4.62, "ci_low": 4.55, "ci_high": 4.69},
+    "pi_1": {"point": 0.68, "ci_low": 0.1, "ci_high": 1.25},
+    "r_1": {"point": 0.92, "ci_low": 0.3, "ci_high": 1.55}
+  }
+}
+```

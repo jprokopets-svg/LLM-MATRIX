@@ -1,0 +1,58 @@
+Let’s walk through the reasoning step by step.
+
+---
+
+### 1. Direct effect of the shock
+
+A consumer confidence collapse that reduces aggregate demand by 2 percentage points means:
+- Output falls below potential → **output gap becomes negative**.
+- Lower demand reduces labor demand → **unemployment rises**.
+- Lower demand reduces inflation pressure → **inflation falls**.
+
+At 1 quarter ahead, these are the first-round effects, before any major policy or exchange rate response has fully kicked in.
+
+---
+
+### 2. Second-order effects (monetary policy, exchange rate, labor market)
+
+- **Monetary policy**: The central bank targets 2% inflation. With inflation falling below target, the central bank will cut its policy rate. However, at only 1 quarter ahead, the policy rate may not have changed much yet (typical decision lag). Some gradual easing may begin.
+- **Real interest rate**: If nominal rates are cut slowly and inflation expectations fall, the *real* interest rate may rise initially (if nominal cuts lag behind inflation decline), which could amplify the contraction. But given the central bank’s history of reacting, we assume a modest nominal cut.
+- **Exchange rate**: Lower interest rates and weaker demand tend to depreciate the currency. A weaker currency boosts net exports partially offsetting the demand shock, but this takes time (more than 1 quarter).
+- **Labor market**: Unemployment rises quickly in response to output falls (Okun’s law type relationship). The natural rate is 5.0%; the shock pushes it above that.
+
+---
+
+### 3. Dynamics over the 1-quarter horizon
+
+- Starting from Q60 data: output gap is not given directly, but the text says “running well above potential” in Years 13–15. By Q60, inflation is 1.4%, unemployment 5.6% (above natural rate 5.0%), so output gap likely near zero or slightly negative already.
+- A 2 pp demand shock → output gap falls by roughly 2 pp (short-run multiplier ~1).
+- Unemployment rises by about half the output gap change (Okun’s coefficient ~0.5) → +1.0 pp from 5.6 → ~6.6%.
+- Inflation falls; real rate = nominal policy rate minus expected inflation. Nominal rate likely cut by ~0.5 pp (from 1.7% to ~1.2%). Expected inflation falls from ~1.4% to maybe 0.5% → real rate rises from ~0.3% to ~0.7%.
+
+---
+
+### Final estimates with uncertainty ranges
+
+**Output gap (y_1)**:
+- Point: –2.0% (from near zero to –2.0)
+- 80% CI: –2.8 to –1.2
+
+**Unemployment rate (u_1)**:
+- Point: 6.6%
+- 80% CI: 5.8% to 7.4%
+
+**Real interest rate (r_1)**:
+- Point: 0.7%
+- 80% CI: 0.1% to 1.3%
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "r_1": {"point": 0.7, "ci_low": 0.1, "ci_high": 1.3},
+    "u_1": {"point": 6.6, "ci_low": 5.8, "ci_high": 7.4},
+    "y_1": {"point": -2.0, "ci_low": -2.8, "ci_high": -1.2}
+  }
+}
+</JSON>

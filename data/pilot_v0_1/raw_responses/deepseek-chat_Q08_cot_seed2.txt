@@ -1,0 +1,64 @@
+Let’s work through this step by step.
+
+---
+
+### 1. Direct effect of the shock
+
+The shock is an easing of supply chain pressures that reduces inflation by 0.75 percentage points this quarter.  
+- This directly lowers the current quarter’s year-on-year inflation rate by 0.75 pp.  
+- Since we are forecasting 1 quarter ahead, the direct effect will still be present in the next quarter’s year-on-year inflation (because the base effect from the lower level carries forward, though partially fading if the shock is temporary).
+
+**Direct effect on inflation (1 quarter ahead):**  
+The most recent observed inflation (Q60) was 1.4%. A 0.75 pp reduction means inflation in the current quarter (which we treat as Q61) would be around 0.65% y/y. One quarter later (Q62), if no further shocks, inflation would partially rebound as the base effect from the low quarter drops out, but typically such supply shocks have a one-off level effect on prices, so the year-on-year rate one quarter later might be around 0.65% + some rebound (maybe 0.2–0.3 pp) → roughly 0.9–1.0%.  
+Given the central bank’s 2% target, this is well below target.
+
+**Direct effect on real exchange rate:**  
+Lower inflation at home, all else equal, makes domestic goods relatively cheaper, leading to a real depreciation (lower log index).  
+But the nominal exchange rate also responds.
+
+---
+
+### 2. Second-order effects
+
+**Monetary policy response:**  
+The central bank targets 2% inflation. With inflation falling well below target (to ~0.65% in Q61), the central bank will likely cut its policy rate to stimulate demand. Historically, the central bank has adjusted rates gradually. Given the shock size (~0.75 pp below target), expect a cut of about 0.5–0.75 pp in the policy rate over the next quarter. The policy rate was 1.7% in Q60; a cut to ~1.0–1.2% is plausible.
+
+**Real interest rate:**  
+Real interest rate = nominal policy rate – expected inflation.  
+If nominal rate drops to ~1.1% and expected inflation is around 0.8% (below target), the real rate becomes ~0.3% (low but positive). That is accommodative.
+
+**Exchange rate:**  
+A rate cut tends to depreciate the nominal exchange rate (vantra weakens). Combined with lower domestic inflation, the real exchange rate depreciates further. The “vantra appreciated sharply” in the prior period (Q49–Q60), so a reversal is plausible. Expect a real depreciation of about 2–4% in log terms.
+
+**Labor market:**  
+Lower inflation and accommodative policy should support demand, but the labor market was already softening (unemployment 5.6% in Q60, above natural rate of 5.0%). The stimulus may stabilize unemployment near 5.3–5.5% in one quarter.
+
+---
+
+### 3. Dynamics over the forecast horizon (1 quarter ahead)
+
+- Inflation: Falls sharply this quarter, then partially recovers next quarter as base effects fade, but still below target (~0.9–1.2%).
+- Real interest rate: Falls as central bank cuts, but expected inflation also low → real rate slightly positive (~0.2–0.5%).
+- Real exchange rate: Depreciates (log index falls) due to rate cut and lower relative prices.
+
+---
+
+### 4. Point estimates and confidence intervals
+
+Based on the historical data patterns (volatility of inflation ~0.6 pp, real rate ~0.8 pp, real exchange rate log ~0.05), and the shock size:
+
+- **Inflation (pi_1):** Point 1.0%, 80% CI: 0.4% to 1.6%
+- **Real interest rate (r_1):** Point 0.3%, 80% CI: -0.3% to 0.9%
+- **Real exchange rate (e_1, log index):** Assume previous log index around 4.6 (normalized). Depreciation of ~3% → 4.57. CI ±0.03.
+
+---
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": 4.57, "ci_low": 4.54, "ci_high": 4.60},
+    "pi_1": {"point": 1.0, "ci_low": 0.4, "ci_high": 1.6},
+    "r_1": {"point": 0.3, "ci_low": -0.3, "ci_high": 0.9}
+  }
+}
+</JSON>

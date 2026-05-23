@@ -1,0 +1,41 @@
+Let’s reason step-by-step.
+
+### 1. Direct impact of a 3% VTR appreciation
+
+- **Real exchange rate (log index)**: A nominal 3% appreciation lowers the log real exchange rate by roughly -0.03 (since domestic goods become more expensive relative to foreign goods).  
+- **Inflation**: Import prices fall immediately, reducing headline CPI inflation. The direct pass-through from a 3% appreciation to inflation is typically about 0.3–0.5 percentage points in the first quarter, depending on import share. Given Vantria is a small open economy, a reasonable estimate is a reduction of ~0.4 percentage points.  
+- **Unemployment**: Appreciation hurts export competitiveness and increases import competition → output falls → unemployment rises. The elasticity is modest at 1 quarter; a 3% appreciation might raise unemployment by about 0.2–0.3 percentage points.
+
+### 2. Second-order effects
+
+- **Monetary policy**: The central bank targets 2% inflation. With inflation falling below target, the bank will likely cut the policy rate. This partially offsets the appreciation’s disinflationary effect and dampens the output loss.  
+- **Exchange rate dynamics**: The initial appreciation is given as a shock; subsequent movements depend on interest rate differentials. A rate cut would partially reverse the appreciation over time, but at 1 quarter ahead the effect is small.  
+- **Labor market**: The rise in unemployment is partially offset if the central bank eases policy quickly, but the 1-quarter lag means the full policy response hasn’t yet fed through.
+
+### 3. Dynamics over 1 quarter
+
+- **Real exchange rate**: The log index starts at some baseline. Appreciation reduces it by ~0.03. No further major movement within one quarter.  
+- **Inflation**: Falls by ~0.4 percentage points from the pre-shock level. Pre-shock inflation in Q60 was 1.4%. So 1.4 – 0.4 = 1.0%.  
+- **Unemployment**: Pre-shock unemployment in Q60 was 5.6%. Appreciation raises it by ~0.2–0.3 → about 5.8–5.9%.
+
+### Baseline values (Q60)
+
+- Real exchange rate log index: Not given explicitly, but we can normalize to 0 in Q60.  
+- Inflation: 1.4%  
+- Unemployment: 5.6%
+
+### Predictions
+
+- **e_1**: log index falls by 0.03 → point = -0.03. CI: ±0.015 for typical volatility.  
+- **pi_1**: 1.4 – 0.4 = 1.0%. CI: ±0.4 pp (0.6 to 1.4).  
+- **u_1**: 5.6 + 0.25 = 5.85%. CI: ±0.3 pp (5.55 to 6.15).
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {"point": -0.03, "ci_low": -0.045, "ci_high": -0.015},
+    "pi_1": {"point": 1.0, "ci_low": 0.6, "ci_high": 1.4},
+    "u_1": {"point": 5.85, "ci_low": 5.55, "ci_high": 6.15}
+  }
+}
+</JSON>

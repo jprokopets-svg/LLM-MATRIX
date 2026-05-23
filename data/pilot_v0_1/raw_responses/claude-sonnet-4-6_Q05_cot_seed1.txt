@@ -1,0 +1,51 @@
+I'll analyze this step-by-step, using Vantria's economic history as context for calibrating my forecasts.
+
+## Step 1: Establishing Baseline Conditions (End of Q60)
+
+From the most recent data:
+- **Inflation**: 1.4% YoY (below the 2% target)
+- **Policy rate**: 1.7% (mildly accommodative given inflation below target)
+- **Unemployment**: 5.6% (above the 5.0% natural rate — labor market softening)
+- **Output gap**: Slightly negative, given unemployment above NAIRU and below-target inflation
+- **Real interest rate**: ~1.7% - 1.4% = ~0.3% (quite low, mildly accommodative)
+- **Context**: Economy described as "running well above potential" but disinflationary pressures evident and labor market softening — suggesting the above-potential characterization may be stale or the economy is decelerating
+
+The narrative inconsistency (above potential yet disinflationary, softening labor market) suggests the economy has been decelerating, and by Q60 the output gap is likely near zero or slightly negative.
+
+## Step 2: Direct Impact of the Shock
+
+A **2 percentage point demand shock** (consumer confidence collapse) is a significant negative aggregate demand shock.
+
+**Output gap**: Starting near 0% to slightly negative (~-0.3%), a 2pp AD reduction would push the output gap materially negative. In one quarter, not all of the demand shock transmits fully (spending adjusts over time, inventories absorb some shock). Roughly 60-70% of the shock manifests in Q1 → output gap moves to approximately **-1.5%**.
+
+**Unemployment**: Using Okun's Law (typically ~0.4-0.5 ratio for small open economies), a -1.5% output gap change from baseline implies unemployment rises ~0.6-0.8pp above where it would otherwise be. Starting at 5.6%, unemployment moves to roughly **6.2-6.3%**.
+
+## Step 3: Second-Order Effects
+
+**Monetary policy response**: The central bank targets 2% inflation. With demand collapsing and inflation already below target (1.4%), the central bank would be inclined to cut rates. However, at 1 quarter ahead, the policy response is likely just beginning — perhaps a 25-50bp cut. Policy rate moves toward ~1.2-1.4%.
+
+**Inflation effect**: Negative demand shock → further disinflationary pressure. Real interest rate = nominal rate - inflation expectations. If nominal rate falls ~30-50bp but inflation expectations also fall, the real rate may not change dramatically. Real rate: ~1.3% nominal - ~1.0% inflation ≈ **~0.3-0.4%** (roughly unchanged or slightly lower in real terms, as the CB cuts but inflation also falls).
+
+**Exchange rate**: Weaker growth expectations and lower rates → VTR depreciation. This partially offsets the demand shock through export competitiveness, but this takes time (J-curve).
+
+**Labor market**: Unemployment is a lagging indicator; the full labor market deterioration lags output by 1-2 quarters.
+
+## Step 4: Calibration from History
+
+Looking at Vantria's history, the sharpest unemployment moves were ~0.6-0.9pp per quarter during stress periods (Q40-Q41: unemployment jumped from 4.5% to 5.4%). A 2pp demand shock is large, suggesting a meaningful but not catastrophic 1-quarter response.
+
+## Final Estimates
+
+- **Output gap (Q+1)**: ~-1.5% (from near 0%)
+- **Unemployment (Q+1)**: ~6.2% (from 5.6%, +0.6pp)
+- **Real interest rate (Q+1)**: ~0.2% (nominal ~1.3%, inflation ~1.1% as demand falls further)
+
+<JSON>
+{
+  "predictions": {
+    "r_1": {"point": 0.2, "ci_low": -0.3, "ci_high": 0.7},
+    "u_1": {"point": 6.2, "ci_low": 5.8, "ci_high": 6.7},
+    "y_1": {"point": -1.5, "ci_low": -2.3, "ci_high": -0.7}
+  }
+}
+</JSON>

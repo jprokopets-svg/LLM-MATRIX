@@ -1,0 +1,94 @@
+# Macroeconomic Forecast for Vantria: Currency Appreciation Scenario
+
+## Step-by-Step Causal Analysis
+
+### 1. Direct Effects of 3% Vantra Appreciation
+
+**Real Exchange Rate:**
+- A 3% appreciation of the nominal exchange rate translates directly to a 3% appreciation of the real exchange rate in the short term (1 quarter ahead), assuming sticky prices and limited pass-through in the immediate period.
+- The log index would increase by approximately 3.0 percentage points.
+
+**Inflation:**
+- Currency appreciation reduces import prices, creating disinflationary pressure through the exchange rate pass-through channel.
+- Historical precedent: Q13-Q24 saw sharp vantra depreciation contributing to disinflationary pressure; the reverse should apply here.
+- Expected direct effect: downward pressure on inflation of approximately 0.3-0.5 percentage points at 1-quarter horizon (modest immediate pass-through).
+
+**Unemployment:**
+- In the very short term (1 quarter), labor market adjustment is limited. Unemployment responds with a lag to demand shocks.
+- Direct effect is minimal at 1-quarter horizon.
+
+### 2. Second-Order Effects
+
+**Monetary Policy Response:**
+- Current inflation (Q60) is 1.4%, below the 2.0% target, and the policy rate is 1.7%.
+- The appreciation shock creates additional disinflationary pressure, pushing inflation further below target.
+- The central bank faces a dilemma: the economy is running above potential (per the narrative), but inflation is below target and weakening.
+- Historical pattern: In Q34-Q36, the CB eased aggressively when inflation fell below 1.0% (rates fell to 0.9%-1.2%).
+- Expected response: Modest easing bias, though not immediate at 1-quarter horizon. The CB will likely hold or signal future easing.
+
+**Exchange Rate Dynamics:**
+- The initial 3% appreciation may persist or partially reverse depending on whether the capital inflow is temporary or structural.
+- Scenario specifies appreciation "following capital inflows," suggesting some persistence, but markets may anticipate eventual policy easing, which could limit sustained appreciation.
+- At 1-quarter horizon, assume the appreciation largely persists (80-90% retention).
+
+**Labor Market Dynamics:**
+- Appreciation reduces export competitiveness, dampening demand for export-oriented sectors.
+- This creates gradual downward pressure on employment and upward pressure on unemployment.
+- However, at 1-quarter horizon, labor market adjustment is slow. Historical lags suggest 2-3 quarters for unemployment to respond materially.
+- Q60 unemployment: 5.6% (above natural rate of 5.0%), suggesting existing slack.
+
+### 3. Dynamics Over the Forecast Horizon
+
+At 1 quarter ahead (Q61):
+
+**Real Exchange Rate:**
+- The 3% appreciation is largely reflected immediately in the real rate.
+- Sticky prices mean the nominal appreciation translates to real appreciation in the short term.
+- **Estimate: +3.0% (log index)**
+
+**Inflation:**
+- Q60 inflation: 1.4%
+- Direct pass-through from 3% appreciation: approximately -0.3 to -0.4 percentage points
+- Lagged effects from prior quarters' momentum: Q59 was 2.6%, suggesting some disinflation already underway
+- Central bank hasn't yet eased in response to below-target inflation, but the appreciation shock reinforces disinflationary pressures
+- **Estimate: 1.0-1.1% (reflecting immediate pass-through and continued disinflation)**
+
+**Unemployment:**
+- Q60 unemployment: 5.6%
+- Appreciation reduces export demand, but this takes time to feed through to employment
+- At 1-quarter horizon, labor market is sticky
+- Natural rate is 5.0%; current rate of 5.6% suggests existing slack that may persist
+- Slight upward bias from demand reduction, but limited immediate response
+- **Estimate: 5.6-5.7%**
+
+## Final Predictions
+
+<JSON>
+{
+  "predictions": {
+    "e_1": {
+      "point": 3.0,
+      "ci_low": 2.5,
+      "ci_high": 3.5
+    },
+    "pi_1": {
+      "point": 1.05,
+      "ci_low": 0.7,
+      "ci_high": 1.4
+    },
+    "u_1": {
+      "point": 5.65,
+      "ci_low": 5.4,
+      "ci_high": 5.9
+    }
+  }
+}
+</JSON>
+
+**Reasoning for Confidence Intervals:**
+
+- **Real Exchange Rate (e_1):** Narrow confidence interval reflects the mechanical nature of the shock. Uncertainty arises from potential partial reversal of capital flows, but the 1-quarter horizon limits this.
+
+- **Inflation (pi_1):** Wide confidence interval reflects uncertainty about pass-through elasticity and timing. Historical data shows variable inflation responses to exchange rate shocks (Q24 showed sharp disinflation to 0.9%, but Q34-Q36 showed sustained low inflation). The current disinflationary trend adds downside risk.
+
+- **Unemployment (u_1):** Moderate confidence interval reflects sticky labor markets at short horizons. The existing slack (5.6% vs. 5.0% NAIRU) provides some cushion, but the appreciation shock creates downside risk to employment.

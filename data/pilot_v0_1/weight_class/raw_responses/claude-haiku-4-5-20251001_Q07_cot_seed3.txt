@@ -1,0 +1,100 @@
+# Macroeconomic Analysis: Vantrian Commodity Price Shock
+
+## Step-by-Step Causal Reasoning
+
+### 1. Direct Effects of the Commodity Price Shock
+
+**Inflation Impact:**
+- The shock adds 1.5 percentage points to inflation mechanically through import price channels
+- Q60 baseline inflation was 1.4% year-on-year
+- Direct effect: 1.4% + 1.5% = 2.9% inflation at Q61
+
+**Output Gap Impact:**
+- Commodity price shocks are typically supply-side disturbances
+- Direct mechanical effect on output is ambiguous (depends on economy's commodity exposure)
+- However, the shock is explicitly "unrelated to domestic demand," suggesting it's a negative supply shock
+- This would tend to compress the output gap slightly as real incomes decline
+- Current state (Q60): unemployment at 5.6% (slightly above NAIRU of 5.0%), suggesting modest negative output gap of approximately -0.6% to -1.0%
+
+**Real Interest Rate Impact:**
+- Nominal policy rate at Q60: 1.7%
+- With inflation rising to ~2.9%, the real rate falls mechanically: 1.7% - 2.9% = -1.2%
+
+### 2. Second-Order Effects
+
+**Monetary Policy Response:**
+The central bank faces a classic policy dilemma:
+- The inflation spike is supply-driven, not demand-driven
+- Tightening policy to fight inflation would further compress demand and widen the negative output gap
+- Historical pattern (Q37-Q48): CB raised rates in response to demand-driven inflation, but current situation differs
+- Given the explicit statement that disinflationary pressures are evident (Q49-Q60 summary) despite above-trend growth, the CB has been cautious
+- Most likely response: The CB will hold rates steady or move cautiously, recognizing the supply-shock nature
+- Point estimate for policy rate at Q61: 1.7% (unchanged from Q60)
+
+**Exchange Rate Channel:**
+- Q60 shows the vantra appreciated sharply (positive for disinflation)
+- A commodity price spike might weaken the vantra if Vantria is a commodity importer
+- Vantra depreciation would amplify imported inflation pressures
+- However, with floating rates and the CB likely holding steady, the exchange rate adjustment is uncertain
+- Assume modest vantra depreciation of 1-2%, partially offsetting the appreciation trend
+
+**Labor Market Dynamics:**
+- Q60 unemployment at 5.6% (above NAIRU), indicating slack
+- Commodity shock reduces real incomes → potential downward wage pressure
+- Slack in labor market limits wage-price spiral risks
+- Employment likely unchanged at Q61 (lags in adjustment)
+
+**Demand Effects:**
+- Real income decline from commodity shock reduces consumption
+- Output gap likely widens (becomes more negative) from current -0.6% to approximately -1.2% to -1.5%
+- However, this is a gradual process; at 1-quarter horizon, the effect is modest
+
+### 3. Dynamics Over the Forecast Horizon (1 Quarter Ahead)
+
+At the 1-quarter horizon (Q61):
+
+**Inflation:**
+- Direct commodity shock: +1.5pp
+- Baseline inflation (Q60): 1.4%
+- Second-order effects: Minimal at 1-quarter horizon
+- Forecast: 2.9% (with some uncertainty around pass-through rates)
+
+**Output Gap:**
+- Current gap: approximately -0.6% to -1.0%
+- Commodity shock effect: -0.3% to -0.5% (demand compression)
+- Forecast: -1.0% to -1.5%
+- Point estimate: -1.2%
+
+**Real Interest Rate:**
+- Nominal rate: 1.7% (CB holds steady)
+- Expected inflation: 2.9%
+- Real rate: 1.7% - 2.9% = -1.2%
+
+## Confidence Intervals
+
+**Inflation (1-quarter ahead):**
+- Point: 2.9%
+- Range: The main uncertainty is the pass-through rate of commodity prices. Historical patterns suggest 70-90% pass-through in a small open economy. Conservative range: 2.6% to 3.2%
+- 80% CI: [2.6%, 3.2%]
+
+**Output Gap (1-quarter ahead):**
+- Point: -1.2%
+- Uncertainty stems from: (i) magnitude of demand response to income shock, (ii) whether CB adjusts policy
+- Range: -1.8% to -0.6%
+- 80% CI: [-1.8%, -0.6%]
+
+**Real Interest Rate (1-quarter ahead):**
+- Point: -1.2%
+- This is mechanically determined given inflation forecast and assumed policy hold
+- Uncertainty mainly from inflation forecast uncertainty
+- 80% CI: [-1.5%, -0.9%]
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 2.9, "ci_low": 2.6, "ci_high": 3.2},
+    "r_1": {"point": -1.2, "ci_low": -1.5, "ci_high": -0.9},
+    "y_1": {"point": -1.2, "ci_low": -1.8, "ci_high": -0.6}
+  }
+}
+</JSON>

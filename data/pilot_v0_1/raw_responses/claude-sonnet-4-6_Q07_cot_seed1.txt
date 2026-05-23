@@ -1,0 +1,113 @@
+# Macroeconomic Analysis: Vantria Commodity Price Shock
+
+## Step 1: Establishing the Baseline (Q60)
+
+Before the shock, the economy shows:
+- **Inflation**: 1.4% YoY (below the 2% target)
+- **Policy rate**: 1.7% (relatively accommodative)
+- **Unemployment**: 5.6% (above the 5.0% natural rate → negative output gap)
+- **Context**: Economy described as "running well above potential" (contradicted by the data showing above-natural unemployment — the narrative is inconsistent with the data, but I'll weight the data more heavily)
+- **Labor market**: softening
+- **Exchange rate**: VTR appreciated sharply (disinflationary via import prices)
+- **Policy stance**: mildly restrictive
+
+The data suggests the economy is actually operating **below potential** (unemployment 5.6% > 5.0% NAIRU, below-target inflation of 1.4%), with a negative output gap of perhaps -0.5% to -1.0%.
+
+**Baseline real interest rate**: Policy rate (1.7%) minus inflation (1.4%) ≈ **+0.3%** (mildly positive, slightly restrictive in real terms)
+
+---
+
+## Step 2: Direct Effects of the Shock
+
+A **+1.5 pp commodity price spike** unrelated to domestic demand:
+
+### Inflation (Direct):
+- Adds ~1.5 pp to headline CPI inflation mechanically
+- Starting from 1.4%, this pushes headline inflation toward **~2.9%**
+- However, the recent VTR appreciation dampens import price pass-through somewhat
+- The shock is supply-side (cost-push), not demand-pull
+- Partial pass-through in one quarter: I'll assume ~80-90% of the 1.5pp materializes in Q1 given it's a direct commodity component
+- **First-order inflation estimate**: ~2.7–2.9%
+
+### Output Gap (Direct):
+- Supply-side shock: higher commodity prices act as a **tax on real income**, compressing household purchasing power
+- This is stagflationary — higher prices without higher demand
+- The shock itself slightly **widens the negative output gap** (reduces real disposable income, suppresses consumption)
+- Starting gap: approximately -0.5% to -0.8%
+- Direct demand drag from commodity shock: perhaps -0.2 to -0.3 pp additional
+
+### Real Interest Rate (Direct):
+- Nominal policy rate stays at 1.7% initially (central bank has one quarter of lag before responding)
+- Inflation rises to ~2.8%
+- **Real rate = 1.7% - 2.8% ≈ -1.1%** (becomes accommodative, which is paradoxically stimulative)
+
+---
+
+## Step 3: Second-Order Effects
+
+### Monetary Policy Response:
+- Vantria's central bank targets 2% inflation and has shown it responds to inflation deviations
+- **But**: this is a supply shock, not demand-driven. The central bank's historical behavior shows measured responses (e.g., Q39-Q41 tightening cycle when inflation rose)
+- With unemployment already at 5.6% (above NAIRU) and a negative output gap, the central bank faces a **policy dilemma**: raise rates to combat above-target inflation, or hold given economic slack
+- Historical precedent (Q40-Q41): when inflation hit 2.7-3.2%, the central bank raised rates to 3.1%
+- However, in Q1 of the shock, the central bank is unlikely to have moved yet (policy lags)
+- **Likely response**: hold or modest 25bp hike in Q1 (1.7% → 1.7-2.0%)
+- I'll assume **no rate change in Q1** (central bank observes, assesses transitory nature)
+
+### Exchange Rate Channel:
+- Higher inflation → potential VTR depreciation pressure (real exchange rate appreciation erodes competitiveness)
+- But if commodity prices are global, other currencies face similar pressures
+- The VTR recently appreciated sharply — this partially offsets commodity price pass-through
+- Net: modest additional dampening of the inflation shock via exchange rate (~0.1-0.2 pp offset)
+
+### Labor Market:
+- Unemployment at 5.6% — labor market already soft
+- Commodity shock reduces real wages → slight additional labor market weakness
+- No significant wage-price spiral risk given slack
+- Output gap widens marginally
+
+### Inflation Expectations:
+- Given the central bank's credibility (15 years of broadly anchored inflation), expectations remain well-anchored
+- The 1-quarter horizon is too short for significant de-anchoring
+- Core inflation remains subdued; commodity shock is transitory in nature
+
+---
+
+## Step 4: Quantitative Estimates at Q+1
+
+### Inflation at 1 Quarter Ahead:
+- Base: 1.4%
+- Commodity shock: +1.5 pp (full mechanical pass-through, partially offset by VTR appreciation)
+- Net commodity contribution: ~+1.2 to +1.4 pp (appreciation offsets ~0.1-0.3 pp)
+- Underlying disinflation trend: -0.1 pp (negative output gap, soft labor market)
+- **Point estimate: ~2.6%**
+- Range: 2.1% to 3.1% (uncertainty around pass-through speed and magnitude)
+
+### Output Gap at 1 Quarter Ahead:
+- Starting gap: approximately -0.6% (unemployment 5.6% vs 5.0% NAIRU, using Okun's law ~2:1 ratio → gap ≈ -1.2%, but adjusting for other factors → ~-0.6% to -0.8%)
+- Commodity shock demand drag: -0.2 pp
+- No monetary tightening yet to add further drag
+- **Point estimate: -0.8%**
+- Range: -1.3% to -0.3%
+
+### Real Interest Rate at 1 Quarter Ahead:
+- Nominal rate: 1.7% (assuming no change, or at most 25bp hike → 1.7-1.95%, call it 1.8%)
+- Inflation: ~2.6%
+- Real rate: 1.8% - 2.6% = **-0.8%**
+- Range: -1.3% to -0.3%
+
+---
+
+## Summary of Reasoning
+
+The commodity shock is **stagflationary**: it raises inflation above target while the economy already has slack. The central bank faces a dilemma but is unlikely to respond aggressively in Q1 given the supply-side nature and existing economic weakness. The real interest rate turns meaningfully negative as inflation jumps while the nominal rate holds. The output gap widens slightly due to the real income squeeze from higher commodity prices.
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 2.6, "ci_low": 2.1, "ci_high": 3.1},
+    "r_1": {"point": -0.8, "ci_low": -1.3, "ci_high": -0.3},
+    "y_1": {"point": -0.8, "ci_low": -1.3, "ci_high": -0.3}
+  }
+}
+</JSON>

@@ -1,0 +1,72 @@
+{
+  "Q01": {
+    "shock_type": "monetary",
+    "DeepSeek V4 Flash_direct": 0.3364506892834269,
+    "DeepSeek V4 Flash_cot": 0.45795823816106956,
+    "Claude Sonnet 4.6_direct": 0.22398126548305233,
+    "Claude Sonnet 4.6_cot": 0.3773928010048691
+  },
+  "Q02": {
+    "shock_type": "monetary",
+    "DeepSeek V4 Flash_direct": 1.49940036131086,
+    "DeepSeek V4 Flash_cot": 2.128844805755304,
+    "Claude Sonnet 4.6_direct": 0.6368954205105375,
+    "Claude Sonnet 4.6_cot": 0.504087997930825
+  },
+  "Q03": {
+    "shock_type": "monetary",
+    "DeepSeek V4 Flash_direct": 1.0352334478368888,
+    "DeepSeek V4 Flash_cot": 1.3178655052143098,
+    "Claude Sonnet 4.6_direct": 0.5858813459980254,
+    "Claude Sonnet 4.6_cot": 0.6628655052143101
+  },
+  "Q04": {
+    "shock_type": "demand",
+    "DeepSeek V4 Flash_direct": 0.6744410559578795,
+    "DeepSeek V4 Flash_cot": 0.8536863448467685,
+    "Claude Sonnet 4.6_direct": 0.8010658115134353,
+    "Claude Sonnet 4.6_cot": 0.7788435892912131
+  },
+  "Q05": {
+    "shock_type": "demand",
+    "DeepSeek V4 Flash_direct": 0.546430182039919,
+    "DeepSeek V4 Flash_cot": 0.5410725461197555,
+    "Claude Sonnet 4.6_direct": 0.4299614350086444,
+    "Claude Sonnet 4.6_cot": 0.4940075683419778
+  },
+  "Q06": {
+    "shock_type": "demand",
+    "DeepSeek V4 Flash_direct": 0.39712911809418944,
+    "DeepSeek V4 Flash_cot": 0.40616724317145747,
+    "Claude Sonnet 4.6_direct": 0.23352575428256817,
+    "Claude Sonnet 4.6_cot": 0.34316935428256823
+  },
+  "Q07": {
+    "shock_type": "cost_push",
+    "DeepSeek V4 Flash_direct": 0.7384434559584547,
+    "DeepSeek V4 Flash_cot": 1.0356557965800322,
+    "Claude Sonnet 4.6_direct": 1.0217570260904982,
+    "Claude Sonnet 4.6_cot": 1.1078582556009644
+  },
+  "Q08": {
+    "shock_type": "cost_push",
+    "DeepSeek V4 Flash_direct": 1.4444111034403855,
+    "DeepSeek V4 Flash_cot": 1.8153103701070523,
+    "Claude Sonnet 4.6_direct": 1.1917651923292745,
+    "Claude Sonnet 4.6_cot": 0.7550985256626078
+  },
+  "Q09": {
+    "shock_type": "exchange_rate",
+    "DeepSeek V4 Flash_direct": 1.945398060106828,
+    "DeepSeek V4 Flash_cot": 2.73705484517285,
+    "Claude Sonnet 4.6_direct": 0.8676202823290503,
+    "Claude Sonnet 4.6_cot": 2.3317017486382268
+  },
+  "Q10": {
+    "shock_type": "exchange_rate",
+    "DeepSeek V4 Flash_direct": 0.7328037955381002,
+    "DeepSeek V4 Flash_cot": 1.0061371288714334,
+    "Claude Sonnet 4.6_direct": 0.8883593510936556,
+    "Claude Sonnet 4.6_cot": 0.8828037955381
+  }
+}

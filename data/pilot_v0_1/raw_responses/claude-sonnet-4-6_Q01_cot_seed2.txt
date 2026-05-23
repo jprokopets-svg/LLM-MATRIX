@@ -1,0 +1,61 @@
+I'll work through this systematically, analyzing Vantria's economic history and then applying the shock.
+
+## Step 1: Establishing the Baseline (Q60 conditions)
+
+At Q60:
+- Inflation: 1.4% (below the 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above the 5.0% natural rate, suggesting slack)
+- The economy was described as "running well above potential" (contradicted somewhat by rising unemployment and below-target inflation — likely narrative inconsistency, but the hard data suggest softening)
+- The vantra had appreciated sharply (disinflationary via import prices)
+- Labor market was softening
+
+The real policy rate at Q60: 1.7% - 1.4% = +0.3% (mildly restrictive)
+
+## Step 2: Characterizing the Shock
+
+An unexpected 100bp rate hike brings the policy rate from 1.7% to 2.7%.
+
+This is a significant surprise tightening. The new real rate: 2.7% - 1.4% ≈ +1.3%, a meaningful tightening relative to the neutral rate (historically ~2% nominal, ~0% real near target).
+
+## Step 3: Causal Channels
+
+**Direct effects (1 quarter ahead):**
+- **Demand channel**: Higher rates raise borrowing costs, suppressing investment and consumption. At 1Q, transmission is just beginning — credit conditions tighten, confidence falls, but spending adjustments are lagged.
+- **Exchange rate channel**: An unexpected 100bp hike causes the vantra to appreciate further (already on an appreciating trend). This adds disinflationary pressure via cheaper imports.
+- **Expectations channel**: Surprise tightening signals CB hawkishness — inflation expectations may decline somewhat.
+
+**Output gap:**
+- Q60 already shows slack (unemployment 5.6% > 5.0% NAIRU). The output gap is likely already mildly negative (roughly -0.5% to -1.0%).
+- A 100bp surprise hike will deepen the negative output gap. At 1Q, the full effect hasn't materialized (monetary policy lags ~2-4 quarters for output). Estimate: output gap moves from ~-0.5% to ~-0.8% to -1.0%.
+
+**Inflation:**
+- Already below target at 1.4%, with appreciation pressures. A further hike + appreciation will add downward pressure. However, at 1Q, inflation is sticky — YoY figures change slowly. Minimal pass-through in 1 quarter.
+- Expect inflation to edge down slightly: ~1.2–1.4%.
+
+**Unemployment:**
+- Labor market already softening (5.6%). Tighter policy will add modest upward pressure, but Okun's Law operates with a lag. At 1Q, unemployment may tick up marginally: ~5.6–5.8%.
+
+## Step 4: Historical Calibration
+
+Looking at the history: when the CB raised rates sharply (Q37-Q40: from 1.5% to 3.1%), unemployment moved from 3.9% to 4.5% over 3 quarters — roughly +0.2% per quarter in a tightening cycle. But that was from a tight labor market. Here, the market is already loose.
+
+When rates were cut (Q34-Q36: 1.2%→0.9%→1.1%), inflation was around 0.7-1.0% and unemployment was 5.3-5.4%. The current situation is somewhat similar but we're hiking into softness.
+
+The 1Q lag means the output gap and unemployment effects are modest but directionally negative/higher.
+
+## Final Estimates
+
+- **Output gap at 1Q**: Starting ~-0.5% (implied by 5.6% unemployment), shock deepens it modestly to ~-0.9%. Confidence interval wide given uncertainty.
+- **Inflation at 1Q**: Already 1.4%, appreciation + tightening bias pushes slightly lower, but stickiness limits movement: ~1.3%.
+- **Unemployment at 1Q**: Already 5.6%, modest further increase to ~5.7% (lag limits immediate impact).
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.3, "ci_low": 0.9, "ci_high": 1.7},
+    "u_1": {"point": 5.7, "ci_low": 5.4, "ci_high": 6.1},
+    "y_1": {"point": -0.9, "ci_low": -1.6, "ci_high": -0.3}
+  }
+}
+</JSON>

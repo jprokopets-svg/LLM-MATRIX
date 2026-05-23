@@ -1,0 +1,57 @@
+I need to analyze Vantria's economic conditions at Q60 and forecast the impact of a 2pp demand shock.
+
+## Step 1: Establish Baseline at Q60
+
+**Recent conditions (Q57-Q60):**
+- Inflation: 2.3%, 2.3%, 2.6%, 1.4% — averaging ~2.15%, near target
+- Policy rate: 2.2%, 2.3%, 2.2%, 1.7% — easing slightly
+- Unemployment: 5.1%, 4.9%, 5.4%, 5.6% — softening, slightly above natural rate (5.0%)
+- Period description: "above potential," "disinflationary pressures," "labor market softened"
+
+**Baseline output gap at Q60:** The narrative says "running well above potential" but unemployment at 5.6% suggests slight slack. There's a contradiction — I'll weight the unemployment data more heavily. With unemployment at 5.6% vs natural rate 5.0%, Okun's law (coefficient ~2) suggests output gap ≈ -1.2%. However, "well above potential" narrative suggests positive gap. I'll estimate a modest positive gap of ~+0.5% given the mixed signals, with unemployment already drifting above natural rate suggesting the gap is closing/slightly negative by Q60.
+
+Given unemployment 5.6% (above NAIRU 5.0%), output gap is likely slightly negative: approximately **-0.5%** at baseline.
+
+**Baseline real interest rate:** Policy rate 1.7%, inflation ~1.4% (Q60), so real rate ≈ 1.7% - 1.4% = **+0.3%**
+
+## Step 2: Apply the Demand Shock
+
+A **2pp reduction in aggregate demand** is a significant negative shock.
+
+**Output gap impact (1 quarter ahead):**
+- Starting gap: ~-0.5%
+- A 2pp demand shock doesn't translate 1:1 to output gap immediately; with multiplier effects and partial transmission in 1 quarter, roughly 60-70% pass-through in Q1
+- Impact on output gap: approximately -1.3 to -1.5pp
+- New output gap: -0.5% - 1.3% ≈ **-1.8%**
+
+**Unemployment (1 quarter ahead):**
+- Okun's law: Δu ≈ -0.5 × Δy_gap
+- Change in output gap: ~-1.3pp → unemployment rises ~0.65pp
+- Baseline unemployment: 5.6%
+- New unemployment: 5.6% + 0.65% ≈ **6.25%**
+- Labor market already softening, so response may be slightly larger
+
+**Real interest rate (1 quarter ahead):**
+- Central bank facing demand collapse would likely cut rates
+- Starting policy rate: 1.7%, with inflation already below target at 1.4%
+- With demand shock, CB likely cuts ~50-75bps within 1 quarter
+- New policy rate: ~1.0-1.2%
+- Inflation will fall further due to demand shock (with lag), but 1Q ahead inflation still ~1.2-1.4%
+- Real rate: ~1.0% - 1.2% ≈ **-0.1%** (approximately zero or slightly negative)
+- However, if CB is slow to react: real rate could stay around 0.3%
+- Best estimate: ~0.0% real rate
+
+**Confidence intervals:**
+- Output gap: uncertainty around multiplier size, 80% CI: [-2.8, -0.8]
+- Unemployment: 80% CI: [5.8, 6.7]
+- Real rate: depends heavily on CB reaction speed, 80% CI: [-0.5, 0.6]
+
+```json
+{
+  "predictions": {
+    "r_1": {"point": 0.0, "ci_low": -0.5, "ci_high": 0.6},
+    "u_1": {"point": 6.25, "ci_low": 5.8, "ci_high": 6.7},
+    "y_1": {"point": -1.8, "ci_low": -2.8, "ci_high": -0.8}
+  }
+}
+```

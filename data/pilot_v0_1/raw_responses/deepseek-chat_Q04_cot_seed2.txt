@@ -1,0 +1,61 @@
+Let’s walk through the causal logic step-by-step.
+
+---
+
+### 1. Direct Effect of the Shock
+
+A surge in business investment adds **+1.5 percentage points** to aggregate demand.  
+This directly increases the **output gap** in the near term. Given that the economy appears to be near potential (unemployment around 5.0% natural rate, inflation near 2% target recently), this pushes output above potential.
+
+**Direct effect on output gap at 1 quarter ahead:**  
+If the economy was roughly at potential (output gap ≈ 0), adding 1.5 pp of demand would push the output gap to about **+1.5%**.
+
+---
+
+### 2. Second-Order Effects
+
+**Inflation:**  
+- Higher aggregate demand → tighter labor market → rising wage pressure.  
+- The Phillips curve suggests inflation will rise.  
+- Historical sensitivity: In this economy, a 1 pp positive output gap tends to raise inflation by about 0.3–0.5 pp within one quarter (based on past inflation-output correlations).  
+- Starting inflation ~1.4% (Q60), plus ~0.5 pp from the gap → **~1.9%** at 1 quarter ahead.
+
+**Monetary policy reaction:**  
+- Central bank targets 2% inflation. With inflation below target but rising, and output above potential, the central bank is likely to **raise the policy rate** to cool demand.  
+- However, within one quarter, policy changes are usually not fully effective due to lags. The central bank may raise rates by ~0.25–0.5 pp.
+
+**Real interest rate:**  
+- Real interest rate = nominal policy rate – expected inflation.  
+- Current nominal rate ≈ 1.7% (Q60). If the central bank raises to ~2.0% and inflation rises to ~1.9%, the real rate becomes ~0.1% (very low), possibly negative if inflation expectations overshoot.
+
+**Exchange rate:**  
+- Higher interest rates attract capital → currency appreciates.  
+- Appreciation dampens import prices → slightly offsets inflation.  
+- But in one quarter, this effect is modest.
+
+**Labor market:**  
+- Output above potential → unemployment falls below natural rate (5.0%).  
+- With a 1.5% positive output gap, Okun’s law suggests unemployment falls ~0.75 pp → ~4.25%. This tightness feeds back into inflation.
+
+---
+
+### 3. Dynamics Over 1 Quarter
+
+- Output gap opens quickly to **+1.5%** (direct demand effect).
+- Inflation rises to **~1.9%** (Phillips curve + demand pull).
+- Real interest rate stays **very low (~0.1%)** because the central bank hasn’t fully offset the inflation rise yet.
+- Confidence intervals: Output gap ±0.5 pp, inflation ±0.4 pp, real rate ±0.5 pp (due to uncertainty in policy reaction and exchange rate pass-through).
+
+---
+
+### Final Predictions
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.9, "ci_low": 1.5, "ci_high": 2.3},
+    "r_1": {"point": 0.1, "ci_low": -0.4, "ci_high": 0.6},
+    "y_1": {"point": 1.5, "ci_low": 1.0, "ci_high": 2.0}
+  }
+}
+</JSON>

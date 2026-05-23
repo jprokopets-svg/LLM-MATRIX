@@ -1,0 +1,39 @@
+I need to analyze Vantria's economic conditions and forecast the impact of a surprise 25bp rate increase (vs. 50bp expected) at 1 quarter ahead.
+
+## Current Conditions (Q60)
+- Inflation: 1.4% YoY
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0% → slack)
+- Real interest rate: 1.7% - 1.4% = 0.3%
+- Context: Economy "running well above potential" (contradicted by unemployment above NAIRU), disinflationary pressures, vantra appreciated sharply
+
+## Analyzing the Shock
+
+**The shock:** 25bp hike instead of expected 50bp → net dovish surprise of 25bp relative to expectations.
+
+**Key mechanics:**
+1. **Policy rate moves to ~1.95%** (from 1.7%, +25bp)
+2. **Dovish surprise relative to market:** Markets priced 50bp, got 25bp → this is a net easing surprise in relative terms
+3. **Exchange rate:** A smaller-than-expected hike = dovish surprise → VTR should **depreciate** (or appreciate less than expected). The real exchange rate (log index) should fall relative to what was priced in.
+4. **Inflation:** The dovish surprise and VTR depreciation are mildly inflationary at 1-quarter horizon. But inflation is already below target (1.4%), with disinflationary pressures. At 1Q ahead, monetary policy transmission is slow. Inflation likely stays near 1.4-1.7%.
+5. **Real interest rate:** Nominal rate rises ~25bp to ~1.95%. If inflation stays ~1.5-1.6%, real rate ≈ 1.95% - 1.5% = ~0.4-0.5%.
+
+**Historical calibration:**
+- Policy rates have hovered 1.4-2.4% throughout history
+- Inflation has been volatile (0.4-3.2%), averaging ~1.9%
+- Real rates typically 0-1.5%
+
+**1-quarter ahead estimates:**
+- **Inflation (pi_1):** Disinflationary trend continues, slight upward pressure from dovish surprise/depreciation. ~1.5% (range 0.9-2.1%)
+- **Real exchange rate (e_1):** Dovish surprise → depreciation. From current appreciated position, log index falls modestly. Using a normalized index, I'll express the change. The current level is elevated (sharp appreciation noted). A dovish surprise causes depreciation. I'll estimate a small decline: ~-0.02 log units from current (set current as ~0, so e_1 ≈ -0.02)
+- **Real interest rate (r_1):** Nominal ~1.95%, inflation ~1.5% → real rate ~0.45%
+
+```json
+{
+  "predictions": {
+    "e_1": {"point": -0.02, "ci_low": -0.06, "ci_high": 0.02},
+    "pi_1": {"point": 1.5, "ci_low": 0.9, "ci_high": 2.1},
+    "r_1": {"point": 0.45, "ci_low": 0.1, "ci_high": 0.8}
+  }
+}
+```

@@ -1,0 +1,44 @@
+Let’s walk through the reasoning step by step.
+
+---
+
+### 1. Direct effects of the shock
+
+A **+1.5 percentage point increase in aggregate demand** (from a surge in business investment) directly raises output above potential.  
+- The **output gap** will increase by roughly the size of the demand shock, assuming a short-run multiplier near 1. So initially, the output gap rises by about +1.5 pp relative to where it otherwise would be.
+
+At the time of the shock (Q60 end), the economy had an unemployment rate of 5.6% (above the natural rate of 5.0%), suggesting a slightly negative output gap. The shock pushes it positive.
+
+---
+
+### 2. Second-order effects
+
+- **Inflation**: Higher aggregate demand puts upward pressure on prices. The Phillips curve suggests a positive output gap raises inflation. Given the central bank’s 2% target and the fact inflation was 1.4% in Q60, this shock will push inflation above target within a few quarters.
+- **Monetary policy response**: The central bank will likely raise the policy rate to counteract inflationary pressure. This raises the **real interest rate** (nominal rate minus expected inflation). The policy rate in Q60 was 1.7%; with inflation rising, the real rate may initially fall but then rise as the central bank acts.
+- **Exchange rate**: Higher interest rates attract capital inflows, appreciating the vantra, which dampens inflation slightly via cheaper imports — but this is a second-order effect over one quarter.
+
+---
+
+### 3. Dynamics over 1 quarter
+
+At **1 quarter ahead**:
+- The demand shock is still fully present (investment takes time to phase in, but the full effect is felt within the quarter).
+- Output gap: from near zero (Q60 had unemployment 5.6% vs 5.0% natural → output gap roughly -0.5% to -0.8%) plus +1.5 pp → output gap becomes positive, around **+0.7 to +1.0%**.
+- Inflation: rises due to demand pressure. Starting from 1.4%, with a positive output gap of ~0.8%, a standard Phillips curve coefficient (~0.3–0.5) gives inflation increase of ~0.3–0.4 pp → inflation around **1.7–1.9%**.
+- Real interest rate: nominal rate may not yet change (central bank meets quarterly, may wait for data). With inflation rising, real rate = nominal (1.7%) minus expected inflation (~1.8%) → near **-0.1%** to 0.0%.
+
+---
+
+### Final predictions
+
+Based on the historical patterns and standard macroeconomic model calibration:
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.8, "ci_low": 1.3, "ci_high": 2.3},
+    "r_1": {"point": 0.0, "ci_low": -0.5, "ci_high": 0.5},
+    "y_1": {"point": 0.8, "ci_low": 0.3, "ci_high": 1.3}
+  }
+}
+</JSON>

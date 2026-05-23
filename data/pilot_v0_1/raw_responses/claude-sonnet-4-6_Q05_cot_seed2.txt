@@ -1,0 +1,62 @@
+I'll work through this systematically, using Vantria's economic history as context for calibrating my estimates.
+
+## Step-by-Step Causal Analysis
+
+### Baseline Conditions (End of Q60)
+- Inflation: 1.4% (below 2% target)
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%, so slight slack)
+- Context: Economy "running well above potential" (narrative inconsistency with unemployment above NAIRU, but the narrative says disinflationary pressures, VTR appreciated sharply, labor market softened)
+- The output gap appears to be slightly negative or near zero given unemployment at 5.6% vs. NAIRU of 5.0%
+
+**Implied output gap at Q60:** Using Okun's Law (~2:1 ratio), unemployment is 0.6pp above NAIRU → output gap ≈ -1.2% to -1.5%. I'll estimate the starting output gap at approximately -1.0% (modest negative).
+
+### 1. Direct Effects of the Shock (1 Quarter Ahead)
+
+**Aggregate demand shock of -2pp:**
+- A 2pp reduction in aggregate demand directly widens the output gap by roughly 2pp in the short run.
+- Starting from ~-1.0%, the output gap moves to approximately **-3.0%** at Q1.
+- This is a demand-side shock, so it's stagflationary in reverse — disinflationary and recessionary.
+
+**Labor market:** Using Okun's Law with a coefficient of ~0.4-0.5 (quarterly dynamics are slower), a 2pp demand shock doesn't immediately translate fully to unemployment. Over 1 quarter, roughly 0.4-0.6pp rise in unemployment is plausible.
+- Starting at 5.6%, unemployment rises to approximately **6.1-6.2%**.
+
+### 2. Second-Order Effects
+
+**Monetary policy response:**
+- Inflation was already below target (1.4%) and output gap was already negative. The central bank has room and incentive to cut rates.
+- Historical pattern shows Vantria's central bank responds to below-target inflation with rate cuts (e.g., Q23-Q24: 1.6%→1.4% as inflation fell; Q34-Q35: 1.2%→0.9%).
+- However, at 1 quarter ahead, policy transmission lag means the rate cut is just beginning. The central bank would likely cut from 1.7% toward ~1.0-1.2%.
+- With inflation at ~1.4% and likely falling further, real rate = policy rate - inflation ≈ 1.7% - 1.4% = 0.3% currently. After a cut to ~1.2% and inflation falling to ~1.0%, real rate ≈ **0.2%**.
+
+**Exchange rate:** A demand collapse would likely weaken the VTR (less domestic spending, lower interest rates). This is mildly inflationary via imports but with a lag.
+
+**Inflation:** Demand shock reduces inflation further below target. At 1Q, inflation might fall toward 1.0-1.2%.
+
+### 3. Dynamic Evolution at 1 Quarter
+
+The 1-quarter horizon captures the immediate impact before significant policy offsets:
+- Output gap: shock hits hard immediately, policy hasn't yet offset
+- Unemployment: rises but with labor market adjustment lag
+- Real interest rate: central bank cuts, inflation also falls slightly, net real rate change is modest
+
+**Real interest rate calculation:**
+- Policy rate cut likely to ~1.2-1.3% (central bank acts quickly given below-target inflation)
+- Inflation falls to ~1.0-1.2% over 1Q
+- Real rate ≈ 1.25% - 1.1% ≈ **0.15% to 0.3%**
+
+## Final Estimates
+
+- **Output gap (Q1):** -3.0% (starting ~-1.0%, shock adds -2pp immediately)
+- **Unemployment (Q1):** 6.1% (Okun's law, ~0.5pp rise from 5.6%)
+- **Real interest rate (Q1):** 0.2% (policy cut to ~1.2%, inflation ~1.0%)
+
+<JSON>
+{
+  "predictions": {
+    "r_1": {"point": 0.2, "ci_low": -0.4, "ci_high": 0.8},
+    "u_1": {"point": 6.1, "ci_low": 5.7, "ci_high": 6.6},
+    "y_1": {"point": -3.0, "ci_low": -4.2, "ci_high": -1.8}
+  }
+}
+</JSON>

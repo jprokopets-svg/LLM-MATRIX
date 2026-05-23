@@ -1,0 +1,59 @@
+I need to analyze Vantria's economic history and forecast the impact of a 2 percentage point aggregate demand collapse from a consumer confidence shock.
+
+## Establishing Baseline (Q60)
+
+**Current conditions (Q60):**
+- Inflation: 1.4% YoY
+- Policy rate: 1.7%
+- Unemployment: 5.6% (above natural rate of 5.0%)
+- Real interest rate ≈ 1.7% - 1.4% = 0.3%
+- Economy described as "running well above potential" (though unemployment above natural rate suggests slack — this is a narrative inconsistency; I'll weight the data)
+- Vantra appreciated sharply (disinflationary)
+- Labor market softened
+
+**Output gap assessment at Q60:**
+Unemployment at 5.6% vs natural rate 5.0% = +0.6pp above natural rate. Using Okun's law (~2:1 ratio), this suggests output gap of approximately -1.2%. The narrative says "well above potential" but the data contradicts this — I'll trust the quantitative data showing unemployment above natural rate, suggesting a mildly negative output gap of around -1.0% to -1.5%.
+
+## Shock Analysis: 2pp AD Collapse
+
+A 2 percentage point reduction in aggregate demand is a significant demand shock.
+
+**Impact on output gap (1 quarter ahead):**
+- Starting output gap: approximately -1.2%
+- A 2pp AD shock would directly reduce the output gap by roughly 1.5-2pp (with some multiplier effects partially offset by import leakage in a small open economy)
+- In a small open economy, the multiplier is smaller (~0.7-0.8), so effective output gap impact ≈ -1.4 to -1.6pp
+- New output gap: -1.2% + (-1.5%) ≈ -2.7%
+- Point estimate: **-2.5%**
+
+**Impact on unemployment (1 quarter ahead):**
+- Starting unemployment: 5.6%
+- Output gap worsens by ~1.5pp → via Okun's law (~0.5 ratio for 1 quarter, lagged): unemployment rises ~0.5-0.75pp
+- New unemployment: 5.6% + 0.6% ≈ 6.2%
+- Point estimate: **6.2%**
+
+**Impact on real interest rate (1 quarter ahead):**
+- Current policy rate: 1.7%, current inflation: 1.4%
+- Current real rate: ~0.3%
+- With a demand collapse, central bank would likely cut rates. Given the shock size and already below-target inflation, a 25-50bp cut is plausible within 1 quarter
+- Policy rate likely moves to ~1.2-1.4%
+- Inflation may tick down slightly (1.2-1.3%) due to demand shock, but with a lag
+- Real rate: ~1.3% - 1.3% ≈ 0.0% to 0.2%
+- Point estimate: **0.1%**
+
+## Confidence Intervals
+
+Given uncertainty in multipliers, Okun's coefficient, and central bank response:
+
+- Output gap: wide interval given model uncertainty: (-3.8, -1.2)
+- Unemployment: (5.7, 6.7)
+- Real interest rate: (-0.5, 0.8)
+
+```json
+{
+  "predictions": {
+    "r_1": {"point": 0.1, "ci_low": -0.5, "ci_high": 0.8},
+    "u_1": {"point": 6.2, "ci_low": 5.7, "ci_high": 6.7},
+    "y_1": {"point": -2.5, "ci_low": -3.8, "ci_high": -1.2}
+  }
+}
+```

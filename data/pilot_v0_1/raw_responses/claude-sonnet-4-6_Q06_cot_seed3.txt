@@ -1,0 +1,57 @@
+I'll analyze Vantria's economic history and then forecast the impact of the infrastructure spending shock.
+
+## Step 1: Establish the Baseline (End of Q60)
+
+**Current conditions (Q60):**
+- Inflation: 1.4% YoY (below the 2% target)
+- Policy rate: 1.7% (near neutral, slightly below the ~2% neutral rate)
+- Unemployment: 5.6% (above the 5.0% natural rate → negative output gap)
+- The economy is described as "running well above potential" but the data shows softening labor markets and below-target inflation — there's an internal contradiction in the narrative vs. data, but the hard data (unemployment above NAIRU, inflation below target) suggests a mildly negative output gap entering Q61.
+- The vantra appreciated sharply — this is disinflationary and contractionary via net exports.
+- The labor market softened in this period.
+
+**Implied output gap at Q60:** With unemployment at 5.6% vs. NAIRU of 5.0%, Okun's Law (roughly 2:1 ratio) suggests an output gap of approximately **-1.2%**.
+
+## Step 2: Characterize the Shock
+
+- Government infrastructure spending adds **+0.75 pp to demand** — a positive demand shock.
+- This is a fiscal impulse acting through the expenditure channel.
+
+## Step 3: First-Order Effects (1 Quarter Ahead)
+
+**Output gap:**
+- Starting from ~-1.2%, a 0.75 pp demand boost with a multiplier. For a small open economy with a floating exchange rate, the fiscal multiplier is relatively small (Mundell-Fleming: ~0.5–0.8 in the short run due to crowding out via exchange rate appreciation).
+- Effective demand boost ≈ 0.75 × 0.6 = ~0.45 pp
+- New output gap ≈ -1.2% + 0.45% ≈ **-0.75%**
+
+**Inflation:**
+- Starting at 1.4%, below target. The output gap remains negative at 1 quarter, so demand-pull inflation is limited.
+- Fiscal spending may have some direct price effects (construction costs), but at 1 quarter, pass-through is modest.
+- Inflation adjustment: +0.1 to +0.2 pp → ~**1.5–1.6%**
+
+**Unemployment:**
+- Starting at 5.6%. With a positive demand shock, unemployment falls slightly.
+- Okun's: ~0.45 pp output gap improvement → ~0.2 pp fall in unemployment
+- New unemployment ≈ 5.6% - 0.2% ≈ **5.4%**
+
+## Step 4: Second-Order Effects
+
+**Monetary policy:** The central bank is currently at 1.7% with inflation below target and unemployment above NAIRU. A modest fiscal boost is unlikely to trigger rate hikes at 1 quarter. The CB may welcome the demand support.
+
+**Exchange rate:** Fiscal expansion could marginally appreciate the VTR (higher rates expected), adding mild disinflationary offset. But at 1 quarter, this effect is small.
+
+**Labor market:** The tightening is gradual; 1 quarter is too short for significant wage-price dynamics.
+
+## Step 5: Summary Assessment
+
+The shock is modest and the economy starts from a position of slack. At 1 quarter, the primary effect is a partial closing of the output gap with limited inflation pass-through and a small reduction in unemployment.
+
+<JSON>
+{
+  "predictions": {
+    "pi_1": {"point": 1.6, "ci_low": 1.2, "ci_high": 2.1},
+    "u_1": {"point": 5.4, "ci_low": 5.1, "ci_high": 5.7},
+    "y_1": {"point": -0.7, "ci_low": -1.2, "ci_high": -0.2}
+  }
+}
+</JSON>
